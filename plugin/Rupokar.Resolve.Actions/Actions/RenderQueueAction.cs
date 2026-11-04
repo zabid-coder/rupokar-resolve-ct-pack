@@ -1,5 +1,6 @@
 namespace Rupokar.Resolve.Actions.Actions;
 
+using System;
 using Loupedeck;
 using Rupokar.Resolve.Actions.IPC;
 
@@ -17,13 +18,24 @@ public class RenderQueueAction : PluginDynamicCommand
 
     protected override async void RunCommand(string actionParameter)
     {
-        if (actionParameter == "start_all")
+        try
         {
-            await _bridge.SendCommandAsync("render.start.all");
+            if (actionParameter == "start_all")
+            {
+                await _bridge.SendCommandAsync("render.start.all");
+            }
+            else if (actionParameter == "start_new")
+            {
+                await _bridge.SendCommandAsync("render.start.new");
+            }
+            else if (actionParameter == "stop")
+            {
+                await _bridge.SendCommandAsync("render.stop");
+            }
         }
-        else if (actionParameter == "stop")
+        catch (Exception ex)
         {
-            await _bridge.SendCommandAsync("render.stop");
+            PluginLog.Warning($"RenderQueueAction error: {ex.Message}");
         }
     }
 }

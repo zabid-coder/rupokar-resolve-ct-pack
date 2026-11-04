@@ -24,6 +24,7 @@ class SocketServer:
 
         self.server_sock = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
         self.server_sock.bind(str(self.socket_path))
+        os.chmod(str(self.socket_path), 0o600)
         self.server_sock.listen(5)
         self.running = True
 
@@ -31,9 +32,11 @@ class SocketServer:
             try:
                 conn, _ = self.server_sock.accept()
                 with conn:
-                    data = conn.recv(4096).decode("utf-8").strip()
-                    if not data:
+                    reader = conn.makefile("r", encoding="utf-8")
+                    line = reader.readline()
+                    if not line:
                         continue
+                    data = line.strip()
                     try:
                         req = json.loads(data)
                         res = handle_command(req)

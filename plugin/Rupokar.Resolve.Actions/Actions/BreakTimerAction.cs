@@ -39,6 +39,15 @@ public class BreakTimerAction : PluginDynamicCommand
         if (_remainingSeconds > 0)
         {
             _remainingSeconds--;
+            if (_remainingSeconds == 0)
+            {
+                _timer?.Stop();
+                try
+                {
+                    System.Diagnostics.Process.Start("osascript", "-e 'display notification \"Time to take a break!\" with title \"Rupokar Break Timer\"'");
+                }
+                catch {}
+            }
         }
         this.ActionImageChanged();
     }
@@ -47,8 +56,13 @@ public class BreakTimerAction : PluginDynamicCommand
     {
         if (actionParameter == "start")
         {
+            if (_remainingSeconds <= 0)
+            {
+                _remainingSeconds = 25 * 60;
+            }
             _isRunning = true;
             _timer?.Start();
+            this.ActionImageChanged();
         }
         else if (actionParameter == "stop")
         {

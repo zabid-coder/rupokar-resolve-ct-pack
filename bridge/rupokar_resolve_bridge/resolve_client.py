@@ -56,6 +56,7 @@ class ResolveClient:
             started = bool(project.StartRendering())
             return {"ok": started, "message": "Rendering started" if started else "Failed to start render"}
         except Exception as err:
+            self.resolve = None
             return {"ok": False, "message": str(err)}
 
     def stop_rendering(self) -> dict:
@@ -69,6 +70,7 @@ class ResolveClient:
             project.StopRendering()
             return {"ok": True, "message": "Rendering stopped"}
         except Exception as err:
+            self.resolve = None
             return {"ok": False, "message": str(err)}
 
     def get_render_jobs(self) -> dict:
@@ -83,6 +85,7 @@ class ResolveClient:
             is_rendering = bool(project.IsRenderingInProgress())
             return {"ok": True, "jobs": jobs, "isRendering": is_rendering}
         except Exception as err:
+            self.resolve = None
             return {"ok": False, "jobs": [], "error": str(err)}
 
     def duplicate_timeline(self, aspect_ratio: str) -> dict:
@@ -101,4 +104,5 @@ class ResolveClient:
             timeline.DuplicateTimeline(new_name)
             return {"ok": True, "message": f"Created timeline: {new_name}"}
         except Exception as err:
+            self.resolve = None
             return {"ok": False, "message": str(err)}

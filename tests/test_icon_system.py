@@ -1,12 +1,18 @@
 import json
 from pathlib import Path
-import pytest
+import xml.etree.ElementTree as ET
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 MANIFEST_PATH = REPO_ROOT / "icons" / "final-icon-manifest.json"
 TOUCH_DIR = REPO_ROOT / "icons" / "final-svg" / "touch"
 DIAL_DIR = REPO_ROOT / "icons" / "final-svg" / "dial"
 PHYSICAL_DIR = REPO_ROOT / "icons" / "final-svg" / "physical"
+
+EXPECTED_DIMS = {
+    "touch": ("256", "256"),
+    "dial": ("120", "180"),
+    "physical": ("320", "160"),
+}
 
 
 def test_manifest_and_icon_counts():
@@ -33,7 +39,7 @@ def test_zero_spark_fallbacks():
     assert len(spark_items) == 0, f"Found {len(spark_items)} unmapped spark fallbacks: {[x['function'] for x in spark_items]}"
 
 
-def test_svg_dimensions():
+def test_svg_dimensions_and_xml_validity():
     with open(MANIFEST_PATH, "r", encoding="utf-8") as f:
         items = json.load(f)
 
@@ -41,9 +47,9 @@ def test_svg_dimensions():
         file_path = REPO_ROOT / "icons" / item["filename"]
         assert file_path.exists(), f"File {file_path} must exist"
         content = file_path.read_text(encoding="utf-8")
-        if item["type"] == "touch":
-            assert 'width="256" height="256"' in content
-        elif item["type"] == "dial":
-            assert 'width="120" height="180"' in content
-        elif item["type"] == "physical":
-            assert 'width="320" height="160"' in content
+
+        # ElementTree will raise ParseError if XML is malformed or has duplicate attributes
+        root = ET.fromstring(content)
+        expected_w, expected_h = EXPECTED_DIMS[item["type"]]
+        assert root.attrib["width"] == expected_w, f"File {file_path} width mismatch: expected {expected_w}, got {root.attrib.get('width')}"
+        assert root.attrib["height"] == expected_h, f"File {file_path} height mismatch: expected {expected_h}, got {root.attrib.get('height')}"

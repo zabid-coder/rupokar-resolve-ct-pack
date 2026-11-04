@@ -142,7 +142,8 @@ def glyph_name(item: dict[str, str]) -> str:
 
 
 def glyph(token: str, color: str) -> str:
-    s = f'stroke="{color}" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"'
+    stroke_attrs = f'stroke="{color}" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"'
+    s = f'{stroke_attrs} fill="none"'
     fill = f'fill="{color}"'
     shapes = {
         # 8 Newly Redesigned Glyphs
@@ -163,7 +164,7 @@ def glyph(token: str, color: str) -> str:
         "gear": f'<circle cx="106" cy="105" r="26" {s}/><path d="M106 43v18m0 88v18M44 105h18m88 0h18M62 61l13 13m62 62 13 13M150 61l-13 13m-62 62-13 13" {s}/>',
         "note": f'<path d="M61 44h91v119H61zM82 76h48M82 103h48M82 130h28" {s}/>',
         "newfile": f'<path d="M67 43h63l27 27v94H67zM129 43v29h28M110 92v47m-24-24h48" {s}/>',
-        "proxy": f'<rect x="43" y="61" width="126" height="87" rx="10" {s}/><path d="M73 95h46M73 120h29" {s}/><circle cx="153" cy="69" r="20" fill="#111923" {s}/><path d="M153 58v12l9 5" {s}/>',
+        "proxy": f'<rect x="43" y="61" width="126" height="87" rx="10" {s}/><path d="M73 95h46M73 120h29" {s}/><circle cx="153" cy="69" r="20" fill="#111923" {stroke_attrs}/><path d="M153 58v12l9 5" {s}/>',
         "camera": f'<path d="M42 82h34l14-20h35l14 20h31v69H42z" {s}/><circle cx="106" cy="116" r="25" {s}/>',
         "layers": f'<path d="M106 48l68 37-68 37-68-37zM38 119l68 37 68-37M38 93l68 37 68-37" {s}/>',
         "scissors": f'<circle cx="69" cy="75" r="17" {s}/><circle cx="69" cy="135" r="17" {s}/><path d="M84 88l71 48M84 122l71-48" {s}/>',
@@ -171,7 +172,7 @@ def glyph(token: str, color: str) -> str:
         "timeline": f'<path d="M42 73h127M42 106h127M42 139h127" {s}/><circle cx="70" cy="73" r="9" {fill}/><circle cx="119" cy="106" r="9" {fill}/><circle cx="151" cy="139" r="9" {fill}/>',
         "timelineplus": f'<path d="M42 76h79M42 106h79M42 136h79M151 105v43m-22-22h44" {s}/>',
         "duplicate": f'<rect x="54" y="61" width="75" height="81" rx="8" {s}/><rect x="83" y="43" width="75" height="81" rx="8" {s}/>',
-        "colorwheel": f'<circle cx="106" cy="105" r="57" fill="#1a2332" {s}/><path d="M106 48a57 57 0 0 1 50 84l-50-27z" fill="#FF6B7B"/><path d="M106 105l50 27a57 57 0 0 1-100 0z" fill="#57DDA9"/><path d="M106 105 56 132a57 57 0 0 1 50-84z" fill="#5AA9FF"/><circle cx="106" cy="105" r="16" fill="#F3F7FF"/>',
+        "colorwheel": f'<circle cx="106" cy="105" r="57" fill="#1a2332" {stroke_attrs}/><path d="M106 48a57 57 0 0 1 50 84l-50-27z" fill="#FF6B7B"/><path d="M106 105l50 27a57 57 0 0 1-100 0z" fill="#57DDA9"/><path d="M106 105 56 132a57 57 0 0 1 50-84z" fill="#5AA9FF"/><circle cx="106" cy="105" r="16" fill="#F3F7FF"/>',
         "wave": f'<path d="M34 106h18l12-41 20 84 22-101 22 116 18-74 14 16h22" {s}/>',
         "export": f'<path d="M61 43h78l26 26v89H61zM111 68v60m-23-24 23 24 23-24M79 151h70" {s}/>',
         "quickexport": f'<path d="M61 47h75l25 25v82H61zM108 71v53m-21-21 21 21 21-21" {s}/><path d="M164 41l7 22 22 7-22 7-7 22-7-22-22-7 22-7z" {fill}/>',
@@ -241,9 +242,9 @@ def glyph(token: str, color: str) -> str:
         "gamma": f'<path d="M51 149l44-91 44 91M70 110h51" {s}/><path d="M137 94h33v55" {s}/>',
         "gain": f'<path d="M52 145l34-45 25 22 41-61" {s}/><path d="M130 61h22v22" {s}/>',
         "reset": f'<path d="M151 84a49 49 0 1 0 5 46M151 58v29h-29" {s}/>',
-        "redlight": f'<circle cx="106" cy="105" r="49" fill="#FF6572" opacity=".25" {s}/><text x="106" y="119" text-anchor="middle" fill="{color}" font-size="51" font-family="Arial" font-weight="700">R</text>',
-        "greenlight": f'<circle cx="106" cy="105" r="49" fill="#5EE07E" opacity=".25" {s}/><text x="106" y="119" text-anchor="middle" fill="{color}" font-size="51" font-family="Arial" font-weight="700">G</text>',
-        "bluelight": f'<circle cx="106" cy="105" r="49" fill="#65AFFF" opacity=".25" {s}/><text x="106" y="119" text-anchor="middle" fill="{color}" font-size="51" font-family="Arial" font-weight="700">B</text>',
+        "redlight": f'<circle cx="106" cy="105" r="49" fill="#FF6572" opacity=".25" {stroke_attrs}/><text x="106" y="119" text-anchor="middle" fill="{color}" font-size="51" font-family="Arial" font-weight="700">R</text>',
+        "greenlight": f'<circle cx="106" cy="105" r="49" fill="#5EE07E" opacity=".25" {stroke_attrs}/><text x="106" y="119" text-anchor="middle" fill="{color}" font-size="51" font-family="Arial" font-weight="700">G</text>',
+        "bluelight": f'<circle cx="106" cy="105" r="49" fill="#65AFFF" opacity=".25" {stroke_attrs}/><text x="106" y="119" text-anchor="middle" fill="{color}" font-size="51" font-family="Arial" font-weight="700">B</text>',
         "closecompare": f'<rect x="53" y="57" width="106" height="96" rx="9" {s}/><path d="M79 82l54 54m0-54-54 54" {s}/>',
         "fadesettings": f'<path d="M66 54v102m40-102v102m40-102v102M48 81h36m22 47h36m22-28h36" {s}/><circle cx="66" cy="81" r="10" {fill}/><circle cx="106" cy="128" r="10" {fill}/><circle cx="146" cy="100" r="10" {fill}/>',
         "applyfade": f'<path d="M48 143h31l27-70 27 70h31" {s}/><path d="M146 65l12 12 23-26" {s}/>',

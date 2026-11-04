@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>Rupokar.Resolve.Actions</AssemblyName>
+    <RootNamespace>Rupokar.Resolve.Actions</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Loupedeck.PluginApi" Version="6.4.1" />
+  </ItemGroup>
+</Project>

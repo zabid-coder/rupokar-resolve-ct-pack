@@ -1,0 +1,45 @@
+# DaVinci Resolve Keyboard Shortcuts Preset for Rupokar Loupedeck CT Pack
+# Import into DaVinci Resolve -> Keyboard Customization
+
+Version = 1
+Profile = "Rupokar Loupedeck CT"
+
+# Edit Actions
+Split = "Ctrl+B"
+Ripple Delete = "Shift+Backspace"
+Ripple Start = "Ctrl+Shift+["
+Ripple End = "Ctrl+Shift+]"
+Trim Start = "Shift+["
+Trim End = "Shift+]"
+Select Forward All = "Y"
+Select Backward All = "Ctrl+Y"
+Snapping = "N"
+Change Clip Speed = "Ctrl+R"
+Retime Controls = "Ctrl+Alt+R"
+Add Marker = "M"
+Delete All Markers = "Ctrl+Alt+M"
+Compound Clip = "Alt+C"
+
+# Navigation & Transport
+Zoom to Fit = "Shift+Z"
+Next Clip = "Down"
+Previous Clip = "Up"
+Shuttle Reverse = "J"
+Shuttle Stop = "K"
+Shuttle Forward = "L"
+Play Pause = "Space"
+
+# Panels & Fn Layer
+Media Pool Panel = "Ctrl+1"
+Effects Library Panel = "Ctrl+2"
+Inspector Panel = "Ctrl+3"
+Mixer Panel = "Ctrl+4"
+Power Bins Panel = "Ctrl+5"
+Metadata Panel = "Ctrl+6"
+Index Panel = "Ctrl+7"
+
+# Color Page
+Add Node = "Alt+S"
+Node Before = "Shift+S"
+Grab Still = "Ctrl+Alt+G"
+Bypass All Grades = "Shift+D"

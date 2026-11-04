@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="title-73 desc-73">
+  <title id="title-73">Apricot clip color</title>
+  <desc id="desc-73">Top-left dial · press; Edit 2</desc>
+  <rect width="256" height="256" rx="24" fill="#101826"/>
+  <rect x="3" y="3" width="250" height="250" rx="21" fill="none" stroke="#2A3A52" stroke-width="3"/>
+  <rect x="22" y="20" width="212" height="5" rx="2.5" fill="#FFB071"/>
+  <g transform="translate(22 13)"><circle cx="106" cy="105" r="55" fill="#172235" stroke="#FFB071" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M106 50a55 55 0 0 1 48 82l-48-27z" fill="#FF6C7A" opacity=".85"/><path d="M106 105l48 27a55 55 0 0 1-96 0z" fill="#55DDA7" opacity=".85"/><path d="M106 105L58 132A55 55 0 0 1 106 50z" fill="#5AA9FF" opacity=".85"/><circle cx="106" cy="105" r="15" fill="#f7fbff"/></g>
+  <path d="M34 181h188" stroke="#2A3A52" stroke-width="2"/>
+  <text x="128" y="204" text-anchor="middle" fill="#F4F7FC" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Apricot</text><text x="128" y="225" text-anchor="middle" fill="#F4F7FC" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">clip color</text>
+  <text x="128" y="245" text-anchor="middle" fill="#FFB071" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" letter-spacing="1.4">EDIT 2</text>
+</svg>

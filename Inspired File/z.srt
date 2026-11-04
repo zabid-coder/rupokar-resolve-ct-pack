@@ -1,0 +1,2202 @@
+1
+00:00:00,766 --> 00:00:01,199
+ Hi!
+
+2
+00:00:01,399 --> 00:00:05,233
+ In this video I'm going to edit a short
+ city film from start to
+
+3
+00:00:05,233 --> 00:00:08,566
+ finish and I'll do almost all of
+ it with the loop deck.
+
+4
+00:00:08,933 --> 00:00:12,666
+ Along the way you'll see every page
+ and every button of the Tika
+
+5
+00:00:12,666 --> 00:00:15,033
+ Studio's loop deck pack in the order
+
+6
+00:00:15,033 --> 00:00:16,933
+ you'd actually use them when you edit.
+
+7
+00:00:17,233 --> 00:00:20,833
+ There's a studio edition for DaVinci
+ Resolve Studio and a free
+
+8
+00:00:20,833 --> 00:00:22,899
+ edition for the free version of DaVinci.
+
+9
+00:00:23,066 --> 00:00:24,899
+ Everything you see works in both,
+
+10
+00:00:25,000 --> 00:00:27,066
+ unless I tell you it's studio only.
+
+11
+00:00:27,300 --> 00:00:28,733
+ And if you still need to install the
+
+12
+00:00:28,733 --> 00:00:31,166
+ pack, there's a short separate
+ video for that.
+
+13
+00:00:31,433 --> 00:00:32,866
+ The link is in the description.
+
+14
+00:00:33,133 --> 00:00:34,633
+ First, a quick tour.
+
+15
+00:00:34,933 --> 00:00:37,766
+ The eight round buttons at the
+ bottom are your pages.
+
+16
+00:00:37,933 --> 00:00:42,000
+ Round button 1, on the bottom left,
+ takes you to the media page.
+
+17
+00:00:42,166 --> 00:00:44,233
+ Button 2 is the edit page.
+
+18
+00:00:44,399 --> 00:00:47,000
+ Buttons 3 and 4 are edit pages too.
+
+19
+00:00:47,299 --> 00:00:50,666
+ DaVinci stays where it is, but the
+ loop deck gets a new set of
+
+20
+00:00:50,666 --> 00:00:54,166
+ buttons, so you get three edit
+ pages full of tools.
+
+21
+00:00:54,366 --> 00:00:58,666
+ Button 5 is the color page. 6 is
+ Fairlight for your sound.
+
+22
+00:00:59,033 --> 00:01:01,799
+ And 7 is Deliver, where you
+ export your film.
+
+23
+00:01:02,033 --> 00:01:05,066
+ Button 8, on the bottom right,
+ is Quick Export.
+
+24
+00:01:05,299 --> 00:01:07,833
+ I'll save that one for the end,
+ when the film is finished.
+
+25
+00:01:08,099 --> 00:01:09,866
+ Above the round buttons is the touch
+
+26
+00:01:09,866 --> 00:01:13,166
+ screen, with 12 buttons that
+ change on every page.
+
+27
+00:01:13,333 --> 00:01:15,933
+ On the left and the right
+ you have 6 dials.
+
+28
+00:01:16,066 --> 00:01:18,066
+ You can turn them and you can press them.
+
+29
+00:01:18,433 --> 00:01:22,166
+ In the middle is the big wheel, and next
+ to it, the square buttons.
+
+30
+00:01:22,333 --> 00:01:24,099
+ I'll show you all of them while we edit.
+
+31
+00:01:24,433 --> 00:01:25,133
+ Let's go!
+
+32
+00:01:29,533 --> 00:01:32,533
+ Round button 1 takes me
+ to the media page.
+
+33
+00:01:32,766 --> 00:01:34,933
+ This is where every project starts.
+
+34
+00:01:35,266 --> 00:01:38,133
+ On the touch screen, the middle
+ row, third button.
+
+35
+00:01:38,466 --> 00:01:39,633
+ Project Settings.
+
+36
+00:01:39,799 --> 00:01:42,799
+ This is where you choose the size and
+ the frame rate of your film.
+
+37
+00:01:43,299 --> 00:01:47,433
+ I'm making a normal 1080p film
+ at 25 frames per second.
+
+38
+00:01:47,833 --> 00:01:50,066
+ That's already set, so I'll
+ just close it.
+
+39
+00:01:50,466 --> 00:01:52,366
+ Next, I want two folders.
+
+40
+00:01:52,533 --> 00:01:54,833
+ One for the music, and one
+ for the footage.
+
+41
+00:01:55,066 --> 00:01:56,666
+ Top row, second button.
+
+42
+00:01:56,900 --> 00:01:57,599
+ New bin.
+
+43
+00:01:57,966 --> 00:01:59,599
+ I'll call this one Music.
+
+44
+00:01:59,933 --> 00:02:02,433
+ One more press, and this one is footage.
+
+45
+00:02:02,866 --> 00:02:03,866
+ Now the files.
+
+46
+00:02:04,133 --> 00:02:07,566
+ I click on the music bin and use the
+ first button on the top row.
+
+47
+00:02:07,799 --> 00:02:08,800
+ Import media.
+
+48
+00:02:09,199 --> 00:02:10,033
+ There's my song.
+
+49
+00:02:10,366 --> 00:02:11,699
+ Open, and it's in.
+
+50
+00:02:12,066 --> 00:02:14,966
+ Then the footage bin, and
+ import media again.
+
+51
+00:02:15,333 --> 00:02:19,133
+ I go to my footage folder, select all
+ four clips, and open them.
+
+52
+00:02:19,366 --> 00:02:21,400
+ Four city clips, ready to edit.
+
+53
+00:02:21,766 --> 00:02:23,366
+ Bottom row, first button.
+
+54
+00:02:23,633 --> 00:02:24,566
+ Power bins.
+
+55
+00:02:24,800 --> 00:02:27,133
+ It hides your power bins and
+ shows them again.
+
+56
+00:02:27,433 --> 00:02:30,500
+ Power bins are folders you can
+ use in every project.
+
+57
+00:02:30,733 --> 00:02:33,233
+ Perfect for your logo or your
+ favorite titles.
+
+58
+00:02:33,500 --> 00:02:35,033
+ Top row, third button.
+
+59
+00:02:35,266 --> 00:02:35,833
+ Note.
+
+60
+00:02:36,099 --> 00:02:37,766
+ These are the notes of your project.
+
+61
+00:02:38,033 --> 00:02:39,866
+ I'll write a little reminder for myself.
+
+62
+00:02:40,066 --> 00:02:42,433
+ Cut on the beat, and night
+ clips at the end.
+
+63
+00:02:42,666 --> 00:02:44,166
+ Save it, and close.
+
+64
+00:02:44,366 --> 00:02:46,000
+ Top row, last button.
+
+65
+00:02:46,166 --> 00:02:47,233
+ Project manager.
+
+66
+00:02:47,433 --> 00:02:49,933
+ This is where you open or
+ switch projects.
+
+67
+00:02:50,166 --> 00:02:51,033
+ I'll close it again.
+
+68
+00:02:51,366 --> 00:02:53,033
+ Middle row, last button.
+
+69
+00:02:53,233 --> 00:02:54,233
+ New project.
+
+70
+00:02:54,400 --> 00:02:55,933
+ For when you want to start something new.
+
+71
+00:02:56,300 --> 00:02:57,266
+ I'll cancel this one.
+
+72
+00:02:57,566 --> 00:02:59,366
+ Two buttons are for heavy footage,
+
+73
+00:02:59,400 --> 00:03:01,099
+ and they sit right next to each other.
+
+74
+00:03:01,333 --> 00:03:02,900
+ Middle row, first button.
+
+75
+00:03:03,099 --> 00:03:04,300
+ Prefer proxy.
+
+76
+00:03:04,533 --> 00:03:07,766
+ DaVinci now plays your smaller proxy
+ files if you made them.
+
+77
+00:03:08,033 --> 00:03:09,866
+ You can see it up here, in purple.
+
+78
+00:03:10,099 --> 00:03:12,599
+ And right next to it, camera originals.
+
+79
+00:03:12,733 --> 00:03:15,333
+ That switches back to your original
+ camera files.
+
+80
+00:03:15,599 --> 00:03:17,833
+ The bottom row has three more buttons.
+
+81
+00:03:18,000 --> 00:03:21,866
+ Timeline 9x16, 4x5, and 4x3.
+
+82
+00:03:22,300 --> 00:03:23,666
+ They turn your finished timeline
+
+83
+00:03:23,666 --> 00:03:25,766
+ into a vertical or a square version.
+
+84
+00:03:26,133 --> 00:03:29,199
+ These are studio only, and they're
+ most useful when your film is
+
+85
+00:03:29,199 --> 00:03:31,233
+ done, so I'll show you those at the end.
+
+86
+00:03:31,566 --> 00:03:33,466
+ In the free edition, this row has
+
+87
+00:03:33,466 --> 00:03:36,099
+ duplicate timeline and new
+ timeline instead.
+
+88
+00:03:36,400 --> 00:03:39,400
+ One more thing on this page, and
+ it's one of my favorites.
+
+89
+00:03:39,533 --> 00:03:42,800
+ Swipe the touchscreen to the right
+ and you get the break timer.
+
+90
+00:03:42,966 --> 00:03:44,800
+ This one is studio only as well.
+
+91
+00:03:45,000 --> 00:03:49,599
+ I'm going to edit for 25 minutes, so
+ I tap 25 minutes and start.
+
+92
+00:03:49,833 --> 00:03:51,133
+ Look at the status button.
+
+93
+00:03:51,366 --> 00:03:53,233
+ The timer is really running now.
+
+94
+00:03:53,766 --> 00:03:55,766
+ 2459, 2458.
+
+95
+00:03:56,166 --> 00:03:59,099
+ Keep an eye on it because it will come
+ back later in this video.
+
+96
+00:03:59,333 --> 00:04:01,666
+ Stop ends the timer if you ever need it.
+
+97
+00:04:01,800 --> 00:04:04,133
+ And this button opens Rushwise, my
+
+98
+00:04:04,133 --> 00:04:06,366
+ project manager for DaVinci editors.
+
+99
+00:04:06,633 --> 00:04:08,199
+ Now, let's start editing.
+
+100
+00:04:12,566 --> 00:04:15,266
+ Round button 2 takes DaVinci to the edit
+
+101
+00:04:15,266 --> 00:04:17,899
+ page, and the loop deck to edit page 1.
+
+102
+00:04:18,500 --> 00:04:19,699
+ First, I need a timeline.
+
+103
+00:04:20,166 --> 00:04:24,433
+ That button lives on edit page 3,
+ so I tap round button 4.
+
+104
+00:04:24,833 --> 00:04:28,366
+ DaVinci stays on the edit page, but
+ the touchscreen changes.
+
+105
+00:04:28,633 --> 00:04:30,266
+ Bottom row, second button.
+
+106
+00:04:30,533 --> 00:04:31,466
+ New timeline.
+
+107
+00:04:31,766 --> 00:04:34,266
+ I'll call it "City Film" and create it.
+
+108
+00:04:34,466 --> 00:04:37,500
+ Then back to round button
+ 2 for edit page 1.
+
+109
+00:04:37,866 --> 00:04:41,133
+ Putting clips on a timeline is something
+ you do with your mouse.
+
+110
+00:04:41,366 --> 00:04:44,533
+ I select my four clips and drag
+ them onto the timeline.
+
+111
+00:04:44,866 --> 00:04:46,166
+ The film doesn't fit on the
+
+112
+00:04:46,166 --> 00:04:48,933
+ screen, so I press the middle right dial.
+
+113
+00:04:49,166 --> 00:04:50,166
+ Zoom to fit.
+
+114
+00:04:50,433 --> 00:04:51,933
+ Now I can see all of it.
+
+115
+00:04:52,233 --> 00:04:55,199
+ From the music bin, I drag the
+ song in underneath.
+
+116
+00:04:55,533 --> 00:04:57,166
+ Now let's look at all the ways to
+
+117
+00:04:57,166 --> 00:04:59,466
+ move through your timeline, in one go.
+
+118
+00:04:59,766 --> 00:05:01,600
+ I click somewhere in the first clip.
+
+119
+00:05:01,866 --> 00:05:04,866
+ The big wheel in the middle moves
+ you frame by frame.
+
+120
+00:05:05,133 --> 00:05:07,266
+ Right is forward, left is back.
+
+121
+00:05:07,533 --> 00:05:08,866
+ Keep an eye on the timecode.
+
+122
+00:05:09,166 --> 00:05:11,033
+ The top left dial does the same.
+
+123
+00:05:11,300 --> 00:05:13,399
+ That's shuttle, frame by frame.
+
+124
+00:05:13,666 --> 00:05:15,933
+ The top right dial is fast shuttle.
+
+125
+00:05:16,166 --> 00:05:18,000
+ Every click is a whole second.
+
+126
+00:05:18,300 --> 00:05:20,399
+ The bottom right dial is next clip.
+
+127
+00:05:20,600 --> 00:05:22,199
+ It jumps from cut to cut.
+
+128
+00:05:22,399 --> 00:05:25,100
+ And the middle right dial
+ zooms in and out.
+
+129
+00:05:25,333 --> 00:05:28,100
+ On the square buttons, D
+ jumps to the end of
+
+130
+00:05:28,100 --> 00:05:31,033
+ your timeline, and C takes you
+ back to the start.
+
+131
+00:05:31,266 --> 00:05:34,266
+ To play, tap the bottom right button
+ on the touchscreen.
+
+132
+00:05:34,533 --> 00:05:35,766
+ Play and pause.
+
+133
+00:05:36,000 --> 00:05:37,366
+ Tap it again to stop.
+
+134
+00:05:37,600 --> 00:05:40,533
+ It's on every edit page, so you
+ never have to switch.
+
+135
+00:05:40,733 --> 00:05:42,766
+ Or tap the middle of the big wheel.
+
+136
+00:05:43,000 --> 00:05:44,466
+ Play and pause.
+
+137
+00:05:44,733 --> 00:05:46,166
+ Now, markers.
+
+138
+00:05:46,366 --> 00:05:48,066
+ You can put them in two places.
+
+139
+00:05:48,300 --> 00:05:51,100
+ With a clip selected, the markers
+ go on the clip.
+
+140
+00:05:51,333 --> 00:05:54,533
+ I play the song and tap the bottom
+ right dial on the beat.
+
+141
+00:05:54,766 --> 00:05:56,199
+ That's add marker.
+
+142
+00:05:56,433 --> 00:05:58,699
+ Look, they land right on the first clip.
+
+143
+00:05:58,933 --> 00:06:01,766
+ With nothing selected, they go
+ on the timeline itself.
+
+144
+00:06:01,966 --> 00:06:05,600
+ One press, and another, and there
+ they are, up in the ruler.
+
+145
+00:06:07,466 --> 00:06:08,399
+ Time to cut.
+
+146
+00:06:08,733 --> 00:06:10,733
+ I select the first clip and put the
+
+147
+00:06:10,733 --> 00:06:12,633
+ playhead where I want it to start.
+
+148
+00:06:12,866 --> 00:06:13,633
+ Touch screen.
+
+149
+00:06:13,866 --> 00:06:16,933
+ Bottom row, first button, ripple start.
+
+150
+00:06:17,300 --> 00:06:19,000
+ Everything before the playhead is
+
+151
+00:06:19,000 --> 00:06:21,533
+ gone, and the rest of the
+ film moves along.
+
+152
+00:06:21,766 --> 00:06:22,533
+ No gap.
+
+153
+00:06:22,899 --> 00:06:24,866
+ Now I put the playhead where
+ the clip should
+
+154
+00:06:24,899 --> 00:06:27,733
+ end, and use the third button
+ on the bottom row.
+
+155
+00:06:27,966 --> 00:06:28,966
+ Ripple end.
+
+156
+00:06:29,266 --> 00:06:31,966
+ The end is gone, and again, no gap.
+
+157
+00:06:32,333 --> 00:06:35,100
+ On the second clip, I put the
+ playhead in the middle.
+
+158
+00:06:35,333 --> 00:06:38,233
+ Bottom row, second button, split clip.
+
+159
+00:06:38,500 --> 00:06:41,166
+ It cuts the clip in two, right
+ at the playhead.
+
+160
+00:06:41,433 --> 00:06:42,766
+ I don't need the second half.
+
+161
+00:06:43,033 --> 00:06:45,633
+ Top row, last button, delete.
+
+162
+00:06:45,933 --> 00:06:48,866
+ The clip is gone, but this
+ time it leaves a gap.
+
+163
+00:06:49,133 --> 00:06:50,800
+ That's fine, I'll close it later.
+
+164
+00:06:51,166 --> 00:06:53,399
+ On the third clip, I want
+ something different.
+
+165
+00:06:53,566 --> 00:06:56,133
+ Trim it, but leave everything
+ else where it is.
+
+166
+00:06:56,366 --> 00:06:59,233
+ Middle row, first button, trim start.
+
+167
+00:06:59,433 --> 00:07:02,399
+ And with the playhead a bit further,
+ the button next to it.
+
+168
+00:07:02,566 --> 00:07:03,466
+ Trim end.
+
+169
+00:07:03,800 --> 00:07:06,066
+ The clip is shorter, and the gaps stay.
+
+170
+00:07:06,366 --> 00:07:07,966
+ Top row, second button.
+
+171
+00:07:08,266 --> 00:07:10,100
+ With the playhead here, select
+
+172
+00:07:10,100 --> 00:07:12,800
+ forward all selects everything
+ to the right.
+
+173
+00:07:13,033 --> 00:07:16,000
+ Handy when you want to move the rest
+ of your film in one go.
+
+174
+00:07:16,233 --> 00:07:19,933
+ The first button, select backward all,
+ does the same to the left.
+
+175
+00:07:20,266 --> 00:07:21,533
+ Now, snapping.
+
+176
+00:07:21,833 --> 00:07:24,166
+ When snapping is on, a clip jumps to
+
+177
+00:07:24,166 --> 00:07:26,466
+ the edge of the next clip, like a magnet.
+
+178
+00:07:26,766 --> 00:07:30,033
+ I drag the last clip to the left,
+ and it clicks into place.
+
+179
+00:07:30,233 --> 00:07:32,899
+ Snapping is the third button
+ on the top row.
+
+180
+00:07:33,133 --> 00:07:34,866
+ I turn it off, and now I can put a
+
+181
+00:07:34,866 --> 00:07:37,800
+ clip anywhere I want, even
+ one frame away.
+
+182
+00:07:38,133 --> 00:07:40,566
+ I'll undo that, and switch
+ snapping back on.
+
+183
+00:07:42,566 --> 00:07:46,466
+ The last clip is a night time lapse,
+ and it can go faster.
+
+184
+00:07:46,833 --> 00:07:50,166
+ I select it, and on the middle
+ row, the last button.
+
+185
+00:07:50,466 --> 00:07:54,233
+ Change clip speed. 200% and change.
+
+186
+00:07:54,533 --> 00:07:56,766
+ Twice as fast, and half as long.
+
+187
+00:07:57,199 --> 00:07:59,033
+ The button next to it, retime
+
+188
+00:07:59,033 --> 00:08:01,866
+ controls, shows the speed
+ right on the clip.
+
+189
+00:08:02,133 --> 00:08:03,600
+ Tap it again to hide it.
+
+190
+00:08:03,899 --> 00:08:05,899
+ You can also press the dials, and
+
+191
+00:08:05,899 --> 00:08:07,533
+ then they give your clips a color.
+
+192
+00:08:07,833 --> 00:08:09,733
+ Great to keep your timeline organized.
+
+193
+00:08:09,966 --> 00:08:12,966
+ The first clip, top left dial, orange.
+
+194
+00:08:13,199 --> 00:08:16,199
+ The second clip, middle
+ left dial, yellow.
+
+195
+00:08:16,466 --> 00:08:19,333
+ The third clip, top right dial, green.
+
+196
+00:08:19,733 --> 00:08:21,199
+ Now I select the music.
+
+197
+00:08:21,500 --> 00:08:23,166
+ Turn the middle left dial, and
+
+198
+00:08:23,199 --> 00:08:25,766
+ every click makes it one decibel softer.
+
+199
+00:08:26,033 --> 00:08:28,366
+ Six clicks, six decibels down.
+
+200
+00:08:28,733 --> 00:08:31,066
+ The bottom left dial is dynamic trim.
+
+201
+00:08:31,333 --> 00:08:33,899
+ Put the playhead on a cut,
+ press the dial to
+
+202
+00:08:33,899 --> 00:08:36,600
+ switch dynamic trim on, and
+ select the cut.
+
+203
+00:08:36,966 --> 00:08:40,600
+ Now turn the dial, and the cut
+ moves, frame by frame.
+
+204
+00:08:40,933 --> 00:08:43,233
+ In the viewer, you see both
+ sides of the cut.
+
+205
+00:08:43,533 --> 00:08:45,600
+ Press the dial again to switch it off.
+
+206
+00:08:49,833 --> 00:08:53,466
+ Round button 3 switches the loop
+ deck to edit page 2.
+
+207
+00:08:54,000 --> 00:08:56,133
+ The markers I made aren't needed anymore.
+
+208
+00:08:56,566 --> 00:08:59,133
+ Top left, delete all markers.
+
+209
+00:08:59,366 --> 00:08:59,766
+ Gone.
+
+210
+00:09:00,266 --> 00:09:01,933
+ The second button is link.
+
+211
+00:09:02,166 --> 00:09:04,733
+ It switches linked selection on and off.
+
+212
+00:09:05,100 --> 00:09:07,166
+ I switch it off, and now a click
+
+213
+00:09:07,166 --> 00:09:09,166
+ on a clip selects only the picture.
+
+214
+00:09:09,433 --> 00:09:10,833
+ The sound stays behind.
+
+215
+00:09:11,166 --> 00:09:12,966
+ Switch it back on, and picture and
+
+216
+00:09:12,966 --> 00:09:14,799
+ sound are selected together again.
+
+217
+00:09:15,200 --> 00:09:18,966
+ The third button, link clips, actually
+ splits them apart.
+
+218
+00:09:19,266 --> 00:09:21,066
+ One press, and they're unlinked.
+
+219
+00:09:21,333 --> 00:09:24,466
+ Now I can drag the sound on its own,
+ away from the picture.
+
+220
+00:09:24,833 --> 00:09:28,333
+ I'll put it back, select both, and
+ press link clips again.
+
+221
+00:09:28,700 --> 00:09:29,166
+ Linked.
+
+222
+00:09:29,500 --> 00:09:31,366
+ But link clips can do more than that.
+
+223
+00:09:31,566 --> 00:09:34,266
+ Select two separate clips, for example a
+
+224
+00:09:34,266 --> 00:09:37,466
+ clip and a piece of music,
+ and press link clips.
+
+225
+00:09:37,666 --> 00:09:39,266
+ Now they are linked together.
+
+226
+00:09:39,533 --> 00:09:41,766
+ Click one, and the other one
+ is selected too.
+
+227
+00:09:42,133 --> 00:09:43,833
+ Move it, and they move together.
+
+228
+00:09:44,133 --> 00:09:45,299
+ So that's the difference.
+
+229
+00:09:45,399 --> 00:09:47,633
+ Link decides how you select, and
+
+230
+00:09:47,633 --> 00:09:50,166
+ link clips really ties clips together.
+
+231
+00:09:50,433 --> 00:09:51,266
+ I'll undo that.
+
+232
+00:09:51,600 --> 00:09:53,833
+ Top right is new compound clip.
+
+233
+00:09:54,066 --> 00:09:56,600
+ It turns the selected clips
+ into one clip.
+
+234
+00:09:56,899 --> 00:09:58,533
+ Create, and there it is.
+
+235
+00:09:58,566 --> 00:10:01,000
+ One compound clip, with that little icon.
+
+236
+00:10:01,266 --> 00:10:03,366
+ Great to keep a busy timeline tidy.
+
+237
+00:10:03,666 --> 00:10:06,333
+ I'll undo it, because I still want
+ to work on this clip.
+
+238
+00:10:06,666 --> 00:10:07,633
+ Now the music.
+
+239
+00:10:07,899 --> 00:10:09,466
+ Middle row, first button.
+
+240
+00:10:09,700 --> 00:10:10,966
+ Normalize audio.
+
+241
+00:10:11,299 --> 00:10:13,100
+ Pick your level, and normalize.
+
+242
+00:10:13,266 --> 00:10:14,200
+ Look at the waveform.
+
+243
+00:10:14,433 --> 00:10:16,399
+ The music now has a steady level.
+
+244
+00:10:16,700 --> 00:10:18,366
+ Next to it is auto align.
+
+245
+00:10:18,633 --> 00:10:20,533
+ It lines up clips by their sound.
+
+246
+00:10:20,766 --> 00:10:23,600
+ That's for when you film the same
+ moment with two cameras.
+
+247
+00:10:23,633 --> 00:10:24,899
+ Like the speeches at a wedding.
+
+248
+00:10:25,233 --> 00:10:28,166
+ My city clips don't have that, so
+ there's nothing to see here.
+
+249
+00:10:28,500 --> 00:10:29,933
+ The third and fourth button on the
+
+250
+00:10:29,933 --> 00:10:32,466
+ middle row are mark in, and mark out.
+
+251
+00:10:32,733 --> 00:10:34,033
+ Now I have a range.
+
+252
+00:10:34,299 --> 00:10:36,633
+ Bottom row, third button, loop.
+
+253
+00:10:36,933 --> 00:10:40,700
+ When I play now, it keeps playing
+ that range, over and over.
+
+254
+00:10:40,899 --> 00:10:42,633
+ Stop, and loop off again.
+
+255
+00:10:42,966 --> 00:10:46,766
+ On the third clip, bottom row, first
+ button, match frame.
+
+256
+00:10:47,000 --> 00:10:49,633
+ It opens the original file
+ at exactly this
+
+257
+00:10:49,633 --> 00:10:52,166
+ frame, so you can grab more
+ of the same shot.
+
+258
+00:10:52,399 --> 00:10:53,566
+ And back to the timeline.
+
+259
+00:10:53,899 --> 00:10:57,733
+ The button next to it, Cinema Viewer,
+ shows your film full screen.
+
+260
+00:10:58,000 --> 00:10:59,299
+ Escape takes you back.
+
+261
+00:10:59,600 --> 00:11:02,899
+ On this page, the dials can give
+ you six more colors.
+
+262
+00:11:03,033 --> 00:11:04,833
+ The dials have their own pages too.
+
+263
+00:11:05,100 --> 00:11:08,133
+ Swipe down on the dials, and these
+ six colors appear.
+
+264
+00:11:08,399 --> 00:11:12,266
+ From the top left down, apricot,
+ blue, lime.
+
+265
+00:11:12,566 --> 00:11:15,700
+ And on the right, brown,
+ pink, and purple.
+
+266
+00:11:20,000 --> 00:11:23,000
+ Round button four gives you
+ edit page three.
+
+267
+00:11:23,299 --> 00:11:25,033
+ Remember the gaps from page one?
+
+268
+00:11:25,433 --> 00:11:27,466
+ Here's how to close them all at once.
+
+269
+00:11:27,633 --> 00:11:30,100
+ The music runs underneath
+ though, and DaVinci
+
+270
+00:11:30,133 --> 00:11:33,233
+ only closes a gap when it's
+ empty on every track.
+
+271
+00:11:33,433 --> 00:11:35,333
+ So, I click this little button on
+
+272
+00:11:35,333 --> 00:11:37,533
+ the music track to leave the music out.
+
+273
+00:11:37,799 --> 00:11:40,533
+ Then, top right, delete gaps.
+
+274
+00:11:40,666 --> 00:11:43,100
+ Every gap is closed, in one press.
+
+275
+00:11:43,333 --> 00:11:46,266
+ The last two buttons on the
+ middle row swap clips.
+
+276
+00:11:46,399 --> 00:11:48,966
+ Swap left swaps the selected
+ clip with the
+
+277
+00:11:48,966 --> 00:11:52,000
+ one on its left, and swap
+ right moves it back.
+
+278
+00:11:52,299 --> 00:11:54,333
+ Top left is Enable Clip.
+
+279
+00:11:54,533 --> 00:11:57,033
+ It switches a clip off without
+ deleting it.
+
+280
+00:11:57,333 --> 00:11:58,866
+ Press it again, and it's back.
+
+281
+00:11:59,200 --> 00:11:59,966
+ Now a new one.
+
+282
+00:12:00,266 --> 00:12:02,766
+ I put the playhead in the middle
+ of the third clip.
+
+283
+00:12:03,000 --> 00:12:04,566
+ Top row, second button.
+
+284
+00:12:04,833 --> 00:12:05,733
+ Freeze frame.
+
+285
+00:12:05,966 --> 00:12:08,000
+ The picture freezes, right here.
+
+286
+00:12:08,200 --> 00:12:11,100
+ When I play it, the rest of the
+ clip just stands still.
+
+287
+00:12:11,266 --> 00:12:14,666
+ Press freeze frame again, and the clip
+ plays at normal speed again.
+
+288
+00:12:15,033 --> 00:12:17,266
+ I switch the music track back
+ on, and put the
+
+289
+00:12:17,266 --> 00:12:20,266
+ playhead right on the cut between
+ two sound clips.
+
+290
+00:12:20,433 --> 00:12:22,066
+ Middle row, second button.
+
+291
+00:12:22,266 --> 00:12:23,100
+ Crossfade.
+
+292
+00:12:23,333 --> 00:12:25,266
+ One press, and the sound now fades
+
+293
+00:12:25,266 --> 00:12:27,633
+ smoothly from one clip into the next.
+
+294
+00:12:27,866 --> 00:12:30,533
+ The third button on the top
+ row is title safe.
+
+295
+00:12:30,666 --> 00:12:32,200
+ It shows the line where your text
+
+296
+00:12:32,200 --> 00:12:34,466
+ is always visible on every screen.
+
+297
+00:12:34,700 --> 00:12:36,200
+ Press it again, and it's gone.
+
+298
+00:12:36,500 --> 00:12:38,133
+ Middle row, first button.
+
+299
+00:12:38,266 --> 00:12:41,666
+ Find Clip shows the selected clip
+ in your media pool.
+
+300
+00:12:41,899 --> 00:12:43,533
+ Bottom row, first button.
+
+301
+00:12:43,600 --> 00:12:46,399
+ Find Timeline does the same
+ for your timeline.
+
+302
+00:12:46,666 --> 00:12:49,966
+ The second button is New Timeline,
+ which we used at the start.
+
+303
+00:12:50,233 --> 00:12:51,133
+ And the colors?
+
+304
+00:12:51,233 --> 00:12:55,000
+ On this page, swipe down on the
+ dials twice for six more.
+
+305
+00:12:55,200 --> 00:12:58,733
+ That's 15 colors in total, all
+ just one press away.
+
+306
+00:12:58,966 --> 00:13:03,833
+ Olive, teal, navy, violet,
+ tan, and beige.
+
+307
+00:13:04,066 --> 00:13:07,266
+ And the third button on the bottom
+ row, Duplicate Timeline.
+
+308
+00:13:07,533 --> 00:13:09,600
+ It makes a copy of your timeline,
+ so you can
+
+309
+00:13:09,600 --> 00:13:11,866
+ try something new without
+ risking your edit.
+
+310
+00:13:12,100 --> 00:13:13,500
+ I'll keep working in the copy.
+
+311
+00:13:17,766 --> 00:13:21,766
+ Now the square buttons next to the
+ wheel, and the FN button.
+
+312
+00:13:22,233 --> 00:13:25,433
+ Back on edit page one, I'll
+ fix one thing first.
+
+313
+00:13:25,666 --> 00:13:28,066
+ The music is much longer than the film.
+
+314
+00:13:28,500 --> 00:13:30,600
+ I select it, put the playhead at the
+
+315
+00:13:30,666 --> 00:13:33,466
+ end of the last clip, and use Trim End.
+
+316
+00:13:33,866 --> 00:13:35,833
+ Now the music stops with the film.
+
+317
+00:13:36,299 --> 00:13:39,299
+ The FN button changes what
+ the other buttons do.
+
+318
+00:13:39,633 --> 00:13:41,600
+ You hold it, and press another button.
+
+319
+00:13:41,966 --> 00:13:43,799
+ Say I want to get rid of this clip.
+
+320
+00:13:44,166 --> 00:13:46,266
+ Hold FN and press B.
+
+321
+00:13:46,500 --> 00:13:47,399
+ Ripple Delete.
+
+322
+00:13:47,733 --> 00:13:50,033
+ The clip is gone, and the gap is closed.
+
+323
+00:13:50,399 --> 00:13:51,200
+ Change my mind?
+
+324
+00:13:51,566 --> 00:13:53,666
+ The Undo button brings it right back.
+
+325
+00:13:54,033 --> 00:13:55,866
+ Next to undo is Save.
+
+326
+00:13:56,133 --> 00:14:00,033
+ Your project is saved, and the word
+ edited at the top disappears.
+
+327
+00:14:00,366 --> 00:14:02,766
+ A and B move the selected clip.
+
+328
+00:14:03,133 --> 00:14:06,200
+ A moves it up a track, and
+ B moves it back down.
+
+329
+00:14:06,633 --> 00:14:09,333
+ E is a right click, wherever
+ your mouse is.
+
+330
+00:14:09,566 --> 00:14:10,299
+ There's the menu.
+
+331
+00:14:10,633 --> 00:14:12,433
+ And C and D you already know.
+
+332
+00:14:12,633 --> 00:14:14,666
+ The start and the end of your timeline.
+
+333
+00:14:15,066 --> 00:14:18,466
+ FN together with the round buttons
+ opens your panels.
+
+334
+00:14:18,700 --> 00:14:21,133
+ FN and 1, the media pool.
+
+335
+00:14:21,399 --> 00:14:22,700
+ Off and on again.
+
+336
+00:14:23,033 --> 00:14:27,533
+ FN and 2, the effects library, with
+ your transitions and titles.
+
+337
+00:14:27,766 --> 00:14:31,833
+ FN and 3, the inspector, with all
+ the settings of your clip.
+
+338
+00:14:32,066 --> 00:14:34,166
+ FN and 4, the mixer.
+
+339
+00:14:34,433 --> 00:14:37,000
+ FN and 5, your power bins.
+
+340
+00:14:37,066 --> 00:14:38,166
+ Off and on.
+
+341
+00:14:38,466 --> 00:14:42,366
+ FN and 6, metadata, all the
+ details of your clip.
+
+342
+00:14:42,600 --> 00:14:47,299
+ And FN and 7, the index, a list of
+ every cut in your timeline.
+
+343
+00:14:47,666 --> 00:14:48,333
+ One more.
+
+344
+00:14:48,600 --> 00:14:50,933
+ FN and C copies a clip.
+
+345
+00:14:51,233 --> 00:14:53,100
+ I copy the first clip, select the
+
+346
+00:14:53,100 --> 00:14:56,266
+ second one, then hold FN and press A.
+
+347
+00:14:56,466 --> 00:14:57,700
+ Paste attributes.
+
+348
+00:14:57,899 --> 00:14:59,833
+ Here you choose what to copy over.
+
+349
+00:15:00,066 --> 00:15:01,733
+ The clip color is ticked, so I
+
+350
+00:15:01,733 --> 00:15:04,233
+ apply, and the second clip is orange too.
+
+351
+00:15:08,500 --> 00:15:09,833
+ Hey, look at that!
+
+352
+00:15:10,133 --> 00:15:12,933
+ Remember the break timer we started
+ on the media page?
+
+353
+00:15:13,333 --> 00:15:16,133
+ 25 minutes have passed, and
+ there's the reminder.
+
+354
+00:15:16,500 --> 00:15:17,799
+ It doesn't stop your work.
+
+355
+00:15:18,000 --> 00:15:20,933
+ It just lets you know it's a good
+ moment for a short break.
+
+356
+00:15:21,233 --> 00:15:22,333
+ So this is your cue.
+
+357
+00:15:22,600 --> 00:15:26,133
+ Grab a coffee, stretch your legs,
+ and give your eyes a rest.
+
+358
+00:15:26,366 --> 00:15:28,566
+ You'll come back with a fresh
+ look at your edit.
+
+359
+00:15:29,000 --> 00:15:31,733
+ Stop timer, and let's get some
+ color in this film.
+
+360
+00:15:36,033 --> 00:15:38,966
+ Round button 5 takes us
+ to the color page.
+
+361
+00:15:39,266 --> 00:15:40,700
+ I start with the first clip.
+
+362
+00:15:40,966 --> 00:15:42,466
+ Top left on the touchscreen.
+
+363
+00:15:42,899 --> 00:15:43,666
+ Videoscopes.
+
+364
+00:15:44,066 --> 00:15:46,366
+ Here you check your colors
+ and your exposure.
+
+365
+00:15:46,933 --> 00:15:48,333
+ Press it again to close them.
+
+366
+00:15:48,733 --> 00:15:51,966
+ This clip is way too bright,
+ so let's fix that.
+
+367
+00:15:52,200 --> 00:15:53,899
+ Middle row, first button.
+
+368
+00:15:54,233 --> 00:15:55,466
+ Add serial node.
+
+369
+00:15:55,766 --> 00:15:57,333
+ A fresh, empty node.
+
+370
+00:15:57,633 --> 00:16:00,166
+ The three dials on the left
+ work on that node.
+
+371
+00:16:00,399 --> 00:16:02,133
+ These are studio only.
+
+372
+00:16:02,333 --> 00:16:04,533
+ The top left dial is saturation.
+
+373
+00:16:04,833 --> 00:16:05,700
+ More color.
+
+374
+00:16:05,899 --> 00:16:07,133
+ See what happened to the node?
+
+375
+00:16:07,433 --> 00:16:08,966
+ As soon as you turn one of these
+
+376
+00:16:08,966 --> 00:16:11,600
+ dials, the node gets the
+ name corrections.
+
+377
+00:16:11,666 --> 00:16:12,433
+ Automatically.
+
+378
+00:16:12,633 --> 00:16:14,100
+ You can't change that name.
+
+379
+00:16:14,366 --> 00:16:16,533
+ That's the node where you
+ do your saturation,
+
+380
+00:16:16,566 --> 00:16:19,399
+ your midtones, and your highlights
+ with the dials.
+
+381
+00:16:19,533 --> 00:16:22,933
+ You can use them on other nodes too,
+ but only on the corrections
+
+382
+00:16:22,933 --> 00:16:26,266
+ node do you see DaVinci's own settings
+ move along live.
+
+383
+00:16:26,533 --> 00:16:28,299
+ The bottom left dial is gain.
+
+384
+00:16:28,600 --> 00:16:30,033
+ I bring the highlights down.
+
+385
+00:16:30,333 --> 00:16:32,899
+ The middle one is gamma for the midtones.
+
+386
+00:16:33,066 --> 00:16:35,566
+ Press one of these dials and
+ it goes back to normal.
+
+387
+00:16:35,799 --> 00:16:37,799
+ The button next to add serial node
+
+388
+00:16:37,833 --> 00:16:39,766
+ adds a node before the current one.
+
+389
+00:16:40,033 --> 00:16:42,700
+ The third button, label node,
+ lets you give
+
+390
+00:16:42,700 --> 00:16:45,500
+ it a name so you always know
+ what a node does.
+
+391
+00:16:45,633 --> 00:16:47,266
+ Top row, last button.
+
+392
+00:16:47,533 --> 00:16:49,066
+ Printer light hotkeys.
+
+393
+00:16:49,233 --> 00:16:51,133
+ Press it once and the three dials on
+
+394
+00:16:51,133 --> 00:16:53,233
+ the right become red, green, and blue.
+
+395
+00:16:53,666 --> 00:16:57,833
+ A bit more red, a bit less blue,
+ and a touch of green.
+
+396
+00:16:58,133 --> 00:16:59,233
+ That's a warmer look.
+
+397
+00:16:59,433 --> 00:17:01,033
+ Press the button again when you're done.
+
+398
+00:17:01,299 --> 00:17:02,966
+ Middle row, last button.
+
+399
+00:17:03,233 --> 00:17:07,066
+ Grab still saves this frame with
+ its grade in your gallery.
+
+400
+00:17:07,266 --> 00:17:09,666
+ The bottom row is all about comparing and
+
+401
+00:17:09,733 --> 00:17:12,400
+ every one of these buttons
+ works on and off.
+
+402
+00:17:12,566 --> 00:17:15,666
+ Split original shows your grade
+ next to the original.
+
+403
+00:17:15,933 --> 00:17:17,866
+ Press it again and you're back to normal.
+
+404
+00:17:18,033 --> 00:17:20,133
+ Split stills puts the still from your
+
+405
+00:17:20,133 --> 00:17:22,466
+ gallery next to the clip and off again.
+
+406
+00:17:22,733 --> 00:17:25,233
+ With two clips selected, split selected
+
+407
+00:17:25,233 --> 00:17:27,933
+ shows them side by side to
+ match your shots.
+
+408
+00:17:28,133 --> 00:17:28,733
+ Off again.
+
+409
+00:17:29,000 --> 00:17:32,799
+ And split prev next shows the clip
+ before and after this one.
+
+410
+00:17:33,099 --> 00:17:34,666
+ Lost track of which split is on?
+
+411
+00:17:34,900 --> 00:17:37,833
+ Press the top right dial and you're
+ always back to normal.
+
+412
+00:17:38,033 --> 00:17:39,633
+ Top row, second button.
+
+413
+00:17:39,866 --> 00:17:40,833
+ Light box.
+
+414
+00:17:40,900 --> 00:17:42,633
+ All your clips next to each other.
+
+415
+00:17:42,866 --> 00:17:43,566
+ And off again.
+
+416
+00:17:43,833 --> 00:17:47,500
+ Next to it is cinema viewer to judge
+ your grade on the full screen.
+
+417
+00:17:47,733 --> 00:17:50,933
+ And finally, hold F, N and press D.
+
+418
+00:17:51,133 --> 00:17:52,799
+ Bypass all grades.
+
+419
+00:17:52,900 --> 00:17:55,099
+ That's the original and that's the grade.
+
+420
+00:17:55,266 --> 00:17:57,500
+ The easiest before and after there is.
+
+421
+00:18:01,833 --> 00:18:05,433
+ Round button 6 is the Fairlight
+ page for your sound.
+
+422
+00:18:05,833 --> 00:18:07,799
+ I select the second piece of music.
+
+423
+00:18:08,033 --> 00:18:09,633
+ Middle row, first button.
+
+424
+00:18:09,933 --> 00:18:11,366
+ Batch fade settings.
+
+425
+00:18:11,533 --> 00:18:13,400
+ One and a half seconds to fade in,
+
+426
+00:18:13,666 --> 00:18:16,400
+ two seconds to fade out and apply.
+
+427
+00:18:16,733 --> 00:18:19,133
+ That piece now fades in and out.
+
+428
+00:18:19,366 --> 00:18:22,400
+ The button next to it is
+ apply batch fades.
+
+429
+00:18:22,599 --> 00:18:26,433
+ I select the first piece of music,
+ press it and it gets the same
+
+430
+00:18:26,433 --> 00:18:29,400
+ fades in one go without opening
+ that window.
+
+431
+00:18:29,700 --> 00:18:31,966
+ The middle left dial is track height.
+
+432
+00:18:32,200 --> 00:18:34,633
+ Keep your mouse over the
+ tracks and turn it.
+
+433
+00:18:34,833 --> 00:18:36,466
+ The bottom left dial makes the
+
+434
+00:18:36,466 --> 00:18:39,433
+ waveforms bigger and pressing
+ it puts them back.
+
+435
+00:18:39,700 --> 00:18:42,566
+ The bottom row works just like
+ on the edit pages.
+
+436
+00:18:42,733 --> 00:18:46,033
+ Mark in, mark out, loop and play.
+
+437
+00:18:46,266 --> 00:18:47,933
+ Stop and loop off.
+
+438
+00:18:48,233 --> 00:18:50,433
+ The dials on the right are
+ the same as well.
+
+439
+00:18:50,566 --> 00:18:53,433
+ Shuttle, fast shuttle and next clip.
+
+440
+00:18:57,700 --> 00:19:00,333
+ Round button 7 is the Deliver page.
+
+441
+00:19:00,566 --> 00:19:03,000
+ The film is done so let's export it.
+
+442
+00:19:03,333 --> 00:19:05,933
+ The buttons on this page are studio only.
+
+443
+00:19:06,200 --> 00:19:07,933
+ Each one adds your timeline to the
+
+444
+00:19:07,933 --> 00:19:09,900
+ render queue with the right settings.
+
+445
+00:19:10,266 --> 00:19:12,433
+ YouTube, there it is in the queue.
+
+446
+00:19:13,066 --> 00:19:16,433
+ Vimeo, TikTok and Instagram at 4x5.
+
+447
+00:19:16,900 --> 00:19:18,500
+ Middle row first button.
+
+448
+00:19:18,799 --> 00:19:23,333
+ ProRes 422 HQ, a high quality
+ master of your film.
+
+449
+00:19:23,666 --> 00:19:28,233
+ The next three buttons are custom 1,
+ 2 and 3 for your own settings.
+
+450
+00:19:28,400 --> 00:19:29,700
+ Here's how you set one up.
+
+451
+00:19:29,966 --> 00:19:31,766
+ Choose your settings, then open
+
+452
+00:19:31,766 --> 00:19:34,500
+ this menu and pick save as new preset.
+
+453
+00:19:34,666 --> 00:19:38,000
+ Give it a short name and end it with
+ a hashtag and the number 1.
+
+454
+00:19:38,433 --> 00:19:40,966
+ I'm calling mine client hashtag 1.
+
+455
+00:19:41,400 --> 00:19:42,000
+ Save.
+
+456
+00:19:42,366 --> 00:19:44,766
+ Now press custom 1 and your timeline
+
+457
+00:19:44,766 --> 00:19:46,900
+ goes into the queue with your own preset.
+
+458
+00:19:47,133 --> 00:19:48,200
+ And look at your loop deck.
+
+459
+00:19:48,400 --> 00:19:50,633
+ The button now shows the name you chose.
+
+460
+00:19:50,833 --> 00:19:54,066
+ Hashtag 2 and 3 work the same for
+ the other two buttons.
+
+461
+00:19:54,299 --> 00:19:55,933
+ Bottom row first button.
+
+462
+00:19:56,200 --> 00:19:59,133
+ Add to queue with whatever settings
+ you have right now.
+
+463
+00:19:59,400 --> 00:20:01,233
+ Next to it, render all.
+
+464
+00:20:01,400 --> 00:20:03,666
+ DaVinci renders every job in the queue.
+
+465
+00:20:03,900 --> 00:20:07,900
+ When I add one more job, render new
+ renders only that new one.
+
+466
+00:20:08,066 --> 00:20:09,299
+ The old ones are skipped.
+
+467
+00:20:09,500 --> 00:20:11,833
+ And if a render takes too
+ long, bottom right.
+
+468
+00:20:12,000 --> 00:20:13,033
+ Stop render.
+
+469
+00:20:13,299 --> 00:20:16,333
+ Swipe the touch screen to the right
+ for three more buttons.
+
+470
+00:20:16,466 --> 00:20:18,966
+ Thumbnail saves the current
+ frame as a picture.
+
+471
+00:20:19,066 --> 00:20:20,733
+ Perfect for your YouTube thumbnail.
+
+472
+00:20:21,066 --> 00:20:23,900
+ Export folder opens the folder
+ with your exports.
+
+473
+00:20:24,066 --> 00:20:24,799
+ There they are.
+
+474
+00:20:25,000 --> 00:20:27,299
+ And clear render queue empties the queue.
+
+475
+00:20:27,633 --> 00:20:29,000
+ The dials work here too.
+
+476
+00:20:29,233 --> 00:20:33,233
+ Press the top left dial for mark in and
+ the top right dial for mark
+
+477
+00:20:33,299 --> 00:20:35,566
+ out to export just a part of your film.
+
+478
+00:20:35,833 --> 00:20:39,433
+ In the free edition, the deliver page
+ has quick export, add to
+
+479
+00:20:39,433 --> 00:20:43,166
+ queue, render all, mark in,
+ mark out and play.
+
+480
+00:20:47,433 --> 00:20:50,166
+ Two more things for when your
+ film is finished.
+
+481
+00:20:50,533 --> 00:20:52,666
+ Back on the edit page, round button
+
+482
+00:20:52,666 --> 00:20:55,533
+ 8 on the bottom right, quick export.
+
+483
+00:20:55,900 --> 00:20:58,666
+ Pick a format, click export
+ and you're done.
+
+484
+00:20:59,133 --> 00:21:01,633
+ And remember the bottom row
+ of the media page?
+
+485
+00:21:01,766 --> 00:21:02,766
+ Round button 1.
+
+486
+00:21:03,299 --> 00:21:06,433
+ Timeline 9x16 makes a vertical copy of
+
+487
+00:21:06,433 --> 00:21:09,466
+ your timeline for TikTok,
+ Reels and Shorts.
+
+488
+00:21:09,733 --> 00:21:11,666
+ On the edit page, there it is.
+
+489
+00:21:11,866 --> 00:21:14,166
+ And your original stays just as it was.
+
+490
+00:21:14,500 --> 00:21:18,500
+ Timeline 4x5 makes one for the Instagram
+ feed, like this.
+
+491
+00:21:19,000 --> 00:21:21,900
+ And Timeline 4x3 makes a 4x3 version.
+
+492
+00:21:22,400 --> 00:21:24,033
+ All three are studio only.
+
+493
+00:21:24,566 --> 00:21:25,166
+ And that's it.
+
+494
+00:21:25,533 --> 00:21:28,200
+ One film, from the first
+ import to the final
+
+495
+00:21:28,333 --> 00:21:31,700
+ export, and every page and every
+ button of the pack.
+
+496
+00:21:32,099 --> 00:21:35,533
+ If a button ever does nothing, check
+ that the keyboard shortcuts of
+
+497
+00:21:35,533 --> 00:21:39,099
+ the pack are selected in DaVinci, under
+ keyboard customization.
+
+498
+00:21:39,433 --> 00:21:43,200
+ In the studio edition, also set external
+ scripting to local.
+
+499
+00:21:43,633 --> 00:21:45,133
+ Want to edit like this yourself?
+
+500
+00:21:45,366 --> 00:21:48,433
+ The Tikka Studio's loop deck pack
+ is in the description below.
+
+501
+00:21:48,666 --> 00:21:50,766
+ Grab it, plug in your loop deck and make
+
+502
+00:21:50,766 --> 00:21:53,766
+ your next edit a lot faster
+ and a lot more fun.
+
+503
+00:21:54,099 --> 00:21:56,233
+ Thanks for watching and see
+ you in the next one.
+

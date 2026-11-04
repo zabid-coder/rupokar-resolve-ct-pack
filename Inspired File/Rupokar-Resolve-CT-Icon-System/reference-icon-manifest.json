@@ -1,0 +1,2858 @@
+[
+  {
+    "id": "rupokar.reference.001",
+    "filename": "reference-png/001.png",
+    "function": "Media page",
+    "control": "Round button 1",
+    "section": "Navigation",
+    "availability": "Both editions",
+    "source_time": "00:00:34–00:01:05",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 49.5,
+    "crop": {
+      "x": 1364,
+      "y": 471,
+      "width": 62,
+      "height": 62
+    }
+  },
+  {
+    "id": "rupokar.reference.002",
+    "filename": "reference-png/002.png",
+    "function": "Edit page 1",
+    "control": "Round button 2",
+    "section": "Navigation",
+    "availability": "Both editions",
+    "source_time": "00:00:34–00:01:05",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 49.5,
+    "crop": {
+      "x": 1426,
+      "y": 471,
+      "width": 62,
+      "height": 62
+    }
+  },
+  {
+    "id": "rupokar.reference.003",
+    "filename": "reference-png/003.png",
+    "function": "Edit page 2",
+    "control": "Round button 3",
+    "section": "Navigation",
+    "availability": "Both editions",
+    "source_time": "00:00:34–00:01:05",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 49.5,
+    "crop": {
+      "x": 1488,
+      "y": 471,
+      "width": 62,
+      "height": 62
+    }
+  },
+  {
+    "id": "rupokar.reference.004",
+    "filename": "reference-png/004.png",
+    "function": "Edit page 3",
+    "control": "Round button 4",
+    "section": "Navigation",
+    "availability": "Both editions",
+    "source_time": "00:00:34–00:01:05",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 49.5,
+    "crop": {
+      "x": 1551,
+      "y": 471,
+      "width": 62,
+      "height": 62
+    }
+  },
+  {
+    "id": "rupokar.reference.005",
+    "filename": "reference-png/005.png",
+    "function": "Color page",
+    "control": "Round button 5",
+    "section": "Navigation",
+    "availability": "Both editions",
+    "source_time": "00:00:34–00:01:05",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 49.5,
+    "crop": {
+      "x": 1613,
+      "y": 471,
+      "width": 62,
+      "height": 62
+    }
+  },
+  {
+    "id": "rupokar.reference.006",
+    "filename": "reference-png/006.png",
+    "function": "Fairlight page",
+    "control": "Round button 6",
+    "section": "Navigation",
+    "availability": "Both editions",
+    "source_time": "00:00:34–00:01:05",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 49.5,
+    "crop": {
+      "x": 1676,
+      "y": 471,
+      "width": 62,
+      "height": 62
+    }
+  },
+  {
+    "id": "rupokar.reference.007",
+    "filename": "reference-png/007.png",
+    "function": "Deliver page",
+    "control": "Round button 7",
+    "section": "Navigation",
+    "availability": "Both editions",
+    "source_time": "00:00:34–00:01:05",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 49.5,
+    "crop": {
+      "x": 1738,
+      "y": 471,
+      "width": 62,
+      "height": 62
+    }
+  },
+  {
+    "id": "rupokar.reference.008",
+    "filename": "reference-png/008.png",
+    "function": "Quick Export",
+    "control": "Round button 8",
+    "section": "Navigation",
+    "availability": "Both editions",
+    "source_time": "00:00:34–00:01:05",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 49.5,
+    "crop": {
+      "x": 1801,
+      "y": 471,
+      "width": 62,
+      "height": 62
+    }
+  },
+  {
+    "id": "rupokar.reference.009",
+    "filename": "reference-png/009.png",
+    "function": "Import Media",
+    "control": "Touch 1 · top-left",
+    "section": "Media / Project",
+    "availability": "Both editions",
+    "source_time": "00:02:04–00:02:21",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 132.5,
+    "crop": {
+      "x": 1436,
+      "y": 191,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.010",
+    "filename": "reference-png/010.png",
+    "function": "New Bin",
+    "control": "Touch 2 · top row",
+    "section": "Media / Project",
+    "availability": "Both editions",
+    "source_time": "00:01:50–00:02:02",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 116.0,
+    "crop": {
+      "x": 1532,
+      "y": 191,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.011",
+    "filename": "reference-png/011.png",
+    "function": "Project Notes",
+    "control": "Touch 3 · top row",
+    "section": "Media / Project",
+    "availability": "Both editions",
+    "source_time": "00:02:33–00:02:44",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 158.5,
+    "crop": {
+      "x": 1628,
+      "y": 191,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.012",
+    "filename": "reference-png/012.png",
+    "function": "Project Manager",
+    "control": "Touch 4 · top-right",
+    "section": "Media / Project",
+    "availability": "Both editions",
+    "source_time": "00:02:44–00:02:51",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 167.5,
+    "crop": {
+      "x": 1724,
+      "y": 191,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.013",
+    "filename": "reference-png/013.png",
+    "function": "Prefer Proxy",
+    "control": "Touch 5 · middle-left",
+    "section": "Media / Project",
+    "availability": "Both editions",
+    "source_time": "00:03:01–00:03:10",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 185.5,
+    "crop": {
+      "x": 1436,
+      "y": 287,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.014",
+    "filename": "reference-png/014.png",
+    "function": "Camera Originals",
+    "control": "Touch 6 · middle row",
+    "section": "Media / Project",
+    "availability": "Both editions",
+    "source_time": "00:03:10–00:03:15",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 192.5,
+    "crop": {
+      "x": 1532,
+      "y": 287,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.015",
+    "filename": "reference-png/015.png",
+    "function": "Project Settings",
+    "control": "Touch 7 · middle row",
+    "section": "Media / Project",
+    "availability": "Both editions",
+    "source_time": "00:01:35–00:01:50",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 102.5,
+    "crop": {
+      "x": 1628,
+      "y": 287,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.016",
+    "filename": "reference-png/016.png",
+    "function": "New Project",
+    "control": "Touch 8 · middle-right",
+    "section": "Media / Project",
+    "availability": "Both editions",
+    "source_time": "00:02:51–00:02:57",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 174.0,
+    "crop": {
+      "x": 1724,
+      "y": 287,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.017",
+    "filename": "reference-png/017.png",
+    "function": "Power Bins",
+    "control": "Touch 9 · bottom-left",
+    "section": "Media / Project",
+    "availability": "Both editions",
+    "source_time": "00:02:21–00:02:33",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 147.0,
+    "crop": {
+      "x": 1436,
+      "y": 383,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.018",
+    "filename": "reference-png/018.png",
+    "function": "Timeline 9:16",
+    "control": "Touch 10 · bottom row",
+    "section": "Media / Project",
+    "availability": "Studio only",
+    "source_time": "00:03:15–00:03:29; 00:21:03–00:21:14",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 202.0,
+    "crop": {
+      "x": 1532,
+      "y": 383,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.019",
+    "filename": "reference-png/019.png",
+    "function": "Timeline 4:5",
+    "control": "Touch 11 · bottom row",
+    "section": "Media / Project",
+    "availability": "Studio only",
+    "source_time": "00:03:15–00:03:29; 00:21:14–00:21:19",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 202.0,
+    "crop": {
+      "x": 1628,
+      "y": 383,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.020",
+    "filename": "reference-png/020.png",
+    "function": "Timeline 4:3",
+    "control": "Touch 12 · bottom-right",
+    "section": "Media / Project",
+    "availability": "Studio only",
+    "source_time": "00:03:15–00:03:29; 00:21:19–00:21:24",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 202.0,
+    "crop": {
+      "x": 1724,
+      "y": 383,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.021",
+    "filename": "reference-png/021.png",
+    "function": "Duplicate Timeline",
+    "control": "Alternate bottom row",
+    "section": "Media / Project",
+    "availability": "Free edition",
+    "source_time": "00:03:31–00:03:36",
+    "source_frame": "../Loupedeck-CT-Master-Reference/images/media.jpg",
+    "source_timestamp_seconds": null,
+    "crop": {
+      "x": 1628,
+      "y": 383,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.022",
+    "filename": "reference-png/022.png",
+    "function": "New Timeline",
+    "control": "Alternate bottom row",
+    "section": "Media / Project",
+    "availability": "Free edition",
+    "source_time": "00:03:31–00:03:36",
+    "source_frame": "../Loupedeck-CT-Master-Reference/images/media.jpg",
+    "source_timestamp_seconds": null,
+    "crop": {
+      "x": 1532,
+      "y": 383,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.023",
+    "filename": "reference-png/023.png",
+    "function": "25-minute interval",
+    "control": "Timer touch 1",
+    "section": "Media / Break Timer",
+    "availability": "Studio only",
+    "source_time": "00:03:45–00:03:56",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 230.5,
+    "crop": {
+      "x": 1436,
+      "y": 191,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.024",
+    "filename": "reference-png/024.png",
+    "function": "45-minute interval",
+    "control": "Timer touch 2",
+    "section": "Media / Break Timer",
+    "availability": "Studio only",
+    "source_time": "00:03:36–00:04:06",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 231.0,
+    "crop": {
+      "x": 1532,
+      "y": 191,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.025",
+    "filename": "reference-png/025.png",
+    "function": "1-hour interval",
+    "control": "Timer touch 3",
+    "section": "Media / Break Timer",
+    "availability": "Studio only",
+    "source_time": "00:03:36–00:04:06",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 231.0,
+    "crop": {
+      "x": 1628,
+      "y": 191,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.026",
+    "filename": "reference-png/026.png",
+    "function": "1.5-hour interval",
+    "control": "Timer touch 4",
+    "section": "Media / Break Timer",
+    "availability": "Studio only",
+    "source_time": "00:03:36–00:04:06",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 231.0,
+    "crop": {
+      "x": 1724,
+      "y": 191,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.027",
+    "filename": "reference-png/027.png",
+    "function": "2-hour interval",
+    "control": "Timer touch 5",
+    "section": "Media / Break Timer",
+    "availability": "Studio only",
+    "source_time": "00:03:36–00:04:06",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 231.0,
+    "crop": {
+      "x": 1436,
+      "y": 287,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.028",
+    "filename": "reference-png/028.png",
+    "function": "2.5-hour interval",
+    "control": "Timer touch 6",
+    "section": "Media / Break Timer",
+    "availability": "Studio only",
+    "source_time": "00:03:36–00:04:06",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 231.0,
+    "crop": {
+      "x": 1532,
+      "y": 287,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.029",
+    "filename": "reference-png/029.png",
+    "function": "3-hour interval",
+    "control": "Timer touch 7",
+    "section": "Media / Break Timer",
+    "availability": "Studio only",
+    "source_time": "00:03:36–00:04:06",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 231.0,
+    "crop": {
+      "x": 1628,
+      "y": 287,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.030",
+    "filename": "reference-png/030.png",
+    "function": "4-hour interval",
+    "control": "Timer touch 8",
+    "section": "Media / Break Timer",
+    "availability": "Studio only",
+    "source_time": "00:03:36–00:04:06",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 231.0,
+    "crop": {
+      "x": 1724,
+      "y": 287,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.031",
+    "filename": "reference-png/031.png",
+    "function": "Rushwise",
+    "control": "Timer touch 9",
+    "section": "Media / Break Timer",
+    "availability": "Studio only",
+    "source_time": "00:04:01–00:04:06",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 243.5,
+    "crop": {
+      "x": 1436,
+      "y": 383,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.032",
+    "filename": "reference-png/032.png",
+    "function": "Break! status",
+    "control": "Timer touch 10",
+    "section": "Media / Break Timer",
+    "availability": "Studio only",
+    "source_time": "00:15:08–00:15:29",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 918.5,
+    "crop": {
+      "x": 1532,
+      "y": 383,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.033",
+    "filename": "reference-png/033.png",
+    "function": "Start timer",
+    "control": "Timer touch 11",
+    "section": "Media / Break Timer",
+    "availability": "Studio only",
+    "source_time": "00:03:45–00:03:56",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 230.5,
+    "crop": {
+      "x": 1628,
+      "y": 383,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.034",
+    "filename": "reference-png/034.png",
+    "function": "Stop timer",
+    "control": "Timer touch 12",
+    "section": "Media / Break Timer",
+    "availability": "Studio only",
+    "source_time": "00:03:59–00:04:01",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 240.0,
+    "crop": {
+      "x": 1724,
+      "y": 383,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.035",
+    "filename": "reference-png/035.png",
+    "function": "Select Backward All",
+    "control": "Touch 1 · top-left",
+    "section": "Edit 1",
+    "availability": "Both editions",
+    "source_time": "00:07:06–00:07:20",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 433.0,
+    "crop": {
+      "x": 1436,
+      "y": 191,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.036",
+    "filename": "reference-png/036.png",
+    "function": "Select Forward All",
+    "control": "Touch 2 · top row",
+    "section": "Edit 1",
+    "availability": "Both editions",
+    "source_time": "00:07:06–00:07:16",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 431.0,
+    "crop": {
+      "x": 1532,
+      "y": 191,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.037",
+    "filename": "reference-png/037.png",
+    "function": "Snapping",
+    "control": "Touch 3 · top row",
+    "section": "Edit 1",
+    "availability": "Both editions",
+    "source_time": "00:07:20–00:07:42",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 451.0,
+    "crop": {
+      "x": 1628,
+      "y": 191,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.038",
+    "filename": "reference-png/038.png",
+    "function": "Delete",
+    "control": "Touch 4 · top-right",
+    "section": "Edit 1",
+    "availability": "Both editions",
+    "source_time": "00:06:41–00:06:51",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 406.0,
+    "crop": {
+      "x": 1724,
+      "y": 191,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.039",
+    "filename": "reference-png/039.png",
+    "function": "Trim Start",
+    "control": "Touch 5 · middle-left",
+    "section": "Edit 1",
+    "availability": "Both editions",
+    "source_time": "00:06:51–00:07:03",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 417.0,
+    "crop": {
+      "x": 1436,
+      "y": 287,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.040",
+    "filename": "reference-png/040.png",
+    "function": "Trim End",
+    "control": "Touch 6 · middle row",
+    "section": "Edit 1",
+    "availability": "Both editions",
+    "source_time": "00:06:51–00:07:03",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 417.0,
+    "crop": {
+      "x": 1532,
+      "y": 287,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.041",
+    "filename": "reference-png/041.png",
+    "function": "Retime Controls",
+    "control": "Touch 7 · middle row",
+    "section": "Edit 1",
+    "availability": "Both editions",
+    "source_time": "00:07:57–00:08:03",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 480.0,
+    "crop": {
+      "x": 1628,
+      "y": 287,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.042",
+    "filename": "reference-png/042.png",
+    "function": "Change Clip Speed",
+    "control": "Touch 8 · middle-right",
+    "section": "Edit 1",
+    "availability": "Both editions",
+    "source_time": "00:07:42–00:07:57",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 469.5,
+    "crop": {
+      "x": 1724,
+      "y": 287,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.043",
+    "filename": "reference-png/043.png",
+    "function": "Ripple Start",
+    "control": "Touch 9 · bottom-left",
+    "section": "Edit 1",
+    "availability": "Both editions",
+    "source_time": "00:06:07–00:06:21",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 374.0,
+    "crop": {
+      "x": 1436,
+      "y": 383,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.044",
+    "filename": "reference-png/044.png",
+    "function": "Split",
+    "control": "Touch 10 · bottom row",
+    "section": "Edit 1",
+    "availability": "Both editions",
+    "source_time": "00:06:32–00:06:41",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 396.5,
+    "crop": {
+      "x": 1532,
+      "y": 383,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.045",
+    "filename": "reference-png/045.png",
+    "function": "Ripple End",
+    "control": "Touch 11 · bottom row",
+    "section": "Edit 1",
+    "availability": "Both editions",
+    "source_time": "00:06:21–00:06:32",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 386.5,
+    "crop": {
+      "x": 1628,
+      "y": 383,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.046",
+    "filename": "reference-png/046.png",
+    "function": "Play/Pause",
+    "control": "Touch 12 · bottom-right",
+    "section": "Edit 1",
+    "availability": "Both editions",
+    "source_time": "00:05:31–00:05:40",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 335.5,
+    "crop": {
+      "x": 1724,
+      "y": 383,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.047",
+    "filename": "reference-png/047.png",
+    "function": "Shuttle",
+    "control": "Top-left dial · turn",
+    "section": "Edit 1",
+    "availability": "Both editions",
+    "source_time": "00:05:09–00:05:13",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 311.0,
+    "crop": {
+      "x": 1370,
+      "y": 184,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.048",
+    "filename": "reference-png/048.png",
+    "function": "Orange clip color",
+    "control": "Top-left dial · press",
+    "section": "Edit 1",
+    "availability": "Both editions",
+    "source_time": "00:08:03–00:08:13",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 488.0,
+    "crop": {
+      "x": 1370,
+      "y": 184,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.049",
+    "filename": "reference-png/049.png",
+    "function": "Audio level",
+    "control": "Middle-left dial · turn",
+    "section": "Edit 1",
+    "availability": "Both editions",
+    "source_time": "00:08:19–00:08:28",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 503.5,
+    "crop": {
+      "x": 1370,
+      "y": 291,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.050",
+    "filename": "reference-png/050.png",
+    "function": "Yellow clip color",
+    "control": "Middle-left dial · press",
+    "section": "Edit 1",
+    "availability": "Both editions",
+    "source_time": "00:08:13–00:08:16",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 494.5,
+    "crop": {
+      "x": 1370,
+      "y": 291,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.051",
+    "filename": "reference-png/051.png",
+    "function": "Dynamic Trim",
+    "control": "Bottom-left dial · turn",
+    "section": "Edit 1",
+    "availability": "Both editions",
+    "source_time": "00:08:28–00:08:43",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 515.5,
+    "crop": {
+      "x": 1370,
+      "y": 395,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.052",
+    "filename": "reference-png/052.png",
+    "function": "Dynamic Trim on/off",
+    "control": "Bottom-left dial · press",
+    "section": "Edit 1",
+    "availability": "Both editions",
+    "source_time": "00:08:28–00:08:43",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 515.5,
+    "crop": {
+      "x": 1370,
+      "y": 395,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.053",
+    "filename": "reference-png/053.png",
+    "function": "Fast Shuttle",
+    "control": "Top-right dial · turn",
+    "section": "Edit 1",
+    "availability": "Both editions",
+    "source_time": "00:05:13–00:05:18",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 315.5,
+    "crop": {
+      "x": 1804,
+      "y": 184,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.054",
+    "filename": "reference-png/054.png",
+    "function": "Green clip color",
+    "control": "Top-right dial · press",
+    "section": "Edit 1",
+    "availability": "Both editions",
+    "source_time": "00:08:16–00:08:19",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 497.5,
+    "crop": {
+      "x": 1804,
+      "y": 184,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.055",
+    "filename": "reference-png/055.png",
+    "function": "Timeline Zoom",
+    "control": "Middle-right dial · turn",
+    "section": "Edit 1",
+    "availability": "Both editions",
+    "source_time": "00:05:22–00:05:25",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 323.5,
+    "crop": {
+      "x": 1804,
+      "y": 291,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.056",
+    "filename": "reference-png/056.png",
+    "function": "Zoom to Fit",
+    "control": "Middle-right dial · press",
+    "section": "Edit 1",
+    "availability": "Both editions",
+    "source_time": "00:04:44–00:04:52",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 288.0,
+    "crop": {
+      "x": 1804,
+      "y": 291,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.057",
+    "filename": "reference-png/057.png",
+    "function": "Next Clip",
+    "control": "Bottom-right dial · turn",
+    "section": "Edit 1",
+    "availability": "Both editions",
+    "source_time": "00:05:18–00:05:22",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 320.0,
+    "crop": {
+      "x": 1804,
+      "y": 395,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.058",
+    "filename": "reference-png/058.png",
+    "function": "Add Marker",
+    "control": "Bottom-right dial · press",
+    "section": "Edit 1",
+    "availability": "Both editions",
+    "source_time": "00:05:44–00:06:07",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 355.5,
+    "crop": {
+      "x": 1804,
+      "y": 395,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.059",
+    "filename": "reference-png/059.png",
+    "function": "Frame-by-frame navigation",
+    "control": "Center wheel · turn",
+    "section": "Edit 1",
+    "availability": "Both editions",
+    "source_time": "00:04:59–00:05:07",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 303.0,
+    "crop": {
+      "x": 1512,
+      "y": 567,
+      "width": 200,
+      "height": 200
+    }
+  },
+  {
+    "id": "rupokar.reference.060",
+    "filename": "reference-png/060.png",
+    "function": "Play/Pause",
+    "control": "Center wheel · press",
+    "section": "Edit 1",
+    "availability": "Both editions",
+    "source_time": "00:05:40–00:05:44",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 342.0,
+    "crop": {
+      "x": 1512,
+      "y": 567,
+      "width": 200,
+      "height": 200
+    }
+  },
+  {
+    "id": "rupokar.reference.061",
+    "filename": "reference-png/061.png",
+    "function": "Delete All Markers",
+    "control": "Touch 1 · top-left",
+    "section": "Edit 2",
+    "availability": "Both editions",
+    "source_time": "00:08:49–00:09:00",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 534.5,
+    "crop": {
+      "x": 1436,
+      "y": 191,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.062",
+    "filename": "reference-png/062.png",
+    "function": "Linked Selection",
+    "control": "Touch 2 · top row",
+    "section": "Edit 2",
+    "availability": "Both editions",
+    "source_time": "00:09:00–00:09:15",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 547.5,
+    "crop": {
+      "x": 1532,
+      "y": 191,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.063",
+    "filename": "reference-png/063.png",
+    "function": "Link Clips",
+    "control": "Touch 3 · top row",
+    "section": "Edit 2",
+    "availability": "Both editions",
+    "source_time": "00:09:15–00:09:50",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 572.5,
+    "crop": {
+      "x": 1628,
+      "y": 191,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.064",
+    "filename": "reference-png/064.png",
+    "function": "Compound Clip",
+    "control": "Touch 4 · top-right",
+    "section": "Edit 2",
+    "availability": "Both editions",
+    "source_time": "00:09:51–00:10:06",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 598.5,
+    "crop": {
+      "x": 1724,
+      "y": 191,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.065",
+    "filename": "reference-png/065.png",
+    "function": "Normalize",
+    "control": "Touch 5 · middle-left",
+    "section": "Edit 2",
+    "availability": "Both editions",
+    "source_time": "00:10:06–00:10:16",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 611.0,
+    "crop": {
+      "x": 1436,
+      "y": 287,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.066",
+    "filename": "reference-png/066.png",
+    "function": "Auto Align",
+    "control": "Touch 6 · middle row",
+    "section": "Edit 2",
+    "availability": "Both editions",
+    "source_time": "00:10:16–00:10:28",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 622.0,
+    "crop": {
+      "x": 1532,
+      "y": 287,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.067",
+    "filename": "reference-png/067.png",
+    "function": "Mark In",
+    "control": "Touch 7 · middle row",
+    "section": "Edit 2",
+    "availability": "Both editions",
+    "source_time": "00:10:28–00:10:34",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 631.0,
+    "crop": {
+      "x": 1628,
+      "y": 287,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.068",
+    "filename": "reference-png/068.png",
+    "function": "Mark Out",
+    "control": "Touch 8 · middle-right",
+    "section": "Edit 2",
+    "availability": "Both editions",
+    "source_time": "00:10:28–00:10:34",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 631.0,
+    "crop": {
+      "x": 1724,
+      "y": 287,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.069",
+    "filename": "reference-png/069.png",
+    "function": "Match Frame",
+    "control": "Touch 9 · bottom-left",
+    "section": "Edit 2",
+    "availability": "Both editions",
+    "source_time": "00:10:42–00:10:52",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 647.0,
+    "crop": {
+      "x": 1436,
+      "y": 383,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.070",
+    "filename": "reference-png/070.png",
+    "function": "Cinema Viewer",
+    "control": "Touch 10 · bottom row",
+    "section": "Edit 2",
+    "availability": "Both editions",
+    "source_time": "00:10:52–00:10:59",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 655.5,
+    "crop": {
+      "x": 1532,
+      "y": 383,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.071",
+    "filename": "reference-png/071.png",
+    "function": "Loop",
+    "control": "Touch 11 · bottom row",
+    "section": "Edit 2",
+    "availability": "Both editions",
+    "source_time": "00:10:34–00:10:42",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 638.0,
+    "crop": {
+      "x": 1628,
+      "y": 383,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.072",
+    "filename": "reference-png/072.png",
+    "function": "Play/Pause",
+    "control": "Touch 12 · bottom-right",
+    "section": "Edit 2",
+    "availability": "Both editions",
+    "source_time": "00:05:31–00:05:40",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 335.5,
+    "crop": {
+      "x": 1724,
+      "y": 383,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.073",
+    "filename": "reference-png/073.png",
+    "function": "Apricot clip color",
+    "control": "Top-left dial · press",
+    "section": "Edit 2",
+    "availability": "Both editions",
+    "source_time": "00:10:59–00:11:12",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 665.5,
+    "crop": {
+      "x": 1370,
+      "y": 184,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.074",
+    "filename": "reference-png/074.png",
+    "function": "Blue clip color",
+    "control": "Middle-left dial · press",
+    "section": "Edit 2",
+    "availability": "Both editions",
+    "source_time": "00:10:59–00:11:12",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 665.5,
+    "crop": {
+      "x": 1370,
+      "y": 291,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.075",
+    "filename": "reference-png/075.png",
+    "function": "Lime clip color",
+    "control": "Bottom-left dial · press",
+    "section": "Edit 2",
+    "availability": "Both editions",
+    "source_time": "00:10:59–00:11:12",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 665.5,
+    "crop": {
+      "x": 1370,
+      "y": 395,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.076",
+    "filename": "reference-png/076.png",
+    "function": "Brown clip color",
+    "control": "Top-right dial · press",
+    "section": "Edit 2",
+    "availability": "Both editions",
+    "source_time": "00:10:59–00:11:12",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 665.5,
+    "crop": {
+      "x": 1804,
+      "y": 184,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.077",
+    "filename": "reference-png/077.png",
+    "function": "Pink clip color",
+    "control": "Middle-right dial · press",
+    "section": "Edit 2",
+    "availability": "Both editions",
+    "source_time": "00:10:59–00:11:12",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 665.5,
+    "crop": {
+      "x": 1804,
+      "y": 291,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.078",
+    "filename": "reference-png/078.png",
+    "function": "Purple clip color",
+    "control": "Bottom-right dial · press",
+    "section": "Edit 2",
+    "availability": "Both editions",
+    "source_time": "00:10:59–00:11:12",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 665.5,
+    "crop": {
+      "x": 1804,
+      "y": 395,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.079",
+    "filename": "reference-png/079.png",
+    "function": "Enable Clip",
+    "control": "Touch 1 · top-left",
+    "section": "Edit 3",
+    "availability": "Both editions",
+    "source_time": "00:11:52–00:11:59",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 715.5,
+    "crop": {
+      "x": 1436,
+      "y": 191,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.080",
+    "filename": "reference-png/080.png",
+    "function": "Freeze Frame",
+    "control": "Touch 2 · top row",
+    "section": "Edit 3",
+    "availability": "Both editions",
+    "source_time": "00:11:59–00:12:15",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 727.0,
+    "crop": {
+      "x": 1532,
+      "y": 191,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.081",
+    "filename": "reference-png/081.png",
+    "function": "Title Safe",
+    "control": "Touch 3 · top row",
+    "section": "Edit 3",
+    "availability": "Both editions",
+    "source_time": "00:12:27–00:12:36",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 751.5,
+    "crop": {
+      "x": 1628,
+      "y": 191,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.082",
+    "filename": "reference-png/082.png",
+    "function": "Delete Gaps",
+    "control": "Touch 4 · top-right",
+    "section": "Edit 3",
+    "availability": "Both editions",
+    "source_time": "00:11:20–00:11:43",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 691.5,
+    "crop": {
+      "x": 1724,
+      "y": 191,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.083",
+    "filename": "reference-png/083.png",
+    "function": "Find Clip",
+    "control": "Touch 5 · middle-left",
+    "section": "Edit 3",
+    "availability": "Both editions",
+    "source_time": "00:12:36–00:12:42",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 759.0,
+    "crop": {
+      "x": 1436,
+      "y": 287,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.084",
+    "filename": "reference-png/084.png",
+    "function": "Crossfade",
+    "control": "Touch 6 · middle row",
+    "section": "Edit 3",
+    "availability": "Both editions",
+    "source_time": "00:12:15–00:12:27",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 741.0,
+    "crop": {
+      "x": 1532,
+      "y": 287,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.085",
+    "filename": "reference-png/085.png",
+    "function": "Swap Left",
+    "control": "Touch 7 · middle row",
+    "section": "Edit 3",
+    "availability": "Both editions",
+    "source_time": "00:11:43–00:11:52",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 707.5,
+    "crop": {
+      "x": 1628,
+      "y": 287,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.086",
+    "filename": "reference-png/086.png",
+    "function": "Swap Right",
+    "control": "Touch 8 · middle-right",
+    "section": "Edit 3",
+    "availability": "Both editions",
+    "source_time": "00:11:43–00:11:52",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 707.5,
+    "crop": {
+      "x": 1724,
+      "y": 287,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.087",
+    "filename": "reference-png/087.png",
+    "function": "Find Timeline",
+    "control": "Touch 9 · bottom-left",
+    "section": "Edit 3",
+    "availability": "Both editions",
+    "source_time": "00:12:41–00:12:46",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 763.5,
+    "crop": {
+      "x": 1436,
+      "y": 383,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.088",
+    "filename": "reference-png/088.png",
+    "function": "New Timeline",
+    "control": "Touch 10 · bottom row",
+    "section": "Edit 3",
+    "availability": "Both editions",
+    "source_time": "00:04:18–00:04:37; 00:12:46–00:12:50",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 267.5,
+    "crop": {
+      "x": 1532,
+      "y": 383,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.089",
+    "filename": "reference-png/089.png",
+    "function": "Duplicate Timeline",
+    "control": "Touch 11 · bottom row",
+    "section": "Edit 3",
+    "availability": "Both editions",
+    "source_time": "00:13:04–00:13:17",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 790.5,
+    "crop": {
+      "x": 1628,
+      "y": 383,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.090",
+    "filename": "reference-png/090.png",
+    "function": "Play/Pause",
+    "control": "Touch 12 · bottom-right",
+    "section": "Edit 3",
+    "availability": "Both editions",
+    "source_time": "00:05:31–00:05:40",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 335.5,
+    "crop": {
+      "x": 1724,
+      "y": 383,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.091",
+    "filename": "reference-png/091.png",
+    "function": "Olive clip color",
+    "control": "Top-left dial · press",
+    "section": "Edit 3",
+    "availability": "Both editions",
+    "source_time": "00:12:50–00:13:04",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 777.0,
+    "crop": {
+      "x": 1370,
+      "y": 184,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.092",
+    "filename": "reference-png/092.png",
+    "function": "Teal clip color",
+    "control": "Middle-left dial · press",
+    "section": "Edit 3",
+    "availability": "Both editions",
+    "source_time": "00:12:50–00:13:04",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 777.0,
+    "crop": {
+      "x": 1370,
+      "y": 291,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.093",
+    "filename": "reference-png/093.png",
+    "function": "Navy clip color",
+    "control": "Bottom-left dial · press",
+    "section": "Edit 3",
+    "availability": "Both editions",
+    "source_time": "00:12:50–00:13:04",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 777.0,
+    "crop": {
+      "x": 1370,
+      "y": 395,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.094",
+    "filename": "reference-png/094.png",
+    "function": "Violet clip color",
+    "control": "Top-right dial · press",
+    "section": "Edit 3",
+    "availability": "Both editions",
+    "source_time": "00:12:50–00:13:04",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 777.0,
+    "crop": {
+      "x": 1804,
+      "y": 184,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.095",
+    "filename": "reference-png/095.png",
+    "function": "Tan clip color",
+    "control": "Middle-right dial · press",
+    "section": "Edit 3",
+    "availability": "Both editions",
+    "source_time": "00:12:50–00:13:04",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 777.0,
+    "crop": {
+      "x": 1804,
+      "y": 291,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.096",
+    "filename": "reference-png/096.png",
+    "function": "Beige clip color",
+    "control": "Bottom-right dial · press",
+    "section": "Edit 3",
+    "availability": "Both editions",
+    "source_time": "00:12:50–00:13:04",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 777.0,
+    "crop": {
+      "x": 1804,
+      "y": 395,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.097",
+    "filename": "reference-png/097.png",
+    "function": "Undo",
+    "control": "Undo",
+    "section": "Physical keys & Fn layer",
+    "availability": "Both editions",
+    "source_time": "00:13:50–00:13:54",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 832.0,
+    "crop": {
+      "x": 1402,
+      "y": 607,
+      "width": 62,
+      "height": 62
+    }
+  },
+  {
+    "id": "rupokar.reference.098",
+    "filename": "reference-png/098.png",
+    "function": "Save project",
+    "control": "Save",
+    "section": "Physical keys & Fn layer",
+    "availability": "Both editions",
+    "source_time": "00:13:54–00:14:00",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 837.0,
+    "crop": {
+      "x": 1448,
+      "y": 607,
+      "width": 62,
+      "height": 62
+    }
+  },
+  {
+    "id": "rupokar.reference.099",
+    "filename": "reference-png/099.png",
+    "function": "Move clip up",
+    "control": "Square A",
+    "section": "Physical keys & Fn layer",
+    "availability": "Both editions",
+    "source_time": "00:14:00–00:14:06",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 843.0,
+    "crop": {
+      "x": 1716,
+      "y": 560,
+      "width": 62,
+      "height": 62
+    }
+  },
+  {
+    "id": "rupokar.reference.100",
+    "filename": "reference-png/100.png",
+    "function": "Move clip down",
+    "control": "Square B",
+    "section": "Physical keys & Fn layer",
+    "availability": "Both editions",
+    "source_time": "00:14:00–00:14:06",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 843.0,
+    "crop": {
+      "x": 1762,
+      "y": 560,
+      "width": 62,
+      "height": 62
+    }
+  },
+  {
+    "id": "rupokar.reference.101",
+    "filename": "reference-png/101.png",
+    "function": "Timeline start",
+    "control": "Square C",
+    "section": "Physical keys & Fn layer",
+    "availability": "Both editions",
+    "source_time": "00:05:25–00:05:31",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 328.0,
+    "crop": {
+      "x": 1716,
+      "y": 607,
+      "width": 62,
+      "height": 62
+    }
+  },
+  {
+    "id": "rupokar.reference.102",
+    "filename": "reference-png/102.png",
+    "function": "Timeline end",
+    "control": "Square D",
+    "section": "Physical keys & Fn layer",
+    "availability": "Both editions",
+    "source_time": "00:05:25–00:05:31",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 328.0,
+    "crop": {
+      "x": 1762,
+      "y": 607,
+      "width": 62,
+      "height": 62
+    }
+  },
+  {
+    "id": "rupokar.reference.103",
+    "filename": "reference-png/103.png",
+    "function": "Right-click",
+    "control": "Square E",
+    "section": "Physical keys & Fn layer",
+    "availability": "Both editions",
+    "source_time": "00:14:06–00:14:10",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 848.0,
+    "crop": {
+      "x": 1762,
+      "y": 654,
+      "width": 62,
+      "height": 62
+    }
+  },
+  {
+    "id": "rupokar.reference.104",
+    "filename": "reference-png/104.png",
+    "function": "Ripple Delete",
+    "control": "Fn + B",
+    "section": "Physical keys & Fn layer",
+    "availability": "Both editions",
+    "source_time": "00:13:41–00:13:50",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 825.5,
+    "crop": {
+      "x": 1710,
+      "y": 554,
+      "width": 120,
+      "height": 168
+    }
+  },
+  {
+    "id": "rupokar.reference.105",
+    "filename": "reference-png/105.png",
+    "function": "Media Pool panel",
+    "control": "Fn + round 1",
+    "section": "Physical keys & Fn layer",
+    "availability": "Both editions",
+    "source_time": "00:14:15–00:14:23",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 859.0,
+    "crop": {
+      "x": 1353,
+      "y": 471,
+      "width": 84,
+      "height": 245
+    }
+  },
+  {
+    "id": "rupokar.reference.106",
+    "filename": "reference-png/106.png",
+    "function": "Effects Library panel",
+    "control": "Fn + round 2",
+    "section": "Physical keys & Fn layer",
+    "availability": "Both editions",
+    "source_time": "00:14:23–00:14:28",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 865.5,
+    "crop": {
+      "x": 1415,
+      "y": 471,
+      "width": 84,
+      "height": 245
+    }
+  },
+  {
+    "id": "rupokar.reference.107",
+    "filename": "reference-png/107.png",
+    "function": "Inspector panel",
+    "control": "Fn + round 3",
+    "section": "Physical keys & Fn layer",
+    "availability": "Both editions",
+    "source_time": "00:14:28–00:14:32",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 870.0,
+    "crop": {
+      "x": 1477,
+      "y": 471,
+      "width": 84,
+      "height": 245
+    }
+  },
+  {
+    "id": "rupokar.reference.108",
+    "filename": "reference-png/108.png",
+    "function": "Mixer panel",
+    "control": "Fn + round 4",
+    "section": "Physical keys & Fn layer",
+    "availability": "Both editions",
+    "source_time": "00:14:32–00:14:34",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 873.0,
+    "crop": {
+      "x": 1540,
+      "y": 471,
+      "width": 84,
+      "height": 245
+    }
+  },
+  {
+    "id": "rupokar.reference.109",
+    "filename": "reference-png/109.png",
+    "function": "Power Bins panel",
+    "control": "Fn + round 5",
+    "section": "Physical keys & Fn layer",
+    "availability": "Both editions",
+    "source_time": "00:14:34–00:14:38",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 876.0,
+    "crop": {
+      "x": 1602,
+      "y": 471,
+      "width": 84,
+      "height": 245
+    }
+  },
+  {
+    "id": "rupokar.reference.110",
+    "filename": "reference-png/110.png",
+    "function": "Metadata panel",
+    "control": "Fn + round 6",
+    "section": "Physical keys & Fn layer",
+    "availability": "Both editions",
+    "source_time": "00:14:38–00:14:42",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 880.0,
+    "crop": {
+      "x": 1665,
+      "y": 471,
+      "width": 84,
+      "height": 245
+    }
+  },
+  {
+    "id": "rupokar.reference.111",
+    "filename": "reference-png/111.png",
+    "function": "Index panel",
+    "control": "Fn + round 7",
+    "section": "Physical keys & Fn layer",
+    "availability": "Both editions",
+    "source_time": "00:14:42–00:14:47",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 884.5,
+    "crop": {
+      "x": 1727,
+      "y": 471,
+      "width": 84,
+      "height": 245
+    }
+  },
+  {
+    "id": "rupokar.reference.112",
+    "filename": "reference-png/112.png",
+    "function": "Copy",
+    "control": "Fn + C",
+    "section": "Physical keys & Fn layer",
+    "availability": "Both editions",
+    "source_time": "00:14:48–00:14:56",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 892.0,
+    "crop": {
+      "x": 1710,
+      "y": 601,
+      "width": 74,
+      "height": 121
+    }
+  },
+  {
+    "id": "rupokar.reference.113",
+    "filename": "reference-png/113.png",
+    "function": "Paste Attributes",
+    "control": "Fn + A",
+    "section": "Physical keys & Fn layer",
+    "availability": "Both editions",
+    "source_time": "00:14:51–00:15:08",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 899.5,
+    "crop": {
+      "x": 1710,
+      "y": 554,
+      "width": 74,
+      "height": 168
+    }
+  },
+  {
+    "id": "rupokar.reference.114",
+    "filename": "reference-png/114.png",
+    "function": "Bypass All Grades",
+    "control": "Fn + D",
+    "section": "Physical keys & Fn layer",
+    "availability": "Both editions",
+    "source_time": "00:17:47–00:17:55",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1071.0,
+    "crop": {
+      "x": 1710,
+      "y": 601,
+      "width": 120,
+      "height": 121
+    }
+  },
+  {
+    "id": "rupokar.reference.115",
+    "filename": "reference-png/115.png",
+    "function": "Scopes",
+    "control": "Touch 1 · top-left",
+    "section": "Color",
+    "availability": "Both editions",
+    "source_time": "00:15:40–00:15:48",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 944.0,
+    "crop": {
+      "x": 1436,
+      "y": 191,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.116",
+    "filename": "reference-png/116.png",
+    "function": "Light Box",
+    "control": "Touch 2 · top row",
+    "section": "Color",
+    "availability": "Both editions",
+    "source_time": "00:17:38–00:17:43",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1060.5,
+    "crop": {
+      "x": 1532,
+      "y": 191,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.117",
+    "filename": "reference-png/117.png",
+    "function": "Cinema Viewer",
+    "control": "Touch 3 · top row",
+    "section": "Color",
+    "availability": "Both editions",
+    "source_time": "00:17:43–00:17:47",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1065.0,
+    "crop": {
+      "x": 1628,
+      "y": 191,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.118",
+    "filename": "reference-png/118.png",
+    "function": "Printer Lights",
+    "control": "Touch 4 · top-right",
+    "section": "Color",
+    "availability": "Both editions",
+    "source_time": "00:16:45–00:17:01",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1013.0,
+    "crop": {
+      "x": 1724,
+      "y": 191,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.119",
+    "filename": "reference-png/119.png",
+    "function": "Add Node",
+    "control": "Touch 5 · middle-left",
+    "section": "Color",
+    "availability": "Both editions",
+    "source_time": "00:15:52–00:15:57",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 954.5,
+    "crop": {
+      "x": 1436,
+      "y": 287,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.120",
+    "filename": "reference-png/120.png",
+    "function": "Node Before",
+    "control": "Touch 6 · middle row",
+    "section": "Color",
+    "availability": "Both editions",
+    "source_time": "00:16:35–00:16:40",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 997.5,
+    "crop": {
+      "x": 1532,
+      "y": 287,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.121",
+    "filename": "reference-png/121.png",
+    "function": "Label Node",
+    "control": "Touch 7 · middle row",
+    "section": "Color",
+    "availability": "Both editions",
+    "source_time": "00:16:40–00:16:45",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1002.5,
+    "crop": {
+      "x": 1628,
+      "y": 287,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.122",
+    "filename": "reference-png/122.png",
+    "function": "Grab Still",
+    "control": "Touch 8 · middle-right",
+    "section": "Color",
+    "availability": "Both editions",
+    "source_time": "00:17:01–00:17:07",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1024.0,
+    "crop": {
+      "x": 1724,
+      "y": 287,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.123",
+    "filename": "reference-png/123.png",
+    "function": "Split Selected",
+    "control": "Touch 9 · bottom-left",
+    "section": "Color",
+    "availability": "Both editions",
+    "source_time": "00:17:22–00:17:28",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1045.0,
+    "crop": {
+      "x": 1436,
+      "y": 383,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.124",
+    "filename": "reference-png/124.png",
+    "function": "Split Prev/Next",
+    "control": "Touch 10 · bottom row",
+    "section": "Color",
+    "availability": "Both editions",
+    "source_time": "00:17:28–00:17:33",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1050.5,
+    "crop": {
+      "x": 1532,
+      "y": 383,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.125",
+    "filename": "reference-png/125.png",
+    "function": "Split Original",
+    "control": "Touch 11 · bottom row",
+    "section": "Color",
+    "availability": "Both editions",
+    "source_time": "00:17:12–00:17:18",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1035.0,
+    "crop": {
+      "x": 1628,
+      "y": 383,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.126",
+    "filename": "reference-png/126.png",
+    "function": "Split Stills",
+    "control": "Touch 12 · bottom-right",
+    "section": "Color",
+    "availability": "Both editions",
+    "source_time": "00:17:18–00:17:22",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1040.0,
+    "crop": {
+      "x": 1724,
+      "y": 383,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.127",
+    "filename": "reference-png/127.png",
+    "function": "Saturation",
+    "control": "Top-left dial · turn",
+    "section": "Color",
+    "availability": "Studio only",
+    "source_time": "00:16:02–00:16:26",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 974.0,
+    "crop": {
+      "x": 1370,
+      "y": 184,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.128",
+    "filename": "reference-png/128.png",
+    "function": "Reset Saturation",
+    "control": "Top-left dial · press",
+    "section": "Color",
+    "availability": "Studio only",
+    "source_time": "00:16:30–00:16:35",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 992.5,
+    "crop": {
+      "x": 1370,
+      "y": 184,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.129",
+    "filename": "reference-png/129.png",
+    "function": "Gamma",
+    "control": "Middle-left dial · turn",
+    "section": "Color",
+    "availability": "Studio only",
+    "source_time": "00:16:30–00:16:35",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 992.5,
+    "crop": {
+      "x": 1370,
+      "y": 291,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.130",
+    "filename": "reference-png/130.png",
+    "function": "Reset Gamma",
+    "control": "Middle-left dial · press",
+    "section": "Color",
+    "availability": "Studio only",
+    "source_time": "00:16:30–00:16:35",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 992.5,
+    "crop": {
+      "x": 1370,
+      "y": 291,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.131",
+    "filename": "reference-png/131.png",
+    "function": "Gain",
+    "control": "Bottom-left dial · turn",
+    "section": "Color",
+    "availability": "Studio only",
+    "source_time": "00:16:26–00:16:30",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 988.0,
+    "crop": {
+      "x": 1370,
+      "y": 395,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.132",
+    "filename": "reference-png/132.png",
+    "function": "Reset Gain",
+    "control": "Bottom-left dial · press",
+    "section": "Color",
+    "availability": "Studio only",
+    "source_time": "00:16:30–00:16:35",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 992.5,
+    "crop": {
+      "x": 1370,
+      "y": 395,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.133",
+    "filename": "reference-png/133.png",
+    "function": "Printer Light Red",
+    "control": "Top-right dial · turn",
+    "section": "Color",
+    "availability": "Both editions",
+    "source_time": "00:16:45–00:17:01",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1013.0,
+    "crop": {
+      "x": 1804,
+      "y": 184,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.134",
+    "filename": "reference-png/134.png",
+    "function": "Printer Light Green",
+    "control": "Middle-right dial · turn",
+    "section": "Color",
+    "availability": "Both editions",
+    "source_time": "00:16:45–00:17:01",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1013.0,
+    "crop": {
+      "x": 1804,
+      "y": 291,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.135",
+    "filename": "reference-png/135.png",
+    "function": "Printer Light Blue",
+    "control": "Bottom-right dial · turn",
+    "section": "Color",
+    "availability": "Both editions",
+    "source_time": "00:16:45–00:17:01",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1013.0,
+    "crop": {
+      "x": 1804,
+      "y": 395,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.136",
+    "filename": "reference-png/136.png",
+    "function": "Exit split comparison",
+    "control": "Top-right dial · press",
+    "section": "Color",
+    "availability": "Both editions",
+    "source_time": "00:17:33–00:17:38",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1055.5,
+    "crop": {
+      "x": 1804,
+      "y": 184,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.137",
+    "filename": "reference-png/137.png",
+    "function": "Batch Fade Settings",
+    "control": "Touch 1 · middle-left",
+    "section": "Fairlight",
+    "availability": "Both editions",
+    "source_time": "00:18:08–00:18:19",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1093.5,
+    "crop": {
+      "x": 1436,
+      "y": 287,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.138",
+    "filename": "reference-png/138.png",
+    "function": "Apply Batch Fades",
+    "control": "Touch 2 · middle row",
+    "section": "Fairlight",
+    "availability": "Both editions",
+    "source_time": "00:18:19–00:18:29",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1104.0,
+    "crop": {
+      "x": 1532,
+      "y": 287,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.139",
+    "filename": "reference-png/139.png",
+    "function": "Loop",
+    "control": "Touch 3 · bottom-left",
+    "section": "Fairlight",
+    "availability": "Both editions",
+    "source_time": "00:18:39–00:18:48",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1123.5,
+    "crop": {
+      "x": 1436,
+      "y": 383,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.140",
+    "filename": "reference-png/140.png",
+    "function": "Mark In",
+    "control": "Touch 4 · bottom row",
+    "section": "Fairlight",
+    "availability": "Both editions",
+    "source_time": "00:18:39–00:18:48",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1123.5,
+    "crop": {
+      "x": 1532,
+      "y": 383,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.141",
+    "filename": "reference-png/141.png",
+    "function": "Mark Out",
+    "control": "Touch 5 · bottom row",
+    "section": "Fairlight",
+    "availability": "Both editions",
+    "source_time": "00:18:39–00:18:48",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1123.5,
+    "crop": {
+      "x": 1532,
+      "y": 383,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.142",
+    "filename": "reference-png/142.png",
+    "function": "Play/Pause",
+    "control": "Touch 6 · bottom-right",
+    "section": "Fairlight",
+    "availability": "Both editions",
+    "source_time": "00:18:39–00:18:48",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1123.5,
+    "crop": {
+      "x": 1724,
+      "y": 383,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.143",
+    "filename": "reference-png/143.png",
+    "function": "Shuttle",
+    "control": "Top-left dial · turn",
+    "section": "Fairlight",
+    "availability": "Both editions",
+    "source_time": "00:18:48–00:18:57",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1132.5,
+    "crop": {
+      "x": 1370,
+      "y": 184,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.144",
+    "filename": "reference-png/144.png",
+    "function": "Track Height",
+    "control": "Middle-left dial · turn",
+    "section": "Fairlight",
+    "availability": "Both editions",
+    "source_time": "00:18:29–00:18:34",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1111.5,
+    "crop": {
+      "x": 1370,
+      "y": 291,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.145",
+    "filename": "reference-png/145.png",
+    "function": "Waveform Zoom",
+    "control": "Bottom-left dial · turn",
+    "section": "Fairlight",
+    "availability": "Both editions",
+    "source_time": "00:18:34–00:18:39",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1116.5,
+    "crop": {
+      "x": 1370,
+      "y": 395,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.146",
+    "filename": "reference-png/146.png",
+    "function": "Reset Waveform Zoom",
+    "control": "Bottom-left dial · press",
+    "section": "Fairlight",
+    "availability": "Both editions",
+    "source_time": "00:18:34–00:18:39",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1116.5,
+    "crop": {
+      "x": 1370,
+      "y": 395,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.147",
+    "filename": "reference-png/147.png",
+    "function": "Fast Shuttle",
+    "control": "Top-right dial · turn",
+    "section": "Fairlight",
+    "availability": "Both editions",
+    "source_time": "00:18:48–00:18:57",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1132.5,
+    "crop": {
+      "x": 1804,
+      "y": 184,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.148",
+    "filename": "reference-png/148.png",
+    "function": "Timeline Zoom",
+    "control": "Middle-right dial · turn",
+    "section": "Fairlight",
+    "availability": "Both editions",
+    "source_time": "00:18:48–00:18:57",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1132.5,
+    "crop": {
+      "x": 1804,
+      "y": 291,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.149",
+    "filename": "reference-png/149.png",
+    "function": "Next Clip",
+    "control": "Bottom-right dial · turn",
+    "section": "Fairlight",
+    "availability": "Both editions",
+    "source_time": "00:18:48–00:18:57",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1132.5,
+    "crop": {
+      "x": 1804,
+      "y": 395,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.150",
+    "filename": "reference-png/150.png",
+    "function": "YouTube preset",
+    "control": "Touch 1 · top-left",
+    "section": "Deliver / Render Queue",
+    "availability": "Studio only",
+    "source_time": "00:19:06–00:19:13",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1149.5,
+    "crop": {
+      "x": 1436,
+      "y": 191,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.151",
+    "filename": "reference-png/151.png",
+    "function": "Vimeo preset",
+    "control": "Touch 2 · top row",
+    "section": "Deliver / Render Queue",
+    "availability": "Studio only",
+    "source_time": "00:19:10–00:19:16",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1153.0,
+    "crop": {
+      "x": 1532,
+      "y": 191,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.152",
+    "filename": "reference-png/152.png",
+    "function": "TikTok preset",
+    "control": "Touch 3 · top row",
+    "section": "Deliver / Render Queue",
+    "availability": "Studio only",
+    "source_time": "00:19:10–00:19:16",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1153.0,
+    "crop": {
+      "x": 1628,
+      "y": 191,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.153",
+    "filename": "reference-png/153.png",
+    "function": "Instagram 4:5 preset",
+    "control": "Touch 4 · top-right",
+    "section": "Deliver / Render Queue",
+    "availability": "Studio only",
+    "source_time": "00:19:10–00:19:16",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1153.0,
+    "crop": {
+      "x": 1724,
+      "y": 191,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.154",
+    "filename": "reference-png/154.png",
+    "function": "ProRes 422 HQ preset",
+    "control": "Touch 5 · middle-left",
+    "section": "Deliver / Render Queue",
+    "availability": "Studio only",
+    "source_time": "00:19:16–00:19:23",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1159.5,
+    "crop": {
+      "x": 1436,
+      "y": 287,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.155",
+    "filename": "reference-png/155.png",
+    "function": "Custom preset 1",
+    "control": "Touch 6 · middle row",
+    "section": "Deliver / Render Queue",
+    "availability": "Studio only",
+    "source_time": "00:19:23–00:19:54",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1178.5,
+    "crop": {
+      "x": 1532,
+      "y": 287,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.156",
+    "filename": "reference-png/156.png",
+    "function": "Custom preset 2",
+    "control": "Touch 7 · middle row",
+    "section": "Deliver / Render Queue",
+    "availability": "Studio only",
+    "source_time": "00:19:23–00:19:54",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1178.5,
+    "crop": {
+      "x": 1628,
+      "y": 287,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.157",
+    "filename": "reference-png/157.png",
+    "function": "Custom preset 3",
+    "control": "Touch 8 · middle-right",
+    "section": "Deliver / Render Queue",
+    "availability": "Studio only",
+    "source_time": "00:19:23–00:19:54",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1178.5,
+    "crop": {
+      "x": 1724,
+      "y": 287,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.158",
+    "filename": "reference-png/158.png",
+    "function": "Add to Queue",
+    "control": "Touch 9 · bottom-left",
+    "section": "Deliver / Render Queue",
+    "availability": "Studio only",
+    "source_time": "00:19:54–00:19:59",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1196.5,
+    "crop": {
+      "x": 1436,
+      "y": 383,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.159",
+    "filename": "reference-png/159.png",
+    "function": "Render All",
+    "control": "Touch 10 · bottom row",
+    "section": "Deliver / Render Queue",
+    "availability": "Studio only",
+    "source_time": "00:19:59–00:20:03",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1201.0,
+    "crop": {
+      "x": 1532,
+      "y": 383,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.160",
+    "filename": "reference-png/160.png",
+    "function": "Render New",
+    "control": "Touch 11 · bottom row",
+    "section": "Deliver / Render Queue",
+    "availability": "Studio only",
+    "source_time": "00:20:03–00:20:09",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1206.0,
+    "crop": {
+      "x": 1628,
+      "y": 383,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.161",
+    "filename": "reference-png/161.png",
+    "function": "Stop Render",
+    "control": "Touch 12 · bottom-right",
+    "section": "Deliver / Render Queue",
+    "availability": "Studio only",
+    "source_time": "00:20:09–00:20:13",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1211.0,
+    "crop": {
+      "x": 1724,
+      "y": 383,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.162",
+    "filename": "reference-png/162.png",
+    "function": "Thumbnail",
+    "control": "Swipe-right touch 1",
+    "section": "Deliver / Render Queue",
+    "availability": "Studio only",
+    "source_time": "00:20:13–00:20:21",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1217.0,
+    "crop": {
+      "x": 1436,
+      "y": 191,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.163",
+    "filename": "reference-png/163.png",
+    "function": "Export Folder",
+    "control": "Swipe-right touch 2",
+    "section": "Deliver / Render Queue",
+    "availability": "Studio only",
+    "source_time": "00:20:21–00:20:25",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1223.0,
+    "crop": {
+      "x": 1532,
+      "y": 191,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.164",
+    "filename": "reference-png/164.png",
+    "function": "Clear Render Queue",
+    "control": "Swipe-right touch 3",
+    "section": "Deliver / Render Queue",
+    "availability": "Studio only",
+    "source_time": "00:20:25–00:20:27",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1226.0,
+    "crop": {
+      "x": 1628,
+      "y": 191,
+      "width": 86,
+      "height": 87
+    }
+  },
+  {
+    "id": "rupokar.reference.165",
+    "filename": "reference-png/165.png",
+    "function": "Mark In for export",
+    "control": "Top-left dial · press",
+    "section": "Deliver / Render Queue",
+    "availability": "Both editions",
+    "source_time": "00:20:27–00:20:35",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1231.0,
+    "crop": {
+      "x": 1370,
+      "y": 184,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.166",
+    "filename": "reference-png/166.png",
+    "function": "Mark Out for export",
+    "control": "Top-right dial · press",
+    "section": "Deliver / Render Queue",
+    "availability": "Both editions",
+    "source_time": "00:20:27–00:20:35",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1231.0,
+    "crop": {
+      "x": 1804,
+      "y": 184,
+      "width": 86,
+      "height": 86
+    }
+  },
+  {
+    "id": "rupokar.reference.167",
+    "filename": "reference-png/167.png",
+    "function": "Free Deliver controls",
+    "control": "Free edition Deliver",
+    "section": "Deliver / Render Queue",
+    "availability": "Free edition",
+    "source_time": "00:20:35–00:20:43",
+    "source_frame": "../Loupedeck-CT-Master-Reference/images/deliver.jpg",
+    "source_timestamp_seconds": null,
+    "crop": {
+      "x": 1425,
+      "y": 190,
+      "width": 336,
+      "height": 270
+    }
+  },
+  {
+    "id": "rupokar.reference.168",
+    "filename": "reference-png/168.png",
+    "function": "Quick Export",
+    "control": "Round button 8",
+    "section": "Quick Export",
+    "availability": "Both editions",
+    "source_time": "00:20:47–00:20:59",
+    "source_frame": "walkthrough-video",
+    "source_timestamp_seconds": 1253.0,
+    "crop": {
+      "x": 1801,
+      "y": 471,
+      "width": 62,
+      "height": 62
+    }
+  }
+]

@@ -1,0 +1,2577 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LoupeDeck CT Master Reference — DaVinci Resolve</title>
+<style>
+  :root { --ink:#edf3ff; --muted:#a7b2c8; --panel:#111827; --panel-2:#172235; --line:#2b3951; --accent:#48e1bb; --purple:#bca7ff; --free:#8ec5ff; --studio:#ffd47c; }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { margin:0; background:#09101c; color:var(--ink); font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+  header { padding:58px max(24px,calc((100vw - 1220px)/2)); background:radial-gradient(circle at 85% 0,#35275f 0,transparent 35%),linear-gradient(145deg,#101d32,#09101c); border-bottom:1px solid var(--line); }
+  .kicker { margin:0 0 10px; color:var(--accent); font-size:.78rem; font-weight:800; letter-spacing:.13em; text-transform:uppercase; }
+  h1 { max-width:900px; margin:0; font-size:clamp(2rem,5vw,4.4rem); line-height:1.04; letter-spacing:-.045em; }
+  .lead { max-width:880px; color:#ced8eb; font-size:1.1rem; }
+  .stats { display:flex; flex-wrap:wrap; gap:12px; margin:28px 0 0; }
+  .stat { min-width:170px; padding:13px 16px; border:1px solid var(--line); border-radius:12px; background:rgba(12,21,37,.7); }
+  .stat strong { display:block; color:var(--accent); font-size:1.45rem; }
+  nav { position:sticky; top:0; z-index:10; display:flex; gap:8px; overflow:auto; padding:13px max(20px,calc((100vw - 1220px)/2)); background:rgba(9,16,28,.94); backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
+  nav a { flex:0 0 auto; padding:6px 9px; color:#c5d0e7; border:1px solid var(--line); border-radius:999px; text-decoration:none; font-size:.8rem; }
+  nav a:hover { border-color:var(--accent); color:var(--accent); }
+  main { width:min(1220px,calc(100% - 40px)); margin:0 auto; padding:30px 0 80px; }
+  .notice { margin:0 0 32px; padding:17px 20px; border-left:4px solid var(--accent); border-radius:0 10px 10px 0; background:#11263a; color:#dbe8fa; }
+  h2 { display:flex; justify-content:space-between; gap:14px; margin:52px 0 16px; padding-bottom:9px; border-bottom:1px solid var(--line); font-size:1.4rem; }
+  h2 span { align-self:center; color:var(--muted); font-size:.83rem; font-weight:500; }
+  .card { display:grid; grid-template-columns:minmax(270px,39%) 1fr; margin:14px 0; overflow:hidden; border:1px solid var(--line); border-radius:14px; background:linear-gradient(125deg,var(--panel),var(--panel-2)); break-inside:avoid; }
+  .evidence { display:flex; flex-direction:column; justify-content:center; gap:5px; padding:10px; background:#07101d; color:var(--muted); font-size:.73rem; text-align:center; text-decoration:none; }
+  .evidence img { width:100%; height:auto; border-radius:8px; border:1px solid #26354c; }
+  .copy { padding:19px 20px 17px; }
+  .eyebrow { margin:0 0 5px; color:var(--accent); font-size:.72rem; font-weight:800; letter-spacing:.11em; text-transform:uppercase; }
+  h3 { margin:0 0 12px; font-size:1.32rem; letter-spacing:-.015em; }
+  dl { display:grid; grid-template-columns:120px 1fr; gap:7px 12px; margin:0; }
+  dt { color:var(--muted); font-weight:700; }
+  dd { margin:0; color:#e6edf9; }
+  @media (max-width:700px) { .card { grid-template-columns:1fr; } .evidence { padding:8px; } dl { grid-template-columns:1fr; gap:2px; } dd { margin:0 0 8px; } header { padding-top:38px; } }
+  @media print { body { background:white; color:#111; } header,nav { background:white; color:#111; } .lead,.notice,dd { color:#222; } .stat,.card { background:white; border-color:#aaa; } .evidence { background:#f5f5f5; } .eyebrow,.kicker,.stat strong { color:#076c57; } h2 { color:#111; } .card { page-break-inside:avoid; } }
+</style>
+</head>
+<body>
+<header>
+  <p class="kicker">Source-audited visual catalog</p>
+  <h1>LoupeDeck CT<br>DaVinci Resolve Master Reference</h1>
+  <p class="lead">Every row pairs one documented mapping or selectable option with an untouched frame from the supplied walkthrough, so you can confirm the control label and CT location visually.</p>
+  <div class="stats">
+    <div class="stat"><strong>168</strong>mapped actions & options</div>
+    <div class="stat"><strong>11</strong>work areas</div>
+    <div class="stat"><strong>8</strong>round-button destinations</div>
+    <div class="stat"><strong>32</strong>named presets, colors & intervals</div>
+  </div>
+</header>
+<nav aria-label="Catalog sections"><a href="#section-0">Navigation</a><a href="#section-1">Media / Project</a><a href="#section-2">Media / Break Timer</a><a href="#section-3">Edit 1</a><a href="#section-4">Edit 2</a><a href="#section-5">Edit 3</a><a href="#section-6">Physical keys &amp; Fn layer</a><a href="#section-7">Color</a><a href="#section-8">Fairlight</a><a href="#section-9">Deliver / Render Queue</a><a href="#section-10">Quick Export</a></nav>
+<main>
+  <p class="notice"><strong>How to read this file:</strong> “Mapped actions & options” counts separate physical assignments, timer choices, color choices, and render presets. It is deliberately higher than a count of unique Resolve commands because the same behaviour can be reachable from more than one CT control. Every image is a direct, unedited still extracted from the supplied video. Studio-only and Free-edition differences are marked row by row.</p>
+  <h2 id="section-0">Navigation <span>8 mappings</span></h2><article class="card" data-section="Navigation">
+  <a class="evidence" href="images/overview.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/overview.jpg" alt="Walkthrough evidence for Media page">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#001 · Navigation</p>
+    <h3>Media page</h3>
+    <dl>
+      <dt>Control</dt><dd>Round button 1</dd>
+      <dt>What it does</dt><dd>Opens the Media / project-management page.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:00:34–00:01:05</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Navigation">
+  <a class="evidence" href="images/overview.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/overview.jpg" alt="Walkthrough evidence for Edit page 1">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#002 · Navigation</p>
+    <h3>Edit page 1</h3>
+    <dl>
+      <dt>Control</dt><dd>Round button 2</dd>
+      <dt>What it does</dt><dd>Keeps Resolve on Edit and loads the first CT Edit tool page.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:00:34–00:01:05</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Navigation">
+  <a class="evidence" href="images/overview.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/overview.jpg" alt="Walkthrough evidence for Edit page 2">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#003 · Navigation</p>
+    <h3>Edit page 2</h3>
+    <dl>
+      <dt>Control</dt><dd>Round button 3</dd>
+      <dt>What it does</dt><dd>Keeps Resolve on Edit and loads the second CT Edit tool page.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:00:34–00:01:05</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Navigation">
+  <a class="evidence" href="images/overview.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/overview.jpg" alt="Walkthrough evidence for Edit page 3">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#004 · Navigation</p>
+    <h3>Edit page 3</h3>
+    <dl>
+      <dt>Control</dt><dd>Round button 4</dd>
+      <dt>What it does</dt><dd>Keeps Resolve on Edit and loads the third CT Edit tool page.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:00:34–00:01:05</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Navigation">
+  <a class="evidence" href="images/overview.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/overview.jpg" alt="Walkthrough evidence for Color page">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#005 · Navigation</p>
+    <h3>Color page</h3>
+    <dl>
+      <dt>Control</dt><dd>Round button 5</dd>
+      <dt>What it does</dt><dd>Switches Resolve and the CT to Color tools.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:00:34–00:01:05</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Navigation">
+  <a class="evidence" href="images/overview.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/overview.jpg" alt="Walkthrough evidence for Fairlight page">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#006 · Navigation</p>
+    <h3>Fairlight page</h3>
+    <dl>
+      <dt>Control</dt><dd>Round button 6</dd>
+      <dt>What it does</dt><dd>Switches Resolve and the CT to Fairlight tools.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:00:34–00:01:05</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Navigation">
+  <a class="evidence" href="images/overview.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/overview.jpg" alt="Walkthrough evidence for Deliver page">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#007 · Navigation</p>
+    <h3>Deliver page</h3>
+    <dl>
+      <dt>Control</dt><dd>Round button 7</dd>
+      <dt>What it does</dt><dd>Switches Resolve and the CT to render/export tools.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:00:34–00:01:05</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Navigation">
+  <a class="evidence" href="images/overview.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/overview.jpg" alt="Walkthrough evidence for Quick Export">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#008 · Navigation</p>
+    <h3>Quick Export</h3>
+    <dl>
+      <dt>Control</dt><dd>Round button 8</dd>
+      <dt>What it does</dt><dd>Opens Resolve&#x27;s Quick Export flow.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:00:34–00:01:05</dd>
+    </dl>
+  </div>
+</article><h2 id="section-1">Media / Project <span>14 mappings</span></h2><article class="card" data-section="Media / Project">
+  <a class="evidence" href="images/media.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/media.jpg" alt="Walkthrough evidence for Import Media">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#009 · Media / Project</p>
+    <h3>Import Media</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 1 · top-left</dd>
+      <dt>What it does</dt><dd>Open the file picker and import selected media into the active bin.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:02:04–00:02:21</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Media / Project">
+  <a class="evidence" href="images/media.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/media.jpg" alt="Walkthrough evidence for New Bin">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#010 · Media / Project</p>
+    <h3>New Bin</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 2 · top row</dd>
+      <dt>What it does</dt><dd>Create a new Media Pool folder/bin.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:01:50–00:02:02</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Media / Project">
+  <a class="evidence" href="images/media.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/media.jpg" alt="Walkthrough evidence for Project Notes">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#011 · Media / Project</p>
+    <h3>Project Notes</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 3 · top row</dd>
+      <dt>What it does</dt><dd>Open, edit, save, and close the project&#x27;s notes.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:02:33–00:02:44</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Media / Project">
+  <a class="evidence" href="images/media.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/media.jpg" alt="Walkthrough evidence for Project Manager">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#012 · Media / Project</p>
+    <h3>Project Manager</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 4 · top-right</dd>
+      <dt>What it does</dt><dd>Open the Project Manager to open or switch projects.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:02:44–00:02:51</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Media / Project">
+  <a class="evidence" href="images/media.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/media.jpg" alt="Walkthrough evidence for Prefer Proxy">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#013 · Media / Project</p>
+    <h3>Prefer Proxy</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 5 · middle-left</dd>
+      <dt>What it does</dt><dd>Prefer generated proxy files for playback when they exist.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:03:01–00:03:10</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Media / Project">
+  <a class="evidence" href="images/media.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/media.jpg" alt="Walkthrough evidence for Camera Originals">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#014 · Media / Project</p>
+    <h3>Camera Originals</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 6 · middle row</dd>
+      <dt>What it does</dt><dd>Switch playback back to original camera media.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:03:10–00:03:15</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Media / Project">
+  <a class="evidence" href="images/media.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/media.jpg" alt="Walkthrough evidence for Project Settings">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#015 · Media / Project</p>
+    <h3>Project Settings</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 7 · middle row</dd>
+      <dt>What it does</dt><dd>Open the project settings, including timeline size and frame rate.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:01:35–00:01:50</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Media / Project">
+  <a class="evidence" href="images/media.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/media.jpg" alt="Walkthrough evidence for New Project">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#016 · Media / Project</p>
+    <h3>New Project</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 8 · middle-right</dd>
+      <dt>What it does</dt><dd>Open the new-project flow.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:02:51–00:02:57</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Media / Project">
+  <a class="evidence" href="images/media.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/media.jpg" alt="Walkthrough evidence for Power Bins">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#017 · Media / Project</p>
+    <h3>Power Bins</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 9 · bottom-left</dd>
+      <dt>What it does</dt><dd>Toggle Power Bins, reusable media folders shared across projects.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:02:21–00:02:33</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Media / Project">
+  <a class="evidence" href="images/media.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/media.jpg" alt="Walkthrough evidence for Timeline 9:16">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#018 · Media / Project</p>
+    <h3>Timeline 9:16</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 10 · bottom row</dd>
+      <dt>What it does</dt><dd>Create a vertical copy of the current timeline for TikTok, Reels, and Shorts; original is retained.</dd>
+      <dt>Edition</dt><dd>Studio only</dd>
+      <dt>Video evidence</dt><dd>00:03:15–00:03:29; 00:21:03–00:21:14</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Media / Project">
+  <a class="evidence" href="images/media.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/media.jpg" alt="Walkthrough evidence for Timeline 4:5">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#019 · Media / Project</p>
+    <h3>Timeline 4:5</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 11 · bottom row</dd>
+      <dt>What it does</dt><dd>Create a 4:5 copy of the timeline for an Instagram feed.</dd>
+      <dt>Edition</dt><dd>Studio only</dd>
+      <dt>Video evidence</dt><dd>00:03:15–00:03:29; 00:21:14–00:21:19</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Media / Project">
+  <a class="evidence" href="images/media.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/media.jpg" alt="Walkthrough evidence for Timeline 4:3">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#020 · Media / Project</p>
+    <h3>Timeline 4:3</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 12 · bottom-right</dd>
+      <dt>What it does</dt><dd>Create a 4:3 copy of the timeline.</dd>
+      <dt>Edition</dt><dd>Studio only</dd>
+      <dt>Video evidence</dt><dd>00:03:15–00:03:29; 00:21:19–00:21:24</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Media / Project">
+  <a class="evidence" href="images/media.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/media.jpg" alt="Walkthrough evidence for Duplicate Timeline">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#021 · Media / Project</p>
+    <h3>Duplicate Timeline</h3>
+    <dl>
+      <dt>Control</dt><dd>Alternate bottom row</dd>
+      <dt>What it does</dt><dd>Free-edition replacement option: make a safe working copy of a timeline.</dd>
+      <dt>Edition</dt><dd>Free edition</dd>
+      <dt>Video evidence</dt><dd>00:03:31–00:03:36</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Media / Project">
+  <a class="evidence" href="images/media.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/media.jpg" alt="Walkthrough evidence for New Timeline">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#022 · Media / Project</p>
+    <h3>New Timeline</h3>
+    <dl>
+      <dt>Control</dt><dd>Alternate bottom row</dd>
+      <dt>What it does</dt><dd>Free-edition replacement option: create a new timeline.</dd>
+      <dt>Edition</dt><dd>Free edition</dd>
+      <dt>Video evidence</dt><dd>00:03:31–00:03:36</dd>
+    </dl>
+  </div>
+</article><h2 id="section-2">Media / Break Timer <span>12 mappings</span></h2><article class="card" data-section="Media / Break Timer">
+  <a class="evidence" href="images/timer.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/timer.jpg" alt="Walkthrough evidence for 25-minute interval">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#023 · Media / Break Timer</p>
+    <h3>25-minute interval</h3>
+    <dl>
+      <dt>Control</dt><dd>Timer touch 1</dd>
+      <dt>What it does</dt><dd>Select a 25-minute editing interval.</dd>
+      <dt>Edition</dt><dd>Studio only</dd>
+      <dt>Video evidence</dt><dd>00:03:45–00:03:56</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Media / Break Timer">
+  <a class="evidence" href="images/timer.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/timer.jpg" alt="Walkthrough evidence for 45-minute interval">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#024 · Media / Break Timer</p>
+    <h3>45-minute interval</h3>
+    <dl>
+      <dt>Control</dt><dd>Timer touch 2</dd>
+      <dt>What it does</dt><dd>Select a 45-minute editing interval.</dd>
+      <dt>Edition</dt><dd>Studio only</dd>
+      <dt>Video evidence</dt><dd>00:03:36–00:04:06</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Media / Break Timer">
+  <a class="evidence" href="images/timer.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/timer.jpg" alt="Walkthrough evidence for 1-hour interval">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#025 · Media / Break Timer</p>
+    <h3>1-hour interval</h3>
+    <dl>
+      <dt>Control</dt><dd>Timer touch 3</dd>
+      <dt>What it does</dt><dd>Select a 1-hour editing interval.</dd>
+      <dt>Edition</dt><dd>Studio only</dd>
+      <dt>Video evidence</dt><dd>00:03:36–00:04:06</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Media / Break Timer">
+  <a class="evidence" href="images/timer.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/timer.jpg" alt="Walkthrough evidence for 1.5-hour interval">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#026 · Media / Break Timer</p>
+    <h3>1.5-hour interval</h3>
+    <dl>
+      <dt>Control</dt><dd>Timer touch 4</dd>
+      <dt>What it does</dt><dd>Select a 90-minute editing interval.</dd>
+      <dt>Edition</dt><dd>Studio only</dd>
+      <dt>Video evidence</dt><dd>00:03:36–00:04:06</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Media / Break Timer">
+  <a class="evidence" href="images/timer.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/timer.jpg" alt="Walkthrough evidence for 2-hour interval">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#027 · Media / Break Timer</p>
+    <h3>2-hour interval</h3>
+    <dl>
+      <dt>Control</dt><dd>Timer touch 5</dd>
+      <dt>What it does</dt><dd>Select a 2-hour editing interval.</dd>
+      <dt>Edition</dt><dd>Studio only</dd>
+      <dt>Video evidence</dt><dd>00:03:36–00:04:06</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Media / Break Timer">
+  <a class="evidence" href="images/timer.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/timer.jpg" alt="Walkthrough evidence for 2.5-hour interval">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#028 · Media / Break Timer</p>
+    <h3>2.5-hour interval</h3>
+    <dl>
+      <dt>Control</dt><dd>Timer touch 6</dd>
+      <dt>What it does</dt><dd>Select a 150-minute editing interval.</dd>
+      <dt>Edition</dt><dd>Studio only</dd>
+      <dt>Video evidence</dt><dd>00:03:36–00:04:06</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Media / Break Timer">
+  <a class="evidence" href="images/timer.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/timer.jpg" alt="Walkthrough evidence for 3-hour interval">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#029 · Media / Break Timer</p>
+    <h3>3-hour interval</h3>
+    <dl>
+      <dt>Control</dt><dd>Timer touch 7</dd>
+      <dt>What it does</dt><dd>Select a 3-hour editing interval.</dd>
+      <dt>Edition</dt><dd>Studio only</dd>
+      <dt>Video evidence</dt><dd>00:03:36–00:04:06</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Media / Break Timer">
+  <a class="evidence" href="images/timer.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/timer.jpg" alt="Walkthrough evidence for 4-hour interval">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#030 · Media / Break Timer</p>
+    <h3>4-hour interval</h3>
+    <dl>
+      <dt>Control</dt><dd>Timer touch 8</dd>
+      <dt>What it does</dt><dd>Select a 4-hour editing interval.</dd>
+      <dt>Edition</dt><dd>Studio only</dd>
+      <dt>Video evidence</dt><dd>00:03:36–00:04:06</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Media / Break Timer">
+  <a class="evidence" href="images/timer.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/timer.jpg" alt="Walkthrough evidence for Rushwise">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#031 · Media / Break Timer</p>
+    <h3>Rushwise</h3>
+    <dl>
+      <dt>Control</dt><dd>Timer touch 9</dd>
+      <dt>What it does</dt><dd>Open Rushwise, described in the walkthrough as a project manager for DaVinci editors.</dd>
+      <dt>Edition</dt><dd>Studio only</dd>
+      <dt>Video evidence</dt><dd>00:04:01–00:04:06</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Media / Break Timer">
+  <a class="evidence" href="images/timer.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/timer.jpg" alt="Walkthrough evidence for Break! status">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#032 · Media / Break Timer</p>
+    <h3>Break! status</h3>
+    <dl>
+      <dt>Control</dt><dd>Timer touch 10</dd>
+      <dt>What it does</dt><dd>Shows that the selected work interval has ended; it is a non-blocking break reminder.</dd>
+      <dt>Edition</dt><dd>Studio only</dd>
+      <dt>Video evidence</dt><dd>00:15:08–00:15:29</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Media / Break Timer">
+  <a class="evidence" href="images/timer.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/timer.jpg" alt="Walkthrough evidence for Start timer">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#033 · Media / Break Timer</p>
+    <h3>Start timer</h3>
+    <dl>
+      <dt>Control</dt><dd>Timer touch 11</dd>
+      <dt>What it does</dt><dd>Start the selected work interval and update the running status.</dd>
+      <dt>Edition</dt><dd>Studio only</dd>
+      <dt>Video evidence</dt><dd>00:03:45–00:03:56</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Media / Break Timer">
+  <a class="evidence" href="images/timer.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/timer.jpg" alt="Walkthrough evidence for Stop timer">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#034 · Media / Break Timer</p>
+    <h3>Stop timer</h3>
+    <dl>
+      <dt>Control</dt><dd>Timer touch 12</dd>
+      <dt>What it does</dt><dd>End a running timer early.</dd>
+      <dt>Edition</dt><dd>Studio only</dd>
+      <dt>Video evidence</dt><dd>00:03:59–00:04:01</dd>
+    </dl>
+  </div>
+</article><h2 id="section-3">Edit 1 <span>26 mappings</span></h2><article class="card" data-section="Edit 1">
+  <a class="evidence" href="images/edit1.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit1.jpg" alt="Walkthrough evidence for Select Backward All">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#035 · Edit 1</p>
+    <h3>Select Backward All</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 1 · top-left</dd>
+      <dt>What it does</dt><dd>Select all timeline items to the left of the playhead.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:07:06–00:07:20</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 1">
+  <a class="evidence" href="images/edit1.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit1.jpg" alt="Walkthrough evidence for Select Forward All">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#036 · Edit 1</p>
+    <h3>Select Forward All</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 2 · top row</dd>
+      <dt>What it does</dt><dd>Select all timeline items to the right of the playhead.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:07:06–00:07:16</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 1">
+  <a class="evidence" href="images/edit1.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit1.jpg" alt="Walkthrough evidence for Snapping">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#037 · Edit 1</p>
+    <h3>Snapping</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 3 · top row</dd>
+      <dt>What it does</dt><dd>Toggle magnetic snapping to clip edges; off permits free frame placement.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:07:20–00:07:42</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 1">
+  <a class="evidence" href="images/edit1.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit1.jpg" alt="Walkthrough evidence for Delete">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#038 · Edit 1</p>
+    <h3>Delete</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 4 · top-right</dd>
+      <dt>What it does</dt><dd>Delete the selected clip, leaving a gap.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:06:41–00:06:51</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 1">
+  <a class="evidence" href="images/edit1.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit1.jpg" alt="Walkthrough evidence for Trim Start">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#039 · Edit 1</p>
+    <h3>Trim Start</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 5 · middle-left</dd>
+      <dt>What it does</dt><dd>Trim a selected clip before the playhead while leaving other material in place.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:06:51–00:07:03</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 1">
+  <a class="evidence" href="images/edit1.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit1.jpg" alt="Walkthrough evidence for Trim End">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#040 · Edit 1</p>
+    <h3>Trim End</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 6 · middle row</dd>
+      <dt>What it does</dt><dd>Trim a selected clip after the playhead while leaving other material in place.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:06:51–00:07:03</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 1">
+  <a class="evidence" href="images/edit1.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit1.jpg" alt="Walkthrough evidence for Retime Controls">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#041 · Edit 1</p>
+    <h3>Retime Controls</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 7 · middle row</dd>
+      <dt>What it does</dt><dd>Show or hide the clip&#x27;s retime/speed overlay.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:07:57–00:08:03</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 1">
+  <a class="evidence" href="images/edit1.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit1.jpg" alt="Walkthrough evidence for Change Clip Speed">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#042 · Edit 1</p>
+    <h3>Change Clip Speed</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 8 · middle-right</dd>
+      <dt>What it does</dt><dd>Open speed change; walkthrough example uses 200%, doubling speed and halving duration.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:07:42–00:07:57</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 1">
+  <a class="evidence" href="images/edit1.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit1.jpg" alt="Walkthrough evidence for Ripple Start">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#043 · Edit 1</p>
+    <h3>Ripple Start</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 9 · bottom-left</dd>
+      <dt>What it does</dt><dd>Remove the selected clip portion before the playhead and close the gap.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:06:07–00:06:21</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 1">
+  <a class="evidence" href="images/edit1.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit1.jpg" alt="Walkthrough evidence for Split">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#044 · Edit 1</p>
+    <h3>Split</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 10 · bottom row</dd>
+      <dt>What it does</dt><dd>Split the selected clip at the playhead.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:06:32–00:06:41</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 1">
+  <a class="evidence" href="images/edit1.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit1.jpg" alt="Walkthrough evidence for Ripple End">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#045 · Edit 1</p>
+    <h3>Ripple End</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 11 · bottom row</dd>
+      <dt>What it does</dt><dd>Remove the selected clip portion after the playhead and close the gap.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:06:21–00:06:32</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 1">
+  <a class="evidence" href="images/edit1.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit1.jpg" alt="Walkthrough evidence for Play/Pause">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#046 · Edit 1</p>
+    <h3>Play/Pause</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 12 · bottom-right</dd>
+      <dt>What it does</dt><dd>Start/pause playback; this control is also on Edit pages 2 and 3.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:05:31–00:05:40</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 1">
+  <a class="evidence" href="images/edit1.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit1.jpg" alt="Walkthrough evidence for Shuttle">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#047 · Edit 1</p>
+    <h3>Shuttle</h3>
+    <dl>
+      <dt>Control</dt><dd>Top-left dial · turn</dd>
+      <dt>What it does</dt><dd>Move the playhead frame by frame.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:05:09–00:05:13</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 1">
+  <a class="evidence" href="images/edit1.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit1.jpg" alt="Walkthrough evidence for Orange clip color">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#048 · Edit 1</p>
+    <h3>Orange clip color</h3>
+    <dl>
+      <dt>Control</dt><dd>Top-left dial · press</dd>
+      <dt>What it does</dt><dd>Apply Orange to the selected clip.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:08:03–00:08:13</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 1">
+  <a class="evidence" href="images/edit1.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit1.jpg" alt="Walkthrough evidence for Audio level">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#049 · Edit 1</p>
+    <h3>Audio level</h3>
+    <dl>
+      <dt>Control</dt><dd>Middle-left dial · turn</dd>
+      <dt>What it does</dt><dd>Adjust selected audio by 1 dB per dial step.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:08:19–00:08:28</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 1">
+  <a class="evidence" href="images/edit1.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit1.jpg" alt="Walkthrough evidence for Yellow clip color">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#050 · Edit 1</p>
+    <h3>Yellow clip color</h3>
+    <dl>
+      <dt>Control</dt><dd>Middle-left dial · press</dd>
+      <dt>What it does</dt><dd>Apply Yellow to the selected clip.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:08:13–00:08:16</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 1">
+  <a class="evidence" href="images/edit1.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit1.jpg" alt="Walkthrough evidence for Dynamic Trim">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#051 · Edit 1</p>
+    <h3>Dynamic Trim</h3>
+    <dl>
+      <dt>Control</dt><dd>Bottom-left dial · turn</dd>
+      <dt>What it does</dt><dd>Move a selected edit point frame by frame while showing both sides of the cut.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:08:28–00:08:43</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 1">
+  <a class="evidence" href="images/edit1.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit1.jpg" alt="Walkthrough evidence for Dynamic Trim on/off">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#052 · Edit 1</p>
+    <h3>Dynamic Trim on/off</h3>
+    <dl>
+      <dt>Control</dt><dd>Bottom-left dial · press</dd>
+      <dt>What it does</dt><dd>Enable or disable Dynamic Trim mode.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:08:28–00:08:43</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 1">
+  <a class="evidence" href="images/edit1.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit1.jpg" alt="Walkthrough evidence for Fast Shuttle">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#053 · Edit 1</p>
+    <h3>Fast Shuttle</h3>
+    <dl>
+      <dt>Control</dt><dd>Top-right dial · turn</dd>
+      <dt>What it does</dt><dd>Move the playhead by one second per dial step.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:05:13–00:05:18</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 1">
+  <a class="evidence" href="images/edit1.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit1.jpg" alt="Walkthrough evidence for Green clip color">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#054 · Edit 1</p>
+    <h3>Green clip color</h3>
+    <dl>
+      <dt>Control</dt><dd>Top-right dial · press</dd>
+      <dt>What it does</dt><dd>Apply Green to the selected clip.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:08:16–00:08:19</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 1">
+  <a class="evidence" href="images/edit1.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit1.jpg" alt="Walkthrough evidence for Timeline Zoom">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#055 · Edit 1</p>
+    <h3>Timeline Zoom</h3>
+    <dl>
+      <dt>Control</dt><dd>Middle-right dial · turn</dd>
+      <dt>What it does</dt><dd>Zoom the timeline in or out.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:05:22–00:05:25</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 1">
+  <a class="evidence" href="images/edit1.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit1.jpg" alt="Walkthrough evidence for Zoom to Fit">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#056 · Edit 1</p>
+    <h3>Zoom to Fit</h3>
+    <dl>
+      <dt>Control</dt><dd>Middle-right dial · press</dd>
+      <dt>What it does</dt><dd>Fit the complete timeline on screen.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:04:44–00:04:52</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 1">
+  <a class="evidence" href="images/edit1.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit1.jpg" alt="Walkthrough evidence for Next Clip">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#057 · Edit 1</p>
+    <h3>Next Clip</h3>
+    <dl>
+      <dt>Control</dt><dd>Bottom-right dial · turn</dd>
+      <dt>What it does</dt><dd>Jump from cut to cut.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:05:18–00:05:22</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 1">
+  <a class="evidence" href="images/edit1.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit1.jpg" alt="Walkthrough evidence for Add Marker">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#058 · Edit 1</p>
+    <h3>Add Marker</h3>
+    <dl>
+      <dt>Control</dt><dd>Bottom-right dial · press</dd>
+      <dt>What it does</dt><dd>Add a marker to the selected clip, or to the timeline when nothing is selected.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:05:44–00:06:07</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 1">
+  <a class="evidence" href="images/edit1.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit1.jpg" alt="Walkthrough evidence for Frame-by-frame navigation">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#059 · Edit 1</p>
+    <h3>Frame-by-frame navigation</h3>
+    <dl>
+      <dt>Control</dt><dd>Center wheel · turn</dd>
+      <dt>What it does</dt><dd>Turn right to move forward and left to move backward one frame at a time.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:04:59–00:05:07</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 1">
+  <a class="evidence" href="images/edit1.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit1.jpg" alt="Walkthrough evidence for Play/Pause">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#060 · Edit 1</p>
+    <h3>Play/Pause</h3>
+    <dl>
+      <dt>Control</dt><dd>Center wheel · press</dd>
+      <dt>What it does</dt><dd>Start or pause playback.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:05:40–00:05:44</dd>
+    </dl>
+  </div>
+</article><h2 id="section-4">Edit 2 <span>18 mappings</span></h2><article class="card" data-section="Edit 2">
+  <a class="evidence" href="images/edit2.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit2.jpg" alt="Walkthrough evidence for Delete All Markers">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#061 · Edit 2</p>
+    <h3>Delete All Markers</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 1 · top-left</dd>
+      <dt>What it does</dt><dd>Remove the project&#x27;s clip/timeline markers.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:08:49–00:09:00</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 2">
+  <a class="evidence" href="images/edit2.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit2.jpg" alt="Walkthrough evidence for Linked Selection">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#062 · Edit 2</p>
+    <h3>Linked Selection</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 2 · top row</dd>
+      <dt>What it does</dt><dd>Toggle whether linked video and audio select together.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:09:00–00:09:15</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 2">
+  <a class="evidence" href="images/edit2.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit2.jpg" alt="Walkthrough evidence for Link Clips">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#063 · Edit 2</p>
+    <h3>Link Clips</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 3 · top row</dd>
+      <dt>What it does</dt><dd>Link separate selections, or unlink items already joined.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:09:15–00:09:50</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 2">
+  <a class="evidence" href="images/edit2.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit2.jpg" alt="Walkthrough evidence for Compound Clip">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#064 · Edit 2</p>
+    <h3>Compound Clip</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 4 · top-right</dd>
+      <dt>What it does</dt><dd>Create one compound clip from selected clips.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:09:51–00:10:06</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 2">
+  <a class="evidence" href="images/edit2.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit2.jpg" alt="Walkthrough evidence for Normalize">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#065 · Edit 2</p>
+    <h3>Normalize</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 5 · middle-left</dd>
+      <dt>What it does</dt><dd>Choose a target level and normalize selected audio.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:10:06–00:10:16</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 2">
+  <a class="evidence" href="images/edit2.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit2.jpg" alt="Walkthrough evidence for Auto Align">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#066 · Edit 2</p>
+    <h3>Auto Align</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 6 · middle row</dd>
+      <dt>What it does</dt><dd>Align clips through matching audio, useful for multi-camera recordings.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:10:16–00:10:28</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 2">
+  <a class="evidence" href="images/edit2.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit2.jpg" alt="Walkthrough evidence for Mark In">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#067 · Edit 2</p>
+    <h3>Mark In</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 7 · middle row</dd>
+      <dt>What it does</dt><dd>Set the in point of a playback/export range.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:10:28–00:10:34</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 2">
+  <a class="evidence" href="images/edit2.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit2.jpg" alt="Walkthrough evidence for Mark Out">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#068 · Edit 2</p>
+    <h3>Mark Out</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 8 · middle-right</dd>
+      <dt>What it does</dt><dd>Set the out point of a playback/export range.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:10:28–00:10:34</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 2">
+  <a class="evidence" href="images/edit2.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit2.jpg" alt="Walkthrough evidence for Match Frame">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#069 · Edit 2</p>
+    <h3>Match Frame</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 9 · bottom-left</dd>
+      <dt>What it does</dt><dd>Open the original source at the exact displayed frame.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:10:42–00:10:52</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 2">
+  <a class="evidence" href="images/edit2.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit2.jpg" alt="Walkthrough evidence for Cinema Viewer">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#070 · Edit 2</p>
+    <h3>Cinema Viewer</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 10 · bottom row</dd>
+      <dt>What it does</dt><dd>Show the timeline in full screen; Escape returns.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:10:52–00:10:59</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 2">
+  <a class="evidence" href="images/edit2.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit2.jpg" alt="Walkthrough evidence for Loop">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#071 · Edit 2</p>
+    <h3>Loop</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 11 · bottom row</dd>
+      <dt>What it does</dt><dd>Toggle repeated playback of the marked range.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:10:34–00:10:42</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 2">
+  <a class="evidence" href="images/edit2.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit2.jpg" alt="Walkthrough evidence for Play/Pause">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#072 · Edit 2</p>
+    <h3>Play/Pause</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 12 · bottom-right</dd>
+      <dt>What it does</dt><dd>Start/pause playback.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:05:31–00:05:40</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 2">
+  <a class="evidence" href="images/edit2.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit2.jpg" alt="Walkthrough evidence for Apricot clip color">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#073 · Edit 2</p>
+    <h3>Apricot clip color</h3>
+    <dl>
+      <dt>Control</dt><dd>Top-left dial · press</dd>
+      <dt>What it does</dt><dd>Swipe the dial labels down to the second color bank, then press the labelled dial to apply this clip color.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:10:59–00:11:12</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 2">
+  <a class="evidence" href="images/edit2.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit2.jpg" alt="Walkthrough evidence for Blue clip color">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#074 · Edit 2</p>
+    <h3>Blue clip color</h3>
+    <dl>
+      <dt>Control</dt><dd>Middle-left dial · press</dd>
+      <dt>What it does</dt><dd>Swipe the dial labels down to the second color bank, then press the labelled dial to apply this clip color.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:10:59–00:11:12</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 2">
+  <a class="evidence" href="images/edit2.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit2.jpg" alt="Walkthrough evidence for Lime clip color">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#075 · Edit 2</p>
+    <h3>Lime clip color</h3>
+    <dl>
+      <dt>Control</dt><dd>Bottom-left dial · press</dd>
+      <dt>What it does</dt><dd>Swipe the dial labels down to the second color bank, then press the labelled dial to apply this clip color.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:10:59–00:11:12</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 2">
+  <a class="evidence" href="images/edit2.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit2.jpg" alt="Walkthrough evidence for Brown clip color">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#076 · Edit 2</p>
+    <h3>Brown clip color</h3>
+    <dl>
+      <dt>Control</dt><dd>Top-right dial · press</dd>
+      <dt>What it does</dt><dd>Swipe the dial labels down to the second color bank, then press the labelled dial to apply this clip color.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:10:59–00:11:12</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 2">
+  <a class="evidence" href="images/edit2.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit2.jpg" alt="Walkthrough evidence for Pink clip color">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#077 · Edit 2</p>
+    <h3>Pink clip color</h3>
+    <dl>
+      <dt>Control</dt><dd>Middle-right dial · press</dd>
+      <dt>What it does</dt><dd>Swipe the dial labels down to the second color bank, then press the labelled dial to apply this clip color.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:10:59–00:11:12</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 2">
+  <a class="evidence" href="images/edit2.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit2.jpg" alt="Walkthrough evidence for Purple clip color">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#078 · Edit 2</p>
+    <h3>Purple clip color</h3>
+    <dl>
+      <dt>Control</dt><dd>Bottom-right dial · press</dd>
+      <dt>What it does</dt><dd>Swipe the dial labels down to the second color bank, then press the labelled dial to apply this clip color.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:10:59–00:11:12</dd>
+    </dl>
+  </div>
+</article><h2 id="section-5">Edit 3 <span>18 mappings</span></h2><article class="card" data-section="Edit 3">
+  <a class="evidence" href="images/edit3.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit3.jpg" alt="Walkthrough evidence for Enable Clip">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#079 · Edit 3</p>
+    <h3>Enable Clip</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 1 · top-left</dd>
+      <dt>What it does</dt><dd>Disable a clip without deleting it; press again to restore it.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:11:52–00:11:59</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 3">
+  <a class="evidence" href="images/edit3.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit3.jpg" alt="Walkthrough evidence for Freeze Frame">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#080 · Edit 3</p>
+    <h3>Freeze Frame</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 2 · top row</dd>
+      <dt>What it does</dt><dd>Freeze the image at the playhead; press again to restore normal playback.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:11:59–00:12:15</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 3">
+  <a class="evidence" href="images/edit3.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit3.jpg" alt="Walkthrough evidence for Title Safe">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#081 · Edit 3</p>
+    <h3>Title Safe</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 3 · top row</dd>
+      <dt>What it does</dt><dd>Toggle the safe-area guide for text visibility.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:12:27–00:12:36</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 3">
+  <a class="evidence" href="images/edit3.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit3.jpg" alt="Walkthrough evidence for Delete Gaps">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#082 · Edit 3</p>
+    <h3>Delete Gaps</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 4 · top-right</dd>
+      <dt>What it does</dt><dd>Close all gaps that are empty on every enabled track.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:11:20–00:11:43</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 3">
+  <a class="evidence" href="images/edit3.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit3.jpg" alt="Walkthrough evidence for Find Clip">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#083 · Edit 3</p>
+    <h3>Find Clip</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 5 · middle-left</dd>
+      <dt>What it does</dt><dd>Reveal the selected clip in the Media Pool.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:12:36–00:12:42</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 3">
+  <a class="evidence" href="images/edit3.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit3.jpg" alt="Walkthrough evidence for Crossfade">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#084 · Edit 3</p>
+    <h3>Crossfade</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 6 · middle row</dd>
+      <dt>What it does</dt><dd>Apply a crossfade between adjacent audio clips.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:12:15–00:12:27</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 3">
+  <a class="evidence" href="images/edit3.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit3.jpg" alt="Walkthrough evidence for Swap Left">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#085 · Edit 3</p>
+    <h3>Swap Left</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 7 · middle row</dd>
+      <dt>What it does</dt><dd>Swap the selected clip with its left neighbor.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:11:43–00:11:52</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 3">
+  <a class="evidence" href="images/edit3.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit3.jpg" alt="Walkthrough evidence for Swap Right">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#086 · Edit 3</p>
+    <h3>Swap Right</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 8 · middle-right</dd>
+      <dt>What it does</dt><dd>Swap the selected clip with its right neighbor.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:11:43–00:11:52</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 3">
+  <a class="evidence" href="images/edit3.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit3.jpg" alt="Walkthrough evidence for Find Timeline">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#087 · Edit 3</p>
+    <h3>Find Timeline</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 9 · bottom-left</dd>
+      <dt>What it does</dt><dd>Reveal the current timeline.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:12:41–00:12:46</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 3">
+  <a class="evidence" href="images/edit3.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit3.jpg" alt="Walkthrough evidence for New Timeline">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#088 · Edit 3</p>
+    <h3>New Timeline</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 10 · bottom row</dd>
+      <dt>What it does</dt><dd>Create a new timeline.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:04:18–00:04:37; 00:12:46–00:12:50</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 3">
+  <a class="evidence" href="images/edit3.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit3.jpg" alt="Walkthrough evidence for Duplicate Timeline">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#089 · Edit 3</p>
+    <h3>Duplicate Timeline</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 11 · bottom row</dd>
+      <dt>What it does</dt><dd>Make a copy of the timeline for safe experiments.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:13:04–00:13:17</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 3">
+  <a class="evidence" href="images/edit3.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit3.jpg" alt="Walkthrough evidence for Play/Pause">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#090 · Edit 3</p>
+    <h3>Play/Pause</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 12 · bottom-right</dd>
+      <dt>What it does</dt><dd>Start/pause playback.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:05:31–00:05:40</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 3">
+  <a class="evidence" href="images/edit3.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit3.jpg" alt="Walkthrough evidence for Olive clip color">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#091 · Edit 3</p>
+    <h3>Olive clip color</h3>
+    <dl>
+      <dt>Control</dt><dd>Top-left dial · press</dd>
+      <dt>What it does</dt><dd>Swipe the dial labels down twice to the third color bank, then press the labelled dial to apply this clip color.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:12:50–00:13:04</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 3">
+  <a class="evidence" href="images/edit3.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit3.jpg" alt="Walkthrough evidence for Teal clip color">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#092 · Edit 3</p>
+    <h3>Teal clip color</h3>
+    <dl>
+      <dt>Control</dt><dd>Middle-left dial · press</dd>
+      <dt>What it does</dt><dd>Swipe the dial labels down twice to the third color bank, then press the labelled dial to apply this clip color.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:12:50–00:13:04</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 3">
+  <a class="evidence" href="images/edit3.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit3.jpg" alt="Walkthrough evidence for Navy clip color">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#093 · Edit 3</p>
+    <h3>Navy clip color</h3>
+    <dl>
+      <dt>Control</dt><dd>Bottom-left dial · press</dd>
+      <dt>What it does</dt><dd>Swipe the dial labels down twice to the third color bank, then press the labelled dial to apply this clip color.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:12:50–00:13:04</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 3">
+  <a class="evidence" href="images/edit3.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit3.jpg" alt="Walkthrough evidence for Violet clip color">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#094 · Edit 3</p>
+    <h3>Violet clip color</h3>
+    <dl>
+      <dt>Control</dt><dd>Top-right dial · press</dd>
+      <dt>What it does</dt><dd>Swipe the dial labels down twice to the third color bank, then press the labelled dial to apply this clip color.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:12:50–00:13:04</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 3">
+  <a class="evidence" href="images/edit3.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit3.jpg" alt="Walkthrough evidence for Tan clip color">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#095 · Edit 3</p>
+    <h3>Tan clip color</h3>
+    <dl>
+      <dt>Control</dt><dd>Middle-right dial · press</dd>
+      <dt>What it does</dt><dd>Swipe the dial labels down twice to the third color bank, then press the labelled dial to apply this clip color.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:12:50–00:13:04</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Edit 3">
+  <a class="evidence" href="images/edit3.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/edit3.jpg" alt="Walkthrough evidence for Beige clip color">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#096 · Edit 3</p>
+    <h3>Beige clip color</h3>
+    <dl>
+      <dt>Control</dt><dd>Bottom-right dial · press</dd>
+      <dt>What it does</dt><dd>Swipe the dial labels down twice to the third color bank, then press the labelled dial to apply this clip color.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:12:50–00:13:04</dd>
+    </dl>
+  </div>
+</article><h2 id="section-6">Physical keys &amp; Fn layer <span>18 mappings</span></h2><article class="card" data-section="Physical keys &amp; Fn layer">
+  <a class="evidence" href="images/physical.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/physical.jpg" alt="Walkthrough evidence for Undo">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#097 · Physical keys &amp; Fn layer</p>
+    <h3>Undo</h3>
+    <dl>
+      <dt>Control</dt><dd>Undo</dd>
+      <dt>What it does</dt><dd>Restore the last action.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:13:50–00:13:54</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Physical keys &amp; Fn layer">
+  <a class="evidence" href="images/physical.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/physical.jpg" alt="Walkthrough evidence for Save project">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#098 · Physical keys &amp; Fn layer</p>
+    <h3>Save project</h3>
+    <dl>
+      <dt>Control</dt><dd>Save</dd>
+      <dt>What it does</dt><dd>Save the Resolve project.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:13:54–00:14:00</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Physical keys &amp; Fn layer">
+  <a class="evidence" href="images/physical.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/physical.jpg" alt="Walkthrough evidence for Move clip up">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#099 · Physical keys &amp; Fn layer</p>
+    <h3>Move clip up</h3>
+    <dl>
+      <dt>Control</dt><dd>Square A</dd>
+      <dt>What it does</dt><dd>Move the selected clip up one track.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:14:00–00:14:06</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Physical keys &amp; Fn layer">
+  <a class="evidence" href="images/physical.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/physical.jpg" alt="Walkthrough evidence for Move clip down">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#100 · Physical keys &amp; Fn layer</p>
+    <h3>Move clip down</h3>
+    <dl>
+      <dt>Control</dt><dd>Square B</dd>
+      <dt>What it does</dt><dd>Move the selected clip down one track.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:14:00–00:14:06</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Physical keys &amp; Fn layer">
+  <a class="evidence" href="images/physical.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/physical.jpg" alt="Walkthrough evidence for Timeline start">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#101 · Physical keys &amp; Fn layer</p>
+    <h3>Timeline start</h3>
+    <dl>
+      <dt>Control</dt><dd>Square C</dd>
+      <dt>What it does</dt><dd>Jump to the start of the timeline.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:05:25–00:05:31</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Physical keys &amp; Fn layer">
+  <a class="evidence" href="images/physical.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/physical.jpg" alt="Walkthrough evidence for Timeline end">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#102 · Physical keys &amp; Fn layer</p>
+    <h3>Timeline end</h3>
+    <dl>
+      <dt>Control</dt><dd>Square D</dd>
+      <dt>What it does</dt><dd>Jump to the end of the timeline.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:05:25–00:05:31</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Physical keys &amp; Fn layer">
+  <a class="evidence" href="images/physical.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/physical.jpg" alt="Walkthrough evidence for Right-click">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#103 · Physical keys &amp; Fn layer</p>
+    <h3>Right-click</h3>
+    <dl>
+      <dt>Control</dt><dd>Square E</dd>
+      <dt>What it does</dt><dd>Issue a right-click at the current mouse location.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:14:06–00:14:10</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Physical keys &amp; Fn layer">
+  <a class="evidence" href="images/physical.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/physical.jpg" alt="Walkthrough evidence for Ripple Delete">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#104 · Physical keys &amp; Fn layer</p>
+    <h3>Ripple Delete</h3>
+    <dl>
+      <dt>Control</dt><dd>Fn + B</dd>
+      <dt>What it does</dt><dd>Delete the selected clip and close the gap.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:13:41–00:13:50</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Physical keys &amp; Fn layer">
+  <a class="evidence" href="images/physical.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/physical.jpg" alt="Walkthrough evidence for Media Pool panel">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#105 · Physical keys &amp; Fn layer</p>
+    <h3>Media Pool panel</h3>
+    <dl>
+      <dt>Control</dt><dd>Fn + round 1</dd>
+      <dt>What it does</dt><dd>Toggle the Media Pool panel.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:14:15–00:14:23</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Physical keys &amp; Fn layer">
+  <a class="evidence" href="images/physical.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/physical.jpg" alt="Walkthrough evidence for Effects Library panel">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#106 · Physical keys &amp; Fn layer</p>
+    <h3>Effects Library panel</h3>
+    <dl>
+      <dt>Control</dt><dd>Fn + round 2</dd>
+      <dt>What it does</dt><dd>Toggle Effects Library, including transitions and titles.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:14:23–00:14:28</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Physical keys &amp; Fn layer">
+  <a class="evidence" href="images/physical.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/physical.jpg" alt="Walkthrough evidence for Inspector panel">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#107 · Physical keys &amp; Fn layer</p>
+    <h3>Inspector panel</h3>
+    <dl>
+      <dt>Control</dt><dd>Fn + round 3</dd>
+      <dt>What it does</dt><dd>Toggle Inspector for clip settings.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:14:28–00:14:32</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Physical keys &amp; Fn layer">
+  <a class="evidence" href="images/physical.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/physical.jpg" alt="Walkthrough evidence for Mixer panel">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#108 · Physical keys &amp; Fn layer</p>
+    <h3>Mixer panel</h3>
+    <dl>
+      <dt>Control</dt><dd>Fn + round 4</dd>
+      <dt>What it does</dt><dd>Toggle Mixer.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:14:32–00:14:34</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Physical keys &amp; Fn layer">
+  <a class="evidence" href="images/physical.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/physical.jpg" alt="Walkthrough evidence for Power Bins panel">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#109 · Physical keys &amp; Fn layer</p>
+    <h3>Power Bins panel</h3>
+    <dl>
+      <dt>Control</dt><dd>Fn + round 5</dd>
+      <dt>What it does</dt><dd>Toggle Power Bins.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:14:34–00:14:38</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Physical keys &amp; Fn layer">
+  <a class="evidence" href="images/physical.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/physical.jpg" alt="Walkthrough evidence for Metadata panel">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#110 · Physical keys &amp; Fn layer</p>
+    <h3>Metadata panel</h3>
+    <dl>
+      <dt>Control</dt><dd>Fn + round 6</dd>
+      <dt>What it does</dt><dd>Toggle clip Metadata.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:14:38–00:14:42</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Physical keys &amp; Fn layer">
+  <a class="evidence" href="images/physical.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/physical.jpg" alt="Walkthrough evidence for Index panel">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#111 · Physical keys &amp; Fn layer</p>
+    <h3>Index panel</h3>
+    <dl>
+      <dt>Control</dt><dd>Fn + round 7</dd>
+      <dt>What it does</dt><dd>Toggle Index, the timeline cut list.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:14:42–00:14:47</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Physical keys &amp; Fn layer">
+  <a class="evidence" href="images/physical.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/physical.jpg" alt="Walkthrough evidence for Copy">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#112 · Physical keys &amp; Fn layer</p>
+    <h3>Copy</h3>
+    <dl>
+      <dt>Control</dt><dd>Fn + C</dd>
+      <dt>What it does</dt><dd>Copy the selected clip.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:14:48–00:14:56</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Physical keys &amp; Fn layer">
+  <a class="evidence" href="images/physical.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/physical.jpg" alt="Walkthrough evidence for Paste Attributes">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#113 · Physical keys &amp; Fn layer</p>
+    <h3>Paste Attributes</h3>
+    <dl>
+      <dt>Control</dt><dd>Fn + A</dd>
+      <dt>What it does</dt><dd>Paste chosen attributes to another clip; example shown is clip color.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:14:51–00:15:08</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Physical keys &amp; Fn layer">
+  <a class="evidence" href="images/physical.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/physical.jpg" alt="Walkthrough evidence for Bypass All Grades">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#114 · Physical keys &amp; Fn layer</p>
+    <h3>Bypass All Grades</h3>
+    <dl>
+      <dt>Control</dt><dd>Fn + D</dd>
+      <dt>What it does</dt><dd>Toggle a before/after view by bypassing all grades.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:17:47–00:17:55</dd>
+    </dl>
+  </div>
+</article><h2 id="section-7">Color <span>22 mappings</span></h2><article class="card" data-section="Color">
+  <a class="evidence" href="images/color.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/color.jpg" alt="Walkthrough evidence for Scopes">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#115 · Color</p>
+    <h3>Scopes</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 1 · top-left</dd>
+      <dt>What it does</dt><dd>Toggle video scopes for checking exposure and color.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:15:40–00:15:48</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Color">
+  <a class="evidence" href="images/color.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/color.jpg" alt="Walkthrough evidence for Light Box">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#116 · Color</p>
+    <h3>Light Box</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 2 · top row</dd>
+      <dt>What it does</dt><dd>Toggle a view of all clips side by side.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:17:38–00:17:43</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Color">
+  <a class="evidence" href="images/color.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/color.jpg" alt="Walkthrough evidence for Cinema Viewer">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#117 · Color</p>
+    <h3>Cinema Viewer</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 3 · top row</dd>
+      <dt>What it does</dt><dd>Judge the grade in full screen.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:17:43–00:17:47</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Color">
+  <a class="evidence" href="images/color.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/color.jpg" alt="Walkthrough evidence for Printer Lights">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#118 · Color</p>
+    <h3>Printer Lights</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 4 · top-right</dd>
+      <dt>What it does</dt><dd>Change the right dials to Red, Green, and Blue printer-light controls; press again to exit.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:16:45–00:17:01</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Color">
+  <a class="evidence" href="images/color.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/color.jpg" alt="Walkthrough evidence for Add Node">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#119 · Color</p>
+    <h3>Add Node</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 5 · middle-left</dd>
+      <dt>What it does</dt><dd>Add an empty serial node.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:15:52–00:15:57</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Color">
+  <a class="evidence" href="images/color.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/color.jpg" alt="Walkthrough evidence for Node Before">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#120 · Color</p>
+    <h3>Node Before</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 6 · middle row</dd>
+      <dt>What it does</dt><dd>Insert a node before the current node.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:16:35–00:16:40</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Color">
+  <a class="evidence" href="images/color.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/color.jpg" alt="Walkthrough evidence for Label Node">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#121 · Color</p>
+    <h3>Label Node</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 7 · middle row</dd>
+      <dt>What it does</dt><dd>Name a node so its role is clear.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:16:40–00:16:45</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Color">
+  <a class="evidence" href="images/color.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/color.jpg" alt="Walkthrough evidence for Grab Still">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#122 · Color</p>
+    <h3>Grab Still</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 8 · middle-right</dd>
+      <dt>What it does</dt><dd>Save the current graded frame to the Gallery.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:17:01–00:17:07</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Color">
+  <a class="evidence" href="images/color.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/color.jpg" alt="Walkthrough evidence for Split Selected">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#123 · Color</p>
+    <h3>Split Selected</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 9 · bottom-left</dd>
+      <dt>What it does</dt><dd>Compare two selected clips side by side.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:17:22–00:17:28</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Color">
+  <a class="evidence" href="images/color.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/color.jpg" alt="Walkthrough evidence for Split Prev/Next">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#124 · Color</p>
+    <h3>Split Prev/Next</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 10 · bottom row</dd>
+      <dt>What it does</dt><dd>Compare the previous and next clips around the current clip.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:17:28–00:17:33</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Color">
+  <a class="evidence" href="images/color.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/color.jpg" alt="Walkthrough evidence for Split Original">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#125 · Color</p>
+    <h3>Split Original</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 11 · bottom row</dd>
+      <dt>What it does</dt><dd>Compare the current grade beside the original.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:17:12–00:17:18</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Color">
+  <a class="evidence" href="images/color.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/color.jpg" alt="Walkthrough evidence for Split Stills">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#126 · Color</p>
+    <h3>Split Stills</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 12 · bottom-right</dd>
+      <dt>What it does</dt><dd>Compare a Gallery still beside the current clip.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:17:18–00:17:22</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Color">
+  <a class="evidence" href="images/color.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/color.jpg" alt="Walkthrough evidence for Saturation">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#127 · Color</p>
+    <h3>Saturation</h3>
+    <dl>
+      <dt>Control</dt><dd>Top-left dial · turn</dd>
+      <dt>What it does</dt><dd>Adjust saturation on the active node.</dd>
+      <dt>Edition</dt><dd>Studio only</dd>
+      <dt>Video evidence</dt><dd>00:16:02–00:16:26</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Color">
+  <a class="evidence" href="images/color.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/color.jpg" alt="Walkthrough evidence for Reset Saturation">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#128 · Color</p>
+    <h3>Reset Saturation</h3>
+    <dl>
+      <dt>Control</dt><dd>Top-left dial · press</dd>
+      <dt>What it does</dt><dd>Return Saturation to normal.</dd>
+      <dt>Edition</dt><dd>Studio only</dd>
+      <dt>Video evidence</dt><dd>00:16:30–00:16:35</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Color">
+  <a class="evidence" href="images/color.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/color.jpg" alt="Walkthrough evidence for Gamma">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#129 · Color</p>
+    <h3>Gamma</h3>
+    <dl>
+      <dt>Control</dt><dd>Middle-left dial · turn</dd>
+      <dt>What it does</dt><dd>Adjust the midtones on the active node.</dd>
+      <dt>Edition</dt><dd>Studio only</dd>
+      <dt>Video evidence</dt><dd>00:16:30–00:16:35</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Color">
+  <a class="evidence" href="images/color.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/color.jpg" alt="Walkthrough evidence for Reset Gamma">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#130 · Color</p>
+    <h3>Reset Gamma</h3>
+    <dl>
+      <dt>Control</dt><dd>Middle-left dial · press</dd>
+      <dt>What it does</dt><dd>Return Gamma to normal.</dd>
+      <dt>Edition</dt><dd>Studio only</dd>
+      <dt>Video evidence</dt><dd>00:16:30–00:16:35</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Color">
+  <a class="evidence" href="images/color.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/color.jpg" alt="Walkthrough evidence for Gain">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#131 · Color</p>
+    <h3>Gain</h3>
+    <dl>
+      <dt>Control</dt><dd>Bottom-left dial · turn</dd>
+      <dt>What it does</dt><dd>Adjust highlights on the active node.</dd>
+      <dt>Edition</dt><dd>Studio only</dd>
+      <dt>Video evidence</dt><dd>00:16:26–00:16:30</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Color">
+  <a class="evidence" href="images/color.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/color.jpg" alt="Walkthrough evidence for Reset Gain">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#132 · Color</p>
+    <h3>Reset Gain</h3>
+    <dl>
+      <dt>Control</dt><dd>Bottom-left dial · press</dd>
+      <dt>What it does</dt><dd>Return Gain to normal.</dd>
+      <dt>Edition</dt><dd>Studio only</dd>
+      <dt>Video evidence</dt><dd>00:16:30–00:16:35</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Color">
+  <a class="evidence" href="images/color.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/color.jpg" alt="Walkthrough evidence for Printer Light Red">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#133 · Color</p>
+    <h3>Printer Light Red</h3>
+    <dl>
+      <dt>Control</dt><dd>Top-right dial · turn</dd>
+      <dt>What it does</dt><dd>Adjust red while Printer Lights mode is active.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:16:45–00:17:01</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Color">
+  <a class="evidence" href="images/color.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/color.jpg" alt="Walkthrough evidence for Printer Light Green">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#134 · Color</p>
+    <h3>Printer Light Green</h3>
+    <dl>
+      <dt>Control</dt><dd>Middle-right dial · turn</dd>
+      <dt>What it does</dt><dd>Adjust green while Printer Lights mode is active.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:16:45–00:17:01</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Color">
+  <a class="evidence" href="images/color.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/color.jpg" alt="Walkthrough evidence for Printer Light Blue">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#135 · Color</p>
+    <h3>Printer Light Blue</h3>
+    <dl>
+      <dt>Control</dt><dd>Bottom-right dial · turn</dd>
+      <dt>What it does</dt><dd>Adjust blue while Printer Lights mode is active.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:16:45–00:17:01</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Color">
+  <a class="evidence" href="images/color.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/color.jpg" alt="Walkthrough evidence for Exit split comparison">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#136 · Color</p>
+    <h3>Exit split comparison</h3>
+    <dl>
+      <dt>Control</dt><dd>Top-right dial · press</dd>
+      <dt>What it does</dt><dd>Return to normal viewing when any Split comparison mode is active.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:17:33–00:17:38</dd>
+    </dl>
+  </div>
+</article><h2 id="section-8">Fairlight <span>13 mappings</span></h2><article class="card" data-section="Fairlight">
+  <a class="evidence" href="images/fairlight.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/fairlight.jpg" alt="Walkthrough evidence for Batch Fade Settings">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#137 · Fairlight</p>
+    <h3>Batch Fade Settings</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 1 · middle-left</dd>
+      <dt>What it does</dt><dd>Set fade-in and fade-out durations before applying them; example shown is 1.5 s in and 2 s out.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:18:08–00:18:19</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Fairlight">
+  <a class="evidence" href="images/fairlight.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/fairlight.jpg" alt="Walkthrough evidence for Apply Batch Fades">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#138 · Fairlight</p>
+    <h3>Apply Batch Fades</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 2 · middle row</dd>
+      <dt>What it does</dt><dd>Apply the saved batch-fade settings without reopening the settings dialog.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:18:19–00:18:29</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Fairlight">
+  <a class="evidence" href="images/fairlight.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/fairlight.jpg" alt="Walkthrough evidence for Loop">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#139 · Fairlight</p>
+    <h3>Loop</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 3 · bottom-left</dd>
+      <dt>What it does</dt><dd>Toggle looping of the marked range.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:18:39–00:18:48</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Fairlight">
+  <a class="evidence" href="images/fairlight.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/fairlight.jpg" alt="Walkthrough evidence for Mark In">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#140 · Fairlight</p>
+    <h3>Mark In</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 4 · bottom row</dd>
+      <dt>What it does</dt><dd>Set the in point.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:18:39–00:18:48</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Fairlight">
+  <a class="evidence" href="images/fairlight.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/fairlight.jpg" alt="Walkthrough evidence for Mark Out">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#141 · Fairlight</p>
+    <h3>Mark Out</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 5 · bottom row</dd>
+      <dt>What it does</dt><dd>Set the out point.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:18:39–00:18:48</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Fairlight">
+  <a class="evidence" href="images/fairlight.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/fairlight.jpg" alt="Walkthrough evidence for Play/Pause">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#142 · Fairlight</p>
+    <h3>Play/Pause</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 6 · bottom-right</dd>
+      <dt>What it does</dt><dd>Start/pause playback.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:18:39–00:18:48</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Fairlight">
+  <a class="evidence" href="images/fairlight.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/fairlight.jpg" alt="Walkthrough evidence for Shuttle">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#143 · Fairlight</p>
+    <h3>Shuttle</h3>
+    <dl>
+      <dt>Control</dt><dd>Top-left dial · turn</dd>
+      <dt>What it does</dt><dd>Move through the timeline frame by frame.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:18:48–00:18:57</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Fairlight">
+  <a class="evidence" href="images/fairlight.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/fairlight.jpg" alt="Walkthrough evidence for Track Height">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#144 · Fairlight</p>
+    <h3>Track Height</h3>
+    <dl>
+      <dt>Control</dt><dd>Middle-left dial · turn</dd>
+      <dt>What it does</dt><dd>Resize tracks while the pointer is over the tracks.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:18:29–00:18:34</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Fairlight">
+  <a class="evidence" href="images/fairlight.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/fairlight.jpg" alt="Walkthrough evidence for Waveform Zoom">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#145 · Fairlight</p>
+    <h3>Waveform Zoom</h3>
+    <dl>
+      <dt>Control</dt><dd>Bottom-left dial · turn</dd>
+      <dt>What it does</dt><dd>Make audio waveforms larger or smaller.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:18:34–00:18:39</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Fairlight">
+  <a class="evidence" href="images/fairlight.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/fairlight.jpg" alt="Walkthrough evidence for Reset Waveform Zoom">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#146 · Fairlight</p>
+    <h3>Reset Waveform Zoom</h3>
+    <dl>
+      <dt>Control</dt><dd>Bottom-left dial · press</dd>
+      <dt>What it does</dt><dd>Restore waveform size to normal.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:18:34–00:18:39</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Fairlight">
+  <a class="evidence" href="images/fairlight.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/fairlight.jpg" alt="Walkthrough evidence for Fast Shuttle">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#147 · Fairlight</p>
+    <h3>Fast Shuttle</h3>
+    <dl>
+      <dt>Control</dt><dd>Top-right dial · turn</dd>
+      <dt>What it does</dt><dd>Move through the timeline in faster increments.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:18:48–00:18:57</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Fairlight">
+  <a class="evidence" href="images/fairlight.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/fairlight.jpg" alt="Walkthrough evidence for Timeline Zoom">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#148 · Fairlight</p>
+    <h3>Timeline Zoom</h3>
+    <dl>
+      <dt>Control</dt><dd>Middle-right dial · turn</dd>
+      <dt>What it does</dt><dd>Zoom the Fairlight timeline.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:18:48–00:18:57</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Fairlight">
+  <a class="evidence" href="images/fairlight.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/fairlight.jpg" alt="Walkthrough evidence for Next Clip">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#149 · Fairlight</p>
+    <h3>Next Clip</h3>
+    <dl>
+      <dt>Control</dt><dd>Bottom-right dial · turn</dd>
+      <dt>What it does</dt><dd>Jump from cut to cut.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:18:48–00:18:57</dd>
+    </dl>
+  </div>
+</article><h2 id="section-9">Deliver / Render Queue <span>18 mappings</span></h2><article class="card" data-section="Deliver / Render Queue">
+  <a class="evidence" href="images/deliver.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/deliver.jpg" alt="Walkthrough evidence for YouTube preset">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#150 · Deliver / Render Queue</p>
+    <h3>YouTube preset</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 1 · top-left</dd>
+      <dt>What it does</dt><dd>Add the timeline to the render queue with the YouTube preset.</dd>
+      <dt>Edition</dt><dd>Studio only</dd>
+      <dt>Video evidence</dt><dd>00:19:06–00:19:13</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Deliver / Render Queue">
+  <a class="evidence" href="images/deliver.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/deliver.jpg" alt="Walkthrough evidence for Vimeo preset">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#151 · Deliver / Render Queue</p>
+    <h3>Vimeo preset</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 2 · top row</dd>
+      <dt>What it does</dt><dd>Add the timeline to the render queue with the Vimeo preset.</dd>
+      <dt>Edition</dt><dd>Studio only</dd>
+      <dt>Video evidence</dt><dd>00:19:10–00:19:16</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Deliver / Render Queue">
+  <a class="evidence" href="images/deliver.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/deliver.jpg" alt="Walkthrough evidence for TikTok preset">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#152 · Deliver / Render Queue</p>
+    <h3>TikTok preset</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 3 · top row</dd>
+      <dt>What it does</dt><dd>Add the timeline to the render queue with the TikTok preset.</dd>
+      <dt>Edition</dt><dd>Studio only</dd>
+      <dt>Video evidence</dt><dd>00:19:10–00:19:16</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Deliver / Render Queue">
+  <a class="evidence" href="images/deliver.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/deliver.jpg" alt="Walkthrough evidence for Instagram 4:5 preset">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#153 · Deliver / Render Queue</p>
+    <h3>Instagram 4:5 preset</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 4 · top-right</dd>
+      <dt>What it does</dt><dd>Add the timeline to the render queue with the Instagram 4:5 preset.</dd>
+      <dt>Edition</dt><dd>Studio only</dd>
+      <dt>Video evidence</dt><dd>00:19:10–00:19:16</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Deliver / Render Queue">
+  <a class="evidence" href="images/deliver.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/deliver.jpg" alt="Walkthrough evidence for ProRes 422 HQ preset">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#154 · Deliver / Render Queue</p>
+    <h3>ProRes 422 HQ preset</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 5 · middle-left</dd>
+      <dt>What it does</dt><dd>Add a high-quality master to the render queue.</dd>
+      <dt>Edition</dt><dd>Studio only</dd>
+      <dt>Video evidence</dt><dd>00:19:16–00:19:23</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Deliver / Render Queue">
+  <a class="evidence" href="images/deliver.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/deliver.jpg" alt="Walkthrough evidence for Custom preset 1">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#155 · Deliver / Render Queue</p>
+    <h3>Custom preset 1</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 6 · middle row</dd>
+      <dt>What it does</dt><dd>Apply the custom preset whose Resolve preset name ends in #1.</dd>
+      <dt>Edition</dt><dd>Studio only</dd>
+      <dt>Video evidence</dt><dd>00:19:23–00:19:54</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Deliver / Render Queue">
+  <a class="evidence" href="images/deliver.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/deliver.jpg" alt="Walkthrough evidence for Custom preset 2">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#156 · Deliver / Render Queue</p>
+    <h3>Custom preset 2</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 7 · middle row</dd>
+      <dt>What it does</dt><dd>Apply the custom preset whose Resolve preset name ends in #2.</dd>
+      <dt>Edition</dt><dd>Studio only</dd>
+      <dt>Video evidence</dt><dd>00:19:23–00:19:54</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Deliver / Render Queue">
+  <a class="evidence" href="images/deliver.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/deliver.jpg" alt="Walkthrough evidence for Custom preset 3">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#157 · Deliver / Render Queue</p>
+    <h3>Custom preset 3</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 8 · middle-right</dd>
+      <dt>What it does</dt><dd>Apply the custom preset whose Resolve preset name ends in #3.</dd>
+      <dt>Edition</dt><dd>Studio only</dd>
+      <dt>Video evidence</dt><dd>00:19:23–00:19:54</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Deliver / Render Queue">
+  <a class="evidence" href="images/deliver.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/deliver.jpg" alt="Walkthrough evidence for Add to Queue">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#158 · Deliver / Render Queue</p>
+    <h3>Add to Queue</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 9 · bottom-left</dd>
+      <dt>What it does</dt><dd>Add the timeline using whichever render settings are active.</dd>
+      <dt>Edition</dt><dd>Studio only</dd>
+      <dt>Video evidence</dt><dd>00:19:54–00:19:59</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Deliver / Render Queue">
+  <a class="evidence" href="images/deliver.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/deliver.jpg" alt="Walkthrough evidence for Render All">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#159 · Deliver / Render Queue</p>
+    <h3>Render All</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 10 · bottom row</dd>
+      <dt>What it does</dt><dd>Render every job in the queue.</dd>
+      <dt>Edition</dt><dd>Studio only</dd>
+      <dt>Video evidence</dt><dd>00:19:59–00:20:03</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Deliver / Render Queue">
+  <a class="evidence" href="images/deliver.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/deliver.jpg" alt="Walkthrough evidence for Render New">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#160 · Deliver / Render Queue</p>
+    <h3>Render New</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 11 · bottom row</dd>
+      <dt>What it does</dt><dd>Render only the new queue job, skipping older queued jobs.</dd>
+      <dt>Edition</dt><dd>Studio only</dd>
+      <dt>Video evidence</dt><dd>00:20:03–00:20:09</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Deliver / Render Queue">
+  <a class="evidence" href="images/deliver.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/deliver.jpg" alt="Walkthrough evidence for Stop Render">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#161 · Deliver / Render Queue</p>
+    <h3>Stop Render</h3>
+    <dl>
+      <dt>Control</dt><dd>Touch 12 · bottom-right</dd>
+      <dt>What it does</dt><dd>Stop an in-progress render.</dd>
+      <dt>Edition</dt><dd>Studio only</dd>
+      <dt>Video evidence</dt><dd>00:20:09–00:20:13</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Deliver / Render Queue">
+  <a class="evidence" href="images/deliver-extras.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/deliver-extras.jpg" alt="Walkthrough evidence for Thumbnail">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#162 · Deliver / Render Queue</p>
+    <h3>Thumbnail</h3>
+    <dl>
+      <dt>Control</dt><dd>Swipe-right touch 1</dd>
+      <dt>What it does</dt><dd>Save the current frame as an image, intended for a video thumbnail.</dd>
+      <dt>Edition</dt><dd>Studio only</dd>
+      <dt>Video evidence</dt><dd>00:20:13–00:20:21</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Deliver / Render Queue">
+  <a class="evidence" href="images/deliver-extras.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/deliver-extras.jpg" alt="Walkthrough evidence for Export Folder">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#163 · Deliver / Render Queue</p>
+    <h3>Export Folder</h3>
+    <dl>
+      <dt>Control</dt><dd>Swipe-right touch 2</dd>
+      <dt>What it does</dt><dd>Open the folder containing exports.</dd>
+      <dt>Edition</dt><dd>Studio only</dd>
+      <dt>Video evidence</dt><dd>00:20:21–00:20:25</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Deliver / Render Queue">
+  <a class="evidence" href="images/deliver-extras.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/deliver-extras.jpg" alt="Walkthrough evidence for Clear Render Queue">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#164 · Deliver / Render Queue</p>
+    <h3>Clear Render Queue</h3>
+    <dl>
+      <dt>Control</dt><dd>Swipe-right touch 3</dd>
+      <dt>What it does</dt><dd>Empty the render queue.</dd>
+      <dt>Edition</dt><dd>Studio only</dd>
+      <dt>Video evidence</dt><dd>00:20:25–00:20:27</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Deliver / Render Queue">
+  <a class="evidence" href="images/deliver.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/deliver.jpg" alt="Walkthrough evidence for Mark In for export">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#165 · Deliver / Render Queue</p>
+    <h3>Mark In for export</h3>
+    <dl>
+      <dt>Control</dt><dd>Top-left dial · press</dd>
+      <dt>What it does</dt><dd>Set export in point to render only a portion of the timeline.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:20:27–00:20:35</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Deliver / Render Queue">
+  <a class="evidence" href="images/deliver.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/deliver.jpg" alt="Walkthrough evidence for Mark Out for export">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#166 · Deliver / Render Queue</p>
+    <h3>Mark Out for export</h3>
+    <dl>
+      <dt>Control</dt><dd>Top-right dial · press</dd>
+      <dt>What it does</dt><dd>Set export out point to render only a portion of the timeline.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:20:27–00:20:35</dd>
+    </dl>
+  </div>
+</article><article class="card" data-section="Deliver / Render Queue">
+  <a class="evidence" href="images/deliver.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/deliver.jpg" alt="Walkthrough evidence for Free Deliver controls">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#167 · Deliver / Render Queue</p>
+    <h3>Free Deliver controls</h3>
+    <dl>
+      <dt>Control</dt><dd>Free edition Deliver</dd>
+      <dt>What it does</dt><dd>Walkthrough lists Quick Export, Add to Queue, Render All, Mark In, Mark Out, and Play.</dd>
+      <dt>Edition</dt><dd>Free edition</dd>
+      <dt>Video evidence</dt><dd>00:20:35–00:20:43</dd>
+    </dl>
+  </div>
+</article><h2 id="section-10">Quick Export <span>1 mappings</span></h2><article class="card" data-section="Quick Export">
+  <a class="evidence" href="images/quick-export.jpg" target="_blank" title="Open untouched walkthrough frame">
+    <img src="images/quick-export.jpg" alt="Walkthrough evidence for Quick Export">
+    <small>Exact walkthrough frame · click to enlarge</small>
+  </a>
+  <div class="copy">
+    <p class="eyebrow">#168 · Quick Export</p>
+    <h3>Quick Export</h3>
+    <dl>
+      <dt>Control</dt><dd>Round button 8</dd>
+      <dt>What it does</dt><dd>Choose a format in Resolve&#x27;s Quick Export flow, then select Export.</dd>
+      <dt>Edition</dt><dd>Both editions</dd>
+      <dt>Video evidence</dt><dd>00:20:47–00:20:59</dd>
+    </dl>
+  </div>
+</article>
+</main>
+</body>
+</html>

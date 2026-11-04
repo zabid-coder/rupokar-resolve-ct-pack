@@ -31,8 +31,21 @@ def check():
         errors.append("Profile .lp5 file missing")
     else:
         with zipfile.ZipFile(lp5_file, "r") as z:
-            if "ProfileInfo.json" not in z.namelist():
+            names = z.namelist()
+            if "ProfileInfo.json" not in names:
                 errors.append("ProfileInfo.json missing from .lp5")
+            else:
+                p_data = json.loads(z.read("ProfileInfo.json"))
+                ws_count = len(p_data.get("layout", {}).get("layoutModes", [{}])[0].get("workspaces", []))
+                if ws_count != 8:
+                    errors.append(f"Expected 8 workspaces in ProfileInfo.json, found {ws_count}")
+                act_count = len(p_data.get("profileActions", []))
+                if act_count != 168:
+                    errors.append(f"Expected 168 profileActions in ProfileInfo.json, found {act_count}")
+            icons_in_lp5 = [n for n in names if n.startswith("ActionIcons/") and n != "ActionIcons/"]
+            if len(icons_in_lp5) != 168:
+                errors.append(f"Expected 168 icons in ActionIcons/, found {len(icons_in_lp5)}")
+
 
     # 3. Keyboard preset
     key_file = REPO_ROOT / "keyboard-preset" / "Rupokar_Resolve_Keys.txt"

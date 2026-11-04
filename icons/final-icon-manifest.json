@@ -10,7 +10,7 @@
     "source_time": "00:00:34–00:01:05",
     "accent": "#A88CFF",
     "glyph": "folder",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/001.png"
+    "reference": "reference-png/001.png"
   },
   {
     "id": "rupokar.final.002",
@@ -23,7 +23,7 @@
     "source_time": "00:00:34–00:01:05",
     "accent": "#A88CFF",
     "glyph": "scissors",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/002.png"
+    "reference": "reference-png/002.png"
   },
   {
     "id": "rupokar.final.003",
@@ -36,7 +36,7 @@
     "source_time": "00:00:34–00:01:05",
     "accent": "#A88CFF",
     "glyph": "link",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/003.png"
+    "reference": "reference-png/003.png"
   },
   {
     "id": "rupokar.final.004",
@@ -49,7 +49,7 @@
     "source_time": "00:00:34–00:01:05",
     "accent": "#A88CFF",
     "glyph": "timeline",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/004.png"
+    "reference": "reference-png/004.png"
   },
   {
     "id": "rupokar.final.005",
@@ -62,7 +62,7 @@
     "source_time": "00:00:34–00:01:05",
     "accent": "#A88CFF",
     "glyph": "colorwheel",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/005.png"
+    "reference": "reference-png/005.png"
   },
   {
     "id": "rupokar.final.006",
@@ -75,7 +75,7 @@
     "source_time": "00:00:34–00:01:05",
     "accent": "#A88CFF",
     "glyph": "wave",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/006.png"
+    "reference": "reference-png/006.png"
   },
   {
     "id": "rupokar.final.007",
@@ -88,7 +88,7 @@
     "source_time": "00:00:34–00:01:05",
     "accent": "#A88CFF",
     "glyph": "export",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/007.png"
+    "reference": "reference-png/007.png"
   },
   {
     "id": "rupokar.final.008",
@@ -101,7 +101,7 @@
     "source_time": "00:00:34–00:01:05",
     "accent": "#A88CFF",
     "glyph": "quickexport",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/008.png"
+    "reference": "reference-png/008.png"
   },
   {
     "id": "rupokar.final.009",
@@ -114,7 +114,7 @@
     "source_time": "00:02:04–00:02:21",
     "accent": "#B79AFF",
     "glyph": "import",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/009.png"
+    "reference": "reference-png/009.png"
   },
   {
     "id": "rupokar.final.010",
@@ -127,7 +127,7 @@
     "source_time": "00:01:50–00:02:02",
     "accent": "#B79AFF",
     "glyph": "folderplus",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/010.png"
+    "reference": "reference-png/010.png"
   },
   {
     "id": "rupokar.final.011",
@@ -140,7 +140,7 @@
     "source_time": "00:02:33–00:02:44",
     "accent": "#B79AFF",
     "glyph": "note",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/011.png"
+    "reference": "reference-png/011.png"
   },
   {
     "id": "rupokar.final.012",
@@ -153,7 +153,7 @@
     "source_time": "00:02:44–00:02:51",
     "accent": "#B79AFF",
     "glyph": "grid",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/012.png"
+    "reference": "reference-png/012.png"
   },
   {
     "id": "rupokar.final.013",
@@ -166,7 +166,7 @@
     "source_time": "00:03:01–00:03:10",
     "accent": "#B79AFF",
     "glyph": "proxy",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/013.png"
+    "reference": "reference-png/013.png"
   },
   {
     "id": "rupokar.final.014",
@@ -179,7 +179,7 @@
     "source_time": "00:03:10–00:03:15",
     "accent": "#B79AFF",
     "glyph": "camera",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/014.png"
+    "reference": "reference-png/014.png"
   },
   {
     "id": "rupokar.final.015",
@@ -192,7 +192,7 @@
     "source_time": "00:01:35–00:01:50",
     "accent": "#B79AFF",
     "glyph": "gear",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/015.png"
+    "reference": "reference-png/015.png"
   },
   {
     "id": "rupokar.final.016",
@@ -205,7 +205,7 @@
     "source_time": "00:02:51–00:02:57",
     "accent": "#B79AFF",
     "glyph": "newfile",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/016.png"
+    "reference": "reference-png/016.png"
   },
   {
     "id": "rupokar.final.017",
@@ -217,8 +217,8 @@
     "availability": "Both editions",
     "source_time": "00:02:21–00:02:33",
     "accent": "#B79AFF",
-    "glyph": "layers",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/017.png"
+    "glyph": "powerbins",
+    "reference": "reference-png/017.png"
   },
   {
     "id": "rupokar.final.018",
@@ -231,7 +231,7 @@
     "source_time": "00:03:15–00:03:29; 00:21:03–00:21:14",
     "accent": "#B79AFF",
     "glyph": "timeline_9_16",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/018.png"
+    "reference": "reference-png/018.png"
   },
   {
     "id": "rupokar.final.019",
@@ -244,7 +244,7 @@
     "source_time": "00:03:15–00:03:29; 00:21:14–00:21:19",
     "accent": "#B79AFF",
     "glyph": "timeline_4_5",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/019.png"
+    "reference": "reference-png/019.png"
   },
   {
     "id": "rupokar.final.020",
@@ -257,7 +257,7 @@
     "source_time": "00:03:15–00:03:29; 00:21:19–00:21:24",
     "accent": "#B79AFF",
     "glyph": "timeline_4_3",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/020.png"
+    "reference": "reference-png/020.png"
   },
   {
     "id": "rupokar.final.021",
@@ -270,7 +270,7 @@
     "source_time": "00:03:31–00:03:36",
     "accent": "#B79AFF",
     "glyph": "duplicate",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/021.png"
+    "reference": "reference-png/021.png"
   },
   {
     "id": "rupokar.final.022",
@@ -283,7 +283,7 @@
     "source_time": "00:03:31–00:03:36",
     "accent": "#B79AFF",
     "glyph": "timelineplus",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/022.png"
+    "reference": "reference-png/022.png"
   },
   {
     "id": "rupokar.final.023",
@@ -295,8 +295,8 @@
     "availability": "Studio only",
     "source_time": "00:03:45–00:03:56",
     "accent": "#4EE0E2",
-    "glyph": "timer",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/023.png"
+    "glyph": "timer_25m",
+    "reference": "reference-png/023.png"
   },
   {
     "id": "rupokar.final.024",
@@ -308,8 +308,8 @@
     "availability": "Studio only",
     "source_time": "00:03:36–00:04:06",
     "accent": "#4EE0E2",
-    "glyph": "timer",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/024.png"
+    "glyph": "timer_45m",
+    "reference": "reference-png/024.png"
   },
   {
     "id": "rupokar.final.025",
@@ -321,8 +321,8 @@
     "availability": "Studio only",
     "source_time": "00:03:36–00:04:06",
     "accent": "#4EE0E2",
-    "glyph": "timer",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/025.png"
+    "glyph": "timer_1h",
+    "reference": "reference-png/025.png"
   },
   {
     "id": "rupokar.final.026",
@@ -334,8 +334,8 @@
     "availability": "Studio only",
     "source_time": "00:03:36–00:04:06",
     "accent": "#4EE0E2",
-    "glyph": "timer",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/026.png"
+    "glyph": "timer_1_5h",
+    "reference": "reference-png/026.png"
   },
   {
     "id": "rupokar.final.027",
@@ -347,8 +347,8 @@
     "availability": "Studio only",
     "source_time": "00:03:36–00:04:06",
     "accent": "#4EE0E2",
-    "glyph": "timer",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/027.png"
+    "glyph": "timer_2h",
+    "reference": "reference-png/027.png"
   },
   {
     "id": "rupokar.final.028",
@@ -360,8 +360,8 @@
     "availability": "Studio only",
     "source_time": "00:03:36–00:04:06",
     "accent": "#4EE0E2",
-    "glyph": "timer",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/028.png"
+    "glyph": "timer_2_5h",
+    "reference": "reference-png/028.png"
   },
   {
     "id": "rupokar.final.029",
@@ -373,8 +373,8 @@
     "availability": "Studio only",
     "source_time": "00:03:36–00:04:06",
     "accent": "#4EE0E2",
-    "glyph": "timer",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/029.png"
+    "glyph": "timer_3h",
+    "reference": "reference-png/029.png"
   },
   {
     "id": "rupokar.final.030",
@@ -386,8 +386,8 @@
     "availability": "Studio only",
     "source_time": "00:03:36–00:04:06",
     "accent": "#4EE0E2",
-    "glyph": "timer",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/030.png"
+    "glyph": "timer_4h",
+    "reference": "reference-png/030.png"
   },
   {
     "id": "rupokar.final.031",
@@ -400,7 +400,7 @@
     "source_time": "00:04:01–00:04:06",
     "accent": "#4EE0E2",
     "glyph": "rushwise",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/031.png"
+    "reference": "reference-png/031.png"
   },
   {
     "id": "rupokar.final.032",
@@ -412,8 +412,8 @@
     "availability": "Studio only",
     "source_time": "00:15:08–00:15:29",
     "accent": "#4EE0E2",
-    "glyph": "timer",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/032.png"
+    "glyph": "break_status",
+    "reference": "reference-png/032.png"
   },
   {
     "id": "rupokar.final.033",
@@ -426,7 +426,7 @@
     "source_time": "00:03:45–00:03:56",
     "accent": "#4EE0E2",
     "glyph": "timer",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/033.png"
+    "reference": "reference-png/033.png"
   },
   {
     "id": "rupokar.final.034",
@@ -439,7 +439,7 @@
     "source_time": "00:03:59–00:04:01",
     "accent": "#FF6C7A",
     "glyph": "timer",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/034.png"
+    "reference": "reference-png/034.png"
   },
   {
     "id": "rupokar.final.035",
@@ -452,7 +452,7 @@
     "source_time": "00:07:06–00:07:20",
     "accent": "#64AAFF",
     "glyph": "selectleft",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/035.png"
+    "reference": "reference-png/035.png"
   },
   {
     "id": "rupokar.final.036",
@@ -465,7 +465,7 @@
     "source_time": "00:07:06–00:07:16",
     "accent": "#64AAFF",
     "glyph": "selectright",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/036.png"
+    "reference": "reference-png/036.png"
   },
   {
     "id": "rupokar.final.037",
@@ -478,7 +478,7 @@
     "source_time": "00:07:20–00:07:42",
     "accent": "#64AAFF",
     "glyph": "magnet",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/037.png"
+    "reference": "reference-png/037.png"
   },
   {
     "id": "rupokar.final.038",
@@ -491,7 +491,7 @@
     "source_time": "00:06:41–00:06:51",
     "accent": "#FF6C7A",
     "glyph": "trash",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/038.png"
+    "reference": "reference-png/038.png"
   },
   {
     "id": "rupokar.final.039",
@@ -504,7 +504,7 @@
     "source_time": "00:06:51–00:07:03",
     "accent": "#64AAFF",
     "glyph": "trimleft",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/039.png"
+    "reference": "reference-png/039.png"
   },
   {
     "id": "rupokar.final.040",
@@ -517,7 +517,7 @@
     "source_time": "00:06:51–00:07:03",
     "accent": "#64AAFF",
     "glyph": "trimright",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/040.png"
+    "reference": "reference-png/040.png"
   },
   {
     "id": "rupokar.final.041",
@@ -530,7 +530,7 @@
     "source_time": "00:07:57–00:08:03",
     "accent": "#64AAFF",
     "glyph": "retime",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/041.png"
+    "reference": "reference-png/041.png"
   },
   {
     "id": "rupokar.final.042",
@@ -543,7 +543,7 @@
     "source_time": "00:07:42–00:07:57",
     "accent": "#64AAFF",
     "glyph": "speed",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/042.png"
+    "reference": "reference-png/042.png"
   },
   {
     "id": "rupokar.final.043",
@@ -556,7 +556,7 @@
     "source_time": "00:06:07–00:06:21",
     "accent": "#64AAFF",
     "glyph": "rippleleft",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/043.png"
+    "reference": "reference-png/043.png"
   },
   {
     "id": "rupokar.final.044",
@@ -568,8 +568,8 @@
     "availability": "Both editions",
     "source_time": "00:06:32–00:06:41",
     "accent": "#64AAFF",
-    "glyph": "scissors",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/044.png"
+    "glyph": "split",
+    "reference": "reference-png/044.png"
   },
   {
     "id": "rupokar.final.045",
@@ -582,7 +582,7 @@
     "source_time": "00:06:21–00:06:32",
     "accent": "#64AAFF",
     "glyph": "rippleright",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/045.png"
+    "reference": "reference-png/045.png"
   },
   {
     "id": "rupokar.final.046",
@@ -595,7 +595,7 @@
     "source_time": "00:05:31–00:05:40",
     "accent": "#64AAFF",
     "glyph": "play",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/046.png"
+    "reference": "reference-png/046.png"
   },
   {
     "id": "rupokar.final.047",
@@ -608,7 +608,7 @@
     "source_time": "00:05:09–00:05:13",
     "accent": "#64AAFF",
     "glyph": "shuttle",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/047.png"
+    "reference": "reference-png/047.png"
   },
   {
     "id": "rupokar.final.048",
@@ -621,7 +621,7 @@
     "source_time": "00:08:03–00:08:13",
     "accent": "#FF8A3D",
     "glyph": "colorswatch",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/048.png"
+    "reference": "reference-png/048.png"
   },
   {
     "id": "rupokar.final.049",
@@ -634,7 +634,7 @@
     "source_time": "00:08:19–00:08:28",
     "accent": "#64AAFF",
     "glyph": "audio_level",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/049.png"
+    "reference": "reference-png/049.png"
   },
   {
     "id": "rupokar.final.050",
@@ -647,7 +647,7 @@
     "source_time": "00:08:13–00:08:16",
     "accent": "#FFD43D",
     "glyph": "colorswatch",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/050.png"
+    "reference": "reference-png/050.png"
   },
   {
     "id": "rupokar.final.051",
@@ -660,7 +660,7 @@
     "source_time": "00:08:28–00:08:43",
     "accent": "#64AAFF",
     "glyph": "dynamic_trim",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/051.png"
+    "reference": "reference-png/051.png"
   },
   {
     "id": "rupokar.final.052",
@@ -673,7 +673,7 @@
     "source_time": "00:08:28–00:08:43",
     "accent": "#64AAFF",
     "glyph": "dynamic_trim_toggle",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/052.png"
+    "reference": "reference-png/052.png"
   },
   {
     "id": "rupokar.final.053",
@@ -686,7 +686,7 @@
     "source_time": "00:05:13–00:05:18",
     "accent": "#64AAFF",
     "glyph": "fastshuttle",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/053.png"
+    "reference": "reference-png/053.png"
   },
   {
     "id": "rupokar.final.054",
@@ -699,7 +699,7 @@
     "source_time": "00:08:16–00:08:19",
     "accent": "#5CE080",
     "glyph": "colorswatch",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/054.png"
+    "reference": "reference-png/054.png"
   },
   {
     "id": "rupokar.final.055",
@@ -712,7 +712,7 @@
     "source_time": "00:05:22–00:05:25",
     "accent": "#64AAFF",
     "glyph": "zoom",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/055.png"
+    "reference": "reference-png/055.png"
   },
   {
     "id": "rupokar.final.056",
@@ -725,7 +725,7 @@
     "source_time": "00:04:44–00:04:52",
     "accent": "#64AAFF",
     "glyph": "fit",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/056.png"
+    "reference": "reference-png/056.png"
   },
   {
     "id": "rupokar.final.057",
@@ -738,7 +738,7 @@
     "source_time": "00:05:18–00:05:22",
     "accent": "#64AAFF",
     "glyph": "nextclip",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/057.png"
+    "reference": "reference-png/057.png"
   },
   {
     "id": "rupokar.final.058",
@@ -751,7 +751,7 @@
     "source_time": "00:05:44–00:06:07",
     "accent": "#64AAFF",
     "glyph": "marker",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/058.png"
+    "reference": "reference-png/058.png"
   },
   {
     "id": "rupokar.final.059",
@@ -764,7 +764,7 @@
     "source_time": "00:04:59–00:05:07",
     "accent": "#64AAFF",
     "glyph": "framewheel",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/059.png"
+    "reference": "reference-png/059.png"
   },
   {
     "id": "rupokar.final.060",
@@ -777,7 +777,7 @@
     "source_time": "00:05:40–00:05:44",
     "accent": "#64AAFF",
     "glyph": "play",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/060.png"
+    "reference": "reference-png/060.png"
   },
   {
     "id": "rupokar.final.061",
@@ -790,7 +790,7 @@
     "source_time": "00:08:49–00:09:00",
     "accent": "#FF6C7A",
     "glyph": "markerdelete",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/061.png"
+    "reference": "reference-png/061.png"
   },
   {
     "id": "rupokar.final.062",
@@ -803,7 +803,7 @@
     "source_time": "00:09:00–00:09:15",
     "accent": "#72B6FF",
     "glyph": "linked",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/062.png"
+    "reference": "reference-png/062.png"
   },
   {
     "id": "rupokar.final.063",
@@ -816,7 +816,7 @@
     "source_time": "00:09:15–00:09:50",
     "accent": "#72B6FF",
     "glyph": "link",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/063.png"
+    "reference": "reference-png/063.png"
   },
   {
     "id": "rupokar.final.064",
@@ -828,8 +828,8 @@
     "availability": "Both editions",
     "source_time": "00:09:51–00:10:06",
     "accent": "#72B6FF",
-    "glyph": "layers",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/064.png"
+    "glyph": "compoundclip",
+    "reference": "reference-png/064.png"
   },
   {
     "id": "rupokar.final.065",
@@ -842,7 +842,7 @@
     "source_time": "00:10:06–00:10:16",
     "accent": "#72B6FF",
     "glyph": "normalize",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/065.png"
+    "reference": "reference-png/065.png"
   },
   {
     "id": "rupokar.final.066",
@@ -855,7 +855,7 @@
     "source_time": "00:10:16–00:10:28",
     "accent": "#72B6FF",
     "glyph": "align",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/066.png"
+    "reference": "reference-png/066.png"
   },
   {
     "id": "rupokar.final.067",
@@ -868,7 +868,7 @@
     "source_time": "00:10:28–00:10:34",
     "accent": "#72B6FF",
     "glyph": "markin",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/067.png"
+    "reference": "reference-png/067.png"
   },
   {
     "id": "rupokar.final.068",
@@ -881,7 +881,7 @@
     "source_time": "00:10:28–00:10:34",
     "accent": "#72B6FF",
     "glyph": "markout",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/068.png"
+    "reference": "reference-png/068.png"
   },
   {
     "id": "rupokar.final.069",
@@ -894,7 +894,7 @@
     "source_time": "00:10:42–00:10:52",
     "accent": "#72B6FF",
     "glyph": "matchframe",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/069.png"
+    "reference": "reference-png/069.png"
   },
   {
     "id": "rupokar.final.070",
@@ -907,7 +907,7 @@
     "source_time": "00:10:52–00:10:59",
     "accent": "#72B6FF",
     "glyph": "cinema",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/070.png"
+    "reference": "reference-png/070.png"
   },
   {
     "id": "rupokar.final.071",
@@ -920,7 +920,7 @@
     "source_time": "00:10:34–00:10:42",
     "accent": "#72B6FF",
     "glyph": "loop",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/071.png"
+    "reference": "reference-png/071.png"
   },
   {
     "id": "rupokar.final.072",
@@ -933,7 +933,7 @@
     "source_time": "00:05:31–00:05:40",
     "accent": "#72B6FF",
     "glyph": "play",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/072.png"
+    "reference": "reference-png/072.png"
   },
   {
     "id": "rupokar.final.073",
@@ -946,7 +946,7 @@
     "source_time": "00:10:59–00:11:12",
     "accent": "#FFB36F",
     "glyph": "colorswatch",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/073.png"
+    "reference": "reference-png/073.png"
   },
   {
     "id": "rupokar.final.074",
@@ -959,7 +959,7 @@
     "source_time": "00:10:59–00:11:12",
     "accent": "#5DAAFF",
     "glyph": "colorswatch",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/074.png"
+    "reference": "reference-png/074.png"
   },
   {
     "id": "rupokar.final.075",
@@ -972,7 +972,7 @@
     "source_time": "00:10:59–00:11:12",
     "accent": "#B2EE58",
     "glyph": "colorswatch",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/075.png"
+    "reference": "reference-png/075.png"
   },
   {
     "id": "rupokar.final.076",
@@ -985,7 +985,7 @@
     "source_time": "00:10:59–00:11:12",
     "accent": "#C08050",
     "glyph": "colorswatch",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/076.png"
+    "reference": "reference-png/076.png"
   },
   {
     "id": "rupokar.final.077",
@@ -998,7 +998,7 @@
     "source_time": "00:10:59–00:11:12",
     "accent": "#FF8DCD",
     "glyph": "colorswatch",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/077.png"
+    "reference": "reference-png/077.png"
   },
   {
     "id": "rupokar.final.078",
@@ -1011,7 +1011,7 @@
     "source_time": "00:10:59–00:11:12",
     "accent": "#B07DFF",
     "glyph": "colorswatch",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/078.png"
+    "reference": "reference-png/078.png"
   },
   {
     "id": "rupokar.final.079",
@@ -1024,7 +1024,7 @@
     "source_time": "00:11:52–00:11:59",
     "accent": "#8CB5FF",
     "glyph": "eye",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/079.png"
+    "reference": "reference-png/079.png"
   },
   {
     "id": "rupokar.final.080",
@@ -1037,7 +1037,7 @@
     "source_time": "00:11:59–00:12:15",
     "accent": "#8CB5FF",
     "glyph": "freeze",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/080.png"
+    "reference": "reference-png/080.png"
   },
   {
     "id": "rupokar.final.081",
@@ -1050,7 +1050,7 @@
     "source_time": "00:12:27–00:12:36",
     "accent": "#8CB5FF",
     "glyph": "safe",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/081.png"
+    "reference": "reference-png/081.png"
   },
   {
     "id": "rupokar.final.082",
@@ -1063,7 +1063,7 @@
     "source_time": "00:11:20–00:11:43",
     "accent": "#FF6C7A",
     "glyph": "deletegaps",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/082.png"
+    "reference": "reference-png/082.png"
   },
   {
     "id": "rupokar.final.083",
@@ -1076,7 +1076,7 @@
     "source_time": "00:12:36–00:12:42",
     "accent": "#8CB5FF",
     "glyph": "findclip",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/083.png"
+    "reference": "reference-png/083.png"
   },
   {
     "id": "rupokar.final.084",
@@ -1089,7 +1089,7 @@
     "source_time": "00:12:15–00:12:27",
     "accent": "#8CB5FF",
     "glyph": "crossfade",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/084.png"
+    "reference": "reference-png/084.png"
   },
   {
     "id": "rupokar.final.085",
@@ -1102,7 +1102,7 @@
     "source_time": "00:11:43–00:11:52",
     "accent": "#8CB5FF",
     "glyph": "swapleft",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/085.png"
+    "reference": "reference-png/085.png"
   },
   {
     "id": "rupokar.final.086",
@@ -1115,7 +1115,7 @@
     "source_time": "00:11:43–00:11:52",
     "accent": "#8CB5FF",
     "glyph": "swapright",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/086.png"
+    "reference": "reference-png/086.png"
   },
   {
     "id": "rupokar.final.087",
@@ -1128,7 +1128,7 @@
     "source_time": "00:12:41–00:12:46",
     "accent": "#8CB5FF",
     "glyph": "timeline",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/087.png"
+    "reference": "reference-png/087.png"
   },
   {
     "id": "rupokar.final.088",
@@ -1141,7 +1141,7 @@
     "source_time": "00:04:18–00:04:37; 00:12:46–00:12:50",
     "accent": "#8CB5FF",
     "glyph": "timelineplus",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/088.png"
+    "reference": "reference-png/088.png"
   },
   {
     "id": "rupokar.final.089",
@@ -1154,7 +1154,7 @@
     "source_time": "00:13:04–00:13:17",
     "accent": "#8CB5FF",
     "glyph": "duplicate",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/089.png"
+    "reference": "reference-png/089.png"
   },
   {
     "id": "rupokar.final.090",
@@ -1167,7 +1167,7 @@
     "source_time": "00:05:31–00:05:40",
     "accent": "#8CB5FF",
     "glyph": "play",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/090.png"
+    "reference": "reference-png/090.png"
   },
   {
     "id": "rupokar.final.091",
@@ -1180,7 +1180,7 @@
     "source_time": "00:12:50–00:13:04",
     "accent": "#A7A65D",
     "glyph": "colorswatch",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/091.png"
+    "reference": "reference-png/091.png"
   },
   {
     "id": "rupokar.final.092",
@@ -1193,7 +1193,7 @@
     "source_time": "00:12:50–00:13:04",
     "accent": "#39CCBD",
     "glyph": "colorswatch",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/092.png"
+    "reference": "reference-png/092.png"
   },
   {
     "id": "rupokar.final.093",
@@ -1206,7 +1206,7 @@
     "source_time": "00:12:50–00:13:04",
     "accent": "#547CCA",
     "glyph": "colorswatch",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/093.png"
+    "reference": "reference-png/093.png"
   },
   {
     "id": "rupokar.final.094",
@@ -1219,7 +1219,7 @@
     "source_time": "00:12:50–00:13:04",
     "accent": "#A36DFF",
     "glyph": "colorswatch",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/094.png"
+    "reference": "reference-png/094.png"
   },
   {
     "id": "rupokar.final.095",
@@ -1232,7 +1232,7 @@
     "source_time": "00:12:50–00:13:04",
     "accent": "#D6AD78",
     "glyph": "colorswatch",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/095.png"
+    "reference": "reference-png/095.png"
   },
   {
     "id": "rupokar.final.096",
@@ -1245,7 +1245,7 @@
     "source_time": "00:12:50–00:13:04",
     "accent": "#E8D1A7",
     "glyph": "colorswatch",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/096.png"
+    "reference": "reference-png/096.png"
   },
   {
     "id": "rupokar.final.097",
@@ -1258,7 +1258,7 @@
     "source_time": "00:13:50–00:13:54",
     "accent": "#A38FFF",
     "glyph": "undo",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/097.png"
+    "reference": "reference-png/097.png"
   },
   {
     "id": "rupokar.final.098",
@@ -1271,7 +1271,7 @@
     "source_time": "00:13:54–00:14:00",
     "accent": "#A38FFF",
     "glyph": "save",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/098.png"
+    "reference": "reference-png/098.png"
   },
   {
     "id": "rupokar.final.099",
@@ -1284,7 +1284,7 @@
     "source_time": "00:14:00–00:14:06",
     "accent": "#A38FFF",
     "glyph": "uptrack",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/099.png"
+    "reference": "reference-png/099.png"
   },
   {
     "id": "rupokar.final.100",
@@ -1297,7 +1297,7 @@
     "source_time": "00:14:00–00:14:06",
     "accent": "#A38FFF",
     "glyph": "downtrack",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/100.png"
+    "reference": "reference-png/100.png"
   },
   {
     "id": "rupokar.final.101",
@@ -1310,7 +1310,7 @@
     "source_time": "00:05:25–00:05:31",
     "accent": "#A38FFF",
     "glyph": "startline",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/101.png"
+    "reference": "reference-png/101.png"
   },
   {
     "id": "rupokar.final.102",
@@ -1323,7 +1323,7 @@
     "source_time": "00:05:25–00:05:31",
     "accent": "#A38FFF",
     "glyph": "endline",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/102.png"
+    "reference": "reference-png/102.png"
   },
   {
     "id": "rupokar.final.103",
@@ -1336,7 +1336,7 @@
     "source_time": "00:14:06–00:14:10",
     "accent": "#A38FFF",
     "glyph": "rightclick",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/103.png"
+    "reference": "reference-png/103.png"
   },
   {
     "id": "rupokar.final.104",
@@ -1349,7 +1349,7 @@
     "source_time": "00:13:41–00:13:50",
     "accent": "#FF6C7A",
     "glyph": "rippledelete",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/104.png"
+    "reference": "reference-png/104.png"
   },
   {
     "id": "rupokar.final.105",
@@ -1362,7 +1362,7 @@
     "source_time": "00:14:15–00:14:23",
     "accent": "#A38FFF",
     "glyph": "folder",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/105.png"
+    "reference": "reference-png/105.png"
   },
   {
     "id": "rupokar.final.106",
@@ -1375,7 +1375,7 @@
     "source_time": "00:14:23–00:14:28",
     "accent": "#A38FFF",
     "glyph": "effects_library",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/106.png"
+    "reference": "reference-png/106.png"
   },
   {
     "id": "rupokar.final.107",
@@ -1388,7 +1388,7 @@
     "source_time": "00:14:28–00:14:32",
     "accent": "#A38FFF",
     "glyph": "inspector",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/107.png"
+    "reference": "reference-png/107.png"
   },
   {
     "id": "rupokar.final.108",
@@ -1401,7 +1401,7 @@
     "source_time": "00:14:32–00:14:34",
     "accent": "#A38FFF",
     "glyph": "mixer",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/108.png"
+    "reference": "reference-png/108.png"
   },
   {
     "id": "rupokar.final.109",
@@ -1413,8 +1413,8 @@
     "availability": "Both editions",
     "source_time": "00:14:34–00:14:38",
     "accent": "#A38FFF",
-    "glyph": "layers",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/109.png"
+    "glyph": "powerbins",
+    "reference": "reference-png/109.png"
   },
   {
     "id": "rupokar.final.110",
@@ -1427,7 +1427,7 @@
     "source_time": "00:14:38–00:14:42",
     "accent": "#A38FFF",
     "glyph": "metadata",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/110.png"
+    "reference": "reference-png/110.png"
   },
   {
     "id": "rupokar.final.111",
@@ -1440,7 +1440,7 @@
     "source_time": "00:14:42–00:14:47",
     "accent": "#A38FFF",
     "glyph": "list",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/111.png"
+    "reference": "reference-png/111.png"
   },
   {
     "id": "rupokar.final.112",
@@ -1453,7 +1453,7 @@
     "source_time": "00:14:48–00:14:56",
     "accent": "#A38FFF",
     "glyph": "copy",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/112.png"
+    "reference": "reference-png/112.png"
   },
   {
     "id": "rupokar.final.113",
@@ -1466,7 +1466,7 @@
     "source_time": "00:14:51–00:15:08",
     "accent": "#A38FFF",
     "glyph": "paste",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/113.png"
+    "reference": "reference-png/113.png"
   },
   {
     "id": "rupokar.final.114",
@@ -1479,7 +1479,7 @@
     "source_time": "00:17:47–00:17:55",
     "accent": "#A38FFF",
     "glyph": "bypass",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/114.png"
+    "reference": "reference-png/114.png"
   },
   {
     "id": "rupokar.final.115",
@@ -1491,8 +1491,8 @@
     "availability": "Both editions",
     "source_time": "00:15:40–00:15:48",
     "accent": "#46D9C4",
-    "glyph": "scope",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/115.png"
+    "glyph": "scopes",
+    "reference": "reference-png/115.png"
   },
   {
     "id": "rupokar.final.116",
@@ -1504,8 +1504,8 @@
     "availability": "Both editions",
     "source_time": "00:17:38–00:17:43",
     "accent": "#46D9C4",
-    "glyph": "grid",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/116.png"
+    "glyph": "lightbox",
+    "reference": "reference-png/116.png"
   },
   {
     "id": "rupokar.final.117",
@@ -1518,7 +1518,7 @@
     "source_time": "00:17:43–00:17:47",
     "accent": "#46D9C4",
     "glyph": "cinema",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/117.png"
+    "reference": "reference-png/117.png"
   },
   {
     "id": "rupokar.final.118",
@@ -1531,7 +1531,7 @@
     "source_time": "00:16:45–00:17:01",
     "accent": "#46D9C4",
     "glyph": "printerlights",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/118.png"
+    "reference": "reference-png/118.png"
   },
   {
     "id": "rupokar.final.119",
@@ -1544,7 +1544,7 @@
     "source_time": "00:15:52–00:15:57",
     "accent": "#46D9C4",
     "glyph": "nodeplus",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/119.png"
+    "reference": "reference-png/119.png"
   },
   {
     "id": "rupokar.final.120",
@@ -1557,7 +1557,7 @@
     "source_time": "00:16:35–00:16:40",
     "accent": "#46D9C4",
     "glyph": "nodebefore",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/120.png"
+    "reference": "reference-png/120.png"
   },
   {
     "id": "rupokar.final.121",
@@ -1570,7 +1570,7 @@
     "source_time": "00:16:40–00:16:45",
     "accent": "#46D9C4",
     "glyph": "tag",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/121.png"
+    "reference": "reference-png/121.png"
   },
   {
     "id": "rupokar.final.122",
@@ -1583,7 +1583,7 @@
     "source_time": "00:17:01–00:17:07",
     "accent": "#46D9C4",
     "glyph": "still",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/122.png"
+    "reference": "reference-png/122.png"
   },
   {
     "id": "rupokar.final.123",
@@ -1596,7 +1596,7 @@
     "source_time": "00:17:22–00:17:28",
     "accent": "#46D9C4",
     "glyph": "splittwo",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/123.png"
+    "reference": "reference-png/123.png"
   },
   {
     "id": "rupokar.final.124",
@@ -1609,7 +1609,7 @@
     "source_time": "00:17:28–00:17:33",
     "accent": "#46D9C4",
     "glyph": "splitprevnext",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/124.png"
+    "reference": "reference-png/124.png"
   },
   {
     "id": "rupokar.final.125",
@@ -1622,7 +1622,7 @@
     "source_time": "00:17:12–00:17:18",
     "accent": "#46D9C4",
     "glyph": "splitoriginal",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/125.png"
+    "reference": "reference-png/125.png"
   },
   {
     "id": "rupokar.final.126",
@@ -1635,7 +1635,7 @@
     "source_time": "00:17:18–00:17:22",
     "accent": "#46D9C4",
     "glyph": "splitstills",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/126.png"
+    "reference": "reference-png/126.png"
   },
   {
     "id": "rupokar.final.127",
@@ -1648,7 +1648,7 @@
     "source_time": "00:16:02–00:16:26",
     "accent": "#46D9C4",
     "glyph": "saturation",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/127.png"
+    "reference": "reference-png/127.png"
   },
   {
     "id": "rupokar.final.128",
@@ -1661,7 +1661,7 @@
     "source_time": "00:16:30–00:16:35",
     "accent": "#46D9C4",
     "glyph": "reset",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/128.png"
+    "reference": "reference-png/128.png"
   },
   {
     "id": "rupokar.final.129",
@@ -1674,7 +1674,7 @@
     "source_time": "00:16:30–00:16:35",
     "accent": "#46D9C4",
     "glyph": "gamma",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/129.png"
+    "reference": "reference-png/129.png"
   },
   {
     "id": "rupokar.final.130",
@@ -1687,7 +1687,7 @@
     "source_time": "00:16:30–00:16:35",
     "accent": "#46D9C4",
     "glyph": "reset",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/130.png"
+    "reference": "reference-png/130.png"
   },
   {
     "id": "rupokar.final.131",
@@ -1700,7 +1700,7 @@
     "source_time": "00:16:26–00:16:30",
     "accent": "#46D9C4",
     "glyph": "gain",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/131.png"
+    "reference": "reference-png/131.png"
   },
   {
     "id": "rupokar.final.132",
@@ -1713,7 +1713,7 @@
     "source_time": "00:16:30–00:16:35",
     "accent": "#46D9C4",
     "glyph": "reset",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/132.png"
+    "reference": "reference-png/132.png"
   },
   {
     "id": "rupokar.final.133",
@@ -1726,7 +1726,7 @@
     "source_time": "00:16:45–00:17:01",
     "accent": "#46D9C4",
     "glyph": "redlight",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/133.png"
+    "reference": "reference-png/133.png"
   },
   {
     "id": "rupokar.final.134",
@@ -1739,7 +1739,7 @@
     "source_time": "00:16:45–00:17:01",
     "accent": "#5CE080",
     "glyph": "greenlight",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/134.png"
+    "reference": "reference-png/134.png"
   },
   {
     "id": "rupokar.final.135",
@@ -1752,7 +1752,7 @@
     "source_time": "00:16:45–00:17:01",
     "accent": "#5DAAFF",
     "glyph": "bluelight",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/135.png"
+    "reference": "reference-png/135.png"
   },
   {
     "id": "rupokar.final.136",
@@ -1765,7 +1765,7 @@
     "source_time": "00:17:33–00:17:38",
     "accent": "#46D9C4",
     "glyph": "closecompare",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/136.png"
+    "reference": "reference-png/136.png"
   },
   {
     "id": "rupokar.final.137",
@@ -1777,8 +1777,8 @@
     "availability": "Both editions",
     "source_time": "00:18:08–00:18:19",
     "accent": "#80E06A",
-    "glyph": "fadesettings",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/137.png"
+    "glyph": "batchfadesettings",
+    "reference": "reference-png/137.png"
   },
   {
     "id": "rupokar.final.138",
@@ -1790,8 +1790,8 @@
     "availability": "Both editions",
     "source_time": "00:18:19–00:18:29",
     "accent": "#80E06A",
-    "glyph": "applyfade",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/138.png"
+    "glyph": "applybatchfades",
+    "reference": "reference-png/138.png"
   },
   {
     "id": "rupokar.final.139",
@@ -1804,7 +1804,7 @@
     "source_time": "00:18:39–00:18:48",
     "accent": "#80E06A",
     "glyph": "loop",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/139.png"
+    "reference": "reference-png/139.png"
   },
   {
     "id": "rupokar.final.140",
@@ -1817,7 +1817,7 @@
     "source_time": "00:18:39–00:18:48",
     "accent": "#80E06A",
     "glyph": "markin",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/140.png"
+    "reference": "reference-png/140.png"
   },
   {
     "id": "rupokar.final.141",
@@ -1830,7 +1830,7 @@
     "source_time": "00:18:39–00:18:48",
     "accent": "#80E06A",
     "glyph": "markout",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/141.png"
+    "reference": "reference-png/141.png"
   },
   {
     "id": "rupokar.final.142",
@@ -1843,7 +1843,7 @@
     "source_time": "00:18:39–00:18:48",
     "accent": "#80E06A",
     "glyph": "play",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/142.png"
+    "reference": "reference-png/142.png"
   },
   {
     "id": "rupokar.final.143",
@@ -1856,7 +1856,7 @@
     "source_time": "00:18:48–00:18:57",
     "accent": "#80E06A",
     "glyph": "shuttle",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/143.png"
+    "reference": "reference-png/143.png"
   },
   {
     "id": "rupokar.final.144",
@@ -1869,7 +1869,7 @@
     "source_time": "00:18:29–00:18:34",
     "accent": "#80E06A",
     "glyph": "trackheight",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/144.png"
+    "reference": "reference-png/144.png"
   },
   {
     "id": "rupokar.final.145",
@@ -1882,7 +1882,7 @@
     "source_time": "00:18:34–00:18:39",
     "accent": "#80E06A",
     "glyph": "wavezoom",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/145.png"
+    "reference": "reference-png/145.png"
   },
   {
     "id": "rupokar.final.146",
@@ -1895,7 +1895,7 @@
     "source_time": "00:18:34–00:18:39",
     "accent": "#80E06A",
     "glyph": "reset",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/146.png"
+    "reference": "reference-png/146.png"
   },
   {
     "id": "rupokar.final.147",
@@ -1908,7 +1908,7 @@
     "source_time": "00:18:48–00:18:57",
     "accent": "#80E06A",
     "glyph": "fastshuttle",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/147.png"
+    "reference": "reference-png/147.png"
   },
   {
     "id": "rupokar.final.148",
@@ -1921,7 +1921,7 @@
     "source_time": "00:18:48–00:18:57",
     "accent": "#80E06A",
     "glyph": "zoom",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/148.png"
+    "reference": "reference-png/148.png"
   },
   {
     "id": "rupokar.final.149",
@@ -1934,7 +1934,7 @@
     "source_time": "00:18:48–00:18:57",
     "accent": "#80E06A",
     "glyph": "nextclip",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/149.png"
+    "reference": "reference-png/149.png"
   },
   {
     "id": "rupokar.final.150",
@@ -1947,7 +1947,7 @@
     "source_time": "00:19:06–00:19:13",
     "accent": "#C9A0FF",
     "glyph": "youtube",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/150.png"
+    "reference": "reference-png/150.png"
   },
   {
     "id": "rupokar.final.151",
@@ -1960,7 +1960,7 @@
     "source_time": "00:19:10–00:19:16",
     "accent": "#C9A0FF",
     "glyph": "vimeo",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/151.png"
+    "reference": "reference-png/151.png"
   },
   {
     "id": "rupokar.final.152",
@@ -1973,7 +1973,7 @@
     "source_time": "00:19:10–00:19:16",
     "accent": "#C9A0FF",
     "glyph": "tiktok",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/152.png"
+    "reference": "reference-png/152.png"
   },
   {
     "id": "rupokar.final.153",
@@ -1986,7 +1986,7 @@
     "source_time": "00:19:10–00:19:16",
     "accent": "#C9A0FF",
     "glyph": "instagram",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/153.png"
+    "reference": "reference-png/153.png"
   },
   {
     "id": "rupokar.final.154",
@@ -1999,7 +1999,7 @@
     "source_time": "00:19:16–00:19:23",
     "accent": "#C9A0FF",
     "glyph": "prores",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/154.png"
+    "reference": "reference-png/154.png"
   },
   {
     "id": "rupokar.final.155",
@@ -2012,7 +2012,7 @@
     "source_time": "00:19:23–00:19:54",
     "accent": "#C9A0FF",
     "glyph": "custom1",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/155.png"
+    "reference": "reference-png/155.png"
   },
   {
     "id": "rupokar.final.156",
@@ -2025,7 +2025,7 @@
     "source_time": "00:19:23–00:19:54",
     "accent": "#C9A0FF",
     "glyph": "custom2",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/156.png"
+    "reference": "reference-png/156.png"
   },
   {
     "id": "rupokar.final.157",
@@ -2038,7 +2038,7 @@
     "source_time": "00:19:23–00:19:54",
     "accent": "#C9A0FF",
     "glyph": "custom3",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/157.png"
+    "reference": "reference-png/157.png"
   },
   {
     "id": "rupokar.final.158",
@@ -2051,7 +2051,7 @@
     "source_time": "00:19:54–00:19:59",
     "accent": "#C9A0FF",
     "glyph": "queueadd",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/158.png"
+    "reference": "reference-png/158.png"
   },
   {
     "id": "rupokar.final.159",
@@ -2064,7 +2064,7 @@
     "source_time": "00:19:59–00:20:03",
     "accent": "#C9A0FF",
     "glyph": "renderall",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/159.png"
+    "reference": "reference-png/159.png"
   },
   {
     "id": "rupokar.final.160",
@@ -2077,7 +2077,7 @@
     "source_time": "00:20:03–00:20:09",
     "accent": "#C9A0FF",
     "glyph": "rendernew",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/160.png"
+    "reference": "reference-png/160.png"
   },
   {
     "id": "rupokar.final.161",
@@ -2090,7 +2090,7 @@
     "source_time": "00:20:09–00:20:13",
     "accent": "#FF6C7A",
     "glyph": "stop",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/161.png"
+    "reference": "reference-png/161.png"
   },
   {
     "id": "rupokar.final.162",
@@ -2103,7 +2103,7 @@
     "source_time": "00:20:13–00:20:21",
     "accent": "#C9A0FF",
     "glyph": "thumbnail",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/162.png"
+    "reference": "reference-png/162.png"
   },
   {
     "id": "rupokar.final.163",
@@ -2115,8 +2115,8 @@
     "availability": "Studio only",
     "source_time": "00:20:21–00:20:25",
     "accent": "#C9A0FF",
-    "glyph": "folder",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/163.png"
+    "glyph": "exportfolder",
+    "reference": "reference-png/163.png"
   },
   {
     "id": "rupokar.final.164",
@@ -2129,7 +2129,7 @@
     "source_time": "00:20:25–00:20:27",
     "accent": "#FF6C7A",
     "glyph": "clearqueue",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/164.png"
+    "reference": "reference-png/164.png"
   },
   {
     "id": "rupokar.final.165",
@@ -2142,7 +2142,7 @@
     "source_time": "00:20:27–00:20:35",
     "accent": "#C9A0FF",
     "glyph": "markin",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/165.png"
+    "reference": "reference-png/165.png"
   },
   {
     "id": "rupokar.final.166",
@@ -2155,7 +2155,7 @@
     "source_time": "00:20:27–00:20:35",
     "accent": "#C9A0FF",
     "glyph": "markout",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/166.png"
+    "reference": "reference-png/166.png"
   },
   {
     "id": "rupokar.final.167",
@@ -2168,7 +2168,7 @@
     "source_time": "00:20:35–00:20:43",
     "accent": "#C9A0FF",
     "glyph": "free",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/167.png"
+    "reference": "reference-png/167.png"
   },
   {
     "id": "rupokar.final.168",
@@ -2181,6 +2181,6 @@
     "source_time": "00:20:47–00:20:59",
     "accent": "#C9A0FF",
     "glyph": "quickexport",
-    "reference": "Inspired File/Rupokar-Resolve-CT-Icon-System/reference-png/168.png"
+    "reference": "reference-png/168.png"
   }
 ]

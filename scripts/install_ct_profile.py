@@ -3,6 +3,7 @@
 
 Injects all 8 workspaces, 168 actions, icons, dials, wheel, round buttons, and physical keys
 into the user's active Loupedeck CT profile 'D94DAE0ACAAC4F4DA61287C9CB088BC8'.
+Includes round-button macro navigation to switch workspaces & DaVinci Resolve pages.
 """
 
 import hashlib
@@ -122,7 +123,6 @@ def make_profile_action(item: dict) -> tuple[dict, str]:
 
     kb_key = SHORTCUT_MAP.get(fn.lower())
     if not kb_key:
-        # Default placeholder shortcut if none mapped
         kb_key = "Space___132105___Space___" if "play" in fn.lower() else ""
 
     action_params = {
@@ -159,26 +159,21 @@ def main():
     if not PROFILE_DIR.exists():
         raise FileNotFoundError(f"Profile directory {PROFILE_DIR} does not exist!")
 
-    # Load 168 items from manifest
     with open(MANIFEST_PATH, "r", encoding="utf-8") as f:
         manifest = json.load(f)
     print(f"Loaded {len(manifest)} manifest items.")
 
-    # Create ActionImages directory
     ACTION_IMAGES_DIR.mkdir(parents=True, exist_ok=True)
 
     # 1. Build profileActions and copy PNGs with exact action naming
     profile_actions = []
-    action_by_id = {}  # manifest id -> action_name
-    action_by_item = {}  # (section, control, function) -> action_name
+    action_by_id = {}
 
     for item in manifest:
         action_def, action_name = make_profile_action(item)
         profile_actions.append(action_def)
         action_by_id[item["id"]] = action_name
-        action_by_item[(item["section"], item["control"], item["function"])] = action_name
 
-        # Copy PNG to ActionImages/ named as `$@Generic___@ProfileAction___<GUID>.png`
         svg_name = Path(item["filename"]).name
         png_name = svg_name.replace(".svg", ".png")
         src_png = PNG_DIR / item["type"] / png_name
@@ -186,23 +181,22 @@ def main():
             dst_png = ACTION_IMAGES_DIR / f"{action_name}.png"
             shutil.copy(src_png, dst_png)
 
-    print(f"Copied {len(list(ACTION_IMAGES_DIR.glob('*.png')))} PNGs into {ACTION_IMAGES_DIR}")
-
-    # 2. Build 8 Workspaces matching Loupedeck CT architecture
+    # 2. Build 8 Workspaces
     WORKSPACE_DEFS = [
-        ("Workspace 1 — Media & Project", ["Navigation", "Media / Project", "Media / Break Timer"]),
-        ("Workspace 2 — Edit 1 (Timeline & Cuts)", ["Edit 1"]),
-        ("Workspace 3 — Edit 2 (Sync & Colors)", ["Edit 2"]),
-        ("Workspace 4 — Edit 3 (Fine Tuning)", ["Edit 3"]),
-        ("Workspace 5 — Color (Nodes & Wheels)", ["Color"]),
-        ("Workspace 6 — Fairlight (Audio & Fades)", ["Fairlight"]),
-        ("Workspace 7 — Deliver & Render Queue", ["Deliver / Render Queue"]),
-        ("Workspace 8 — Quick Export", ["Quick Export", "Physical keys & Fn layer"]),
+        ("Workspace 1 — Media & Project", ["Navigation", "Media / Project", "Media / Break Timer"], "Shift+Key2___132105___Shift+2___"),
+        ("Workspace 2 — Edit 1 (Timeline & Cuts)", ["Edit 1"], "Shift+Key4___132105___Shift+4___"),
+        ("Workspace 3 — Edit 2 (Sync & Colors)", ["Edit 2"], "Shift+Key4___132105___Shift+4___"),
+        ("Workspace 4 — Edit 3 (Fine Tuning)", ["Edit 3"], "Shift+Key4___132105___Shift+4___"),
+        ("Workspace 5 — Color (Nodes & Wheels)", ["Color"], "Shift+Key6___132105___Shift+6___"),
+        ("Workspace 6 — Fairlight (Audio & Fades)", ["Fairlight"], "Shift+Key7___132105___Shift+7___"),
+        ("Workspace 7 — Deliver & Render Queue", ["Deliver / Render Queue"], "Shift+Key8___132105___Shift+8___"),
+        ("Workspace 8 — Quick Export", ["Quick Export", "Physical keys & Fn layer"], "Shift+Key9___132105___Shift+9___"),
     ]
 
     workspaces = []
     touch_pages = []
     encoder_pages = []
+    macro_commands = []
 
     # Common Jog/Shuttle dial adjustments
     shuttle_guid = deterministic_guid("rupokar_shuttle_adjustment")
@@ -246,14 +240,12 @@ def main():
         }
     ]
 
-    for ws_idx, (ws_title, sections) in enumerate(WORKSPACE_DEFS, start=1):
+    for ws_idx, (ws_title, sections, page_shortcut) in enumerate(WORKSPACE_DEFS, start=1):
         ws_guid = deterministic_guid(f"rupokar_ws_{ws_idx}_{ws_title}")
 
-        # Gather touch items for this workspace
         touch_items = [
             m for m in manifest if m["section"] in sections and m["type"] == "touch"
         ]
-        # Gather dial items for this workspace
         dial_items = [
             m for m in manifest if m["section"] in sections and m["type"] == "dial"
         ]
@@ -296,7 +288,6 @@ def main():
         # Encoder page (6 dials: 3 on left, 3 on right)
         ep_guid = deterministic_guid(f"rupokar_encoder_page_{ws_idx}")
         dial_controls = []
-        # Group dial items by turn vs press
         dials_turn = [d for d in dial_items if "turn" in d["control"].lower()]
         dials_press = [d for d in dial_items if "press" in d["control"].lower()]
 
@@ -334,29 +325,71 @@ def main():
             "activationActions": [],
         })
 
-    # 3. Round Buttons 1 to 8: Page Switch & Navigation
-    nav_items = [m for m in manifest if m["section"] == "Navigation"]
+    # 3. Round Buttons 1 to 8: Workspace switching macros!
     round_controls = []
+    nav_manifest_items = [m for m in manifest if m["section"] == "Navigation"]
+
     for r_idx in range(8):
-        if r_idx < len(nav_items):
-            it = nav_items[r_idx]
-            act = action_by_id[it["id"]]
-            round_controls.append({
-                "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
-                "pressAction": act,
-                "fnPressAction": None,
-            })
-        else:
-            round_controls.append({
-                "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
-                "pressAction": None,
-                "fnPressAction": None,
-            })
+        ws = workspaces[r_idx]
+        ws_guid = ws["name"]
+        ws_title, _, page_shortcut = WORKSPACE_DEFS[r_idx]
+
+        macro_guid = deterministic_guid(f"rupokar_round_btn_macro_{r_idx+1}")
+        sub_cmd_guid = deterministic_guid(f"rupokar_round_btn_subcmd_{r_idx+1}")
+
+        # Macro that changes workspace on CT AND switches Resolve page!
+        macro_def = {
+            "$type": "Loupedeck.Service.ApplicationProfileMacroCommand, LoupedeckService",
+            "isCommand": True,
+            "name": macro_guid,
+            "displayName": ws_title,
+            "description": f"Switch Loupedeck CT to {ws_title} and switch DaVinci Resolve page",
+            "groupName": "Navigation",
+            "superGroupName": "@macro",
+            "supportedOs": "All",
+            "supportedModes": ["Main"],
+            "showAsSingleAction": False,
+            "actionEditorCommands": [
+                {
+                    "$type": "Loupedeck.Service.MacroActionEditorCommand, LoupedeckService",
+                    "name": sub_cmd_guid,
+                    "templateName": "$@Generic___@KeyboardKey",
+                    "actionParameters": {
+                        "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                        "keyboardKey": page_shortcut,
+                    },
+                }
+            ],
+            "isMultiState": False,
+            "actions": [
+                sub_cmd_guid,
+                f"$@Generic___@ChangeWorkspace___Main|{ws_guid}",
+            ],
+        }
+        macro_commands.append(macro_def)
+
+        # Set round button action
+        round_act = f"$@Generic___@Macro___{macro_guid}"
+        round_controls.append({
+            "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+            "pressAction": round_act,
+            "fnPressAction": None,
+        })
+
+        # Copy nav icon for this round button macro
+        if r_idx < len(nav_manifest_items):
+            nav_item = nav_manifest_items[r_idx]
+            svg_name = Path(nav_item["filename"]).name
+            png_name = svg_name.replace(".svg", ".png")
+            src_png = PNG_DIR / nav_item["type"] / png_name
+            if src_png.exists():
+                shutil.copy(src_png, ACTION_IMAGES_DIR / f"{round_act}.png")
+                shutil.copy(src_png, ACTION_IMAGES_DIR / f"$@generic___@Macro___{macro_guid}.png")
 
     round_page = {
         "$type": "Loupedeck.Service.ProfileLayoutButtonPage, LoupedeckService",
         "name": deterministic_guid("rupokar_round_page"),
-        "displayName": "Navigation Pages (1-8)",
+        "displayName": "Workspace Navigation (1-8)",
         "description": None,
         "controls": round_controls,
         "dynamicPageName": None,
@@ -437,7 +470,7 @@ def main():
             "roundPage": round_page,
             "squarePage": square_page,
         },
-        "macroCommands": [],
+        "macroCommands": macro_commands,
         "macroAdjustments": macro_adjustments,
         "profileCommands": [],
         "profileAdjustments": [],
@@ -453,9 +486,11 @@ def main():
 
     print(f"✅ Successfully wrote ProfileInfo.json ({out_file.stat().st_size} bytes)")
     print(f"✅ Workspaces: {len(workspaces)}")
+    print(f"✅ Macro commands (Round 1-8): {len(macro_commands)}")
     print(f"✅ Touch pages: {len(touch_pages)}")
     print(f"✅ Encoder pages: {len(encoder_pages)}")
     print(f"✅ Profile actions: {len(profile_actions)}")
+    print(f"✅ ActionImages count: {len(list(ACTION_IMAGES_DIR.glob('*.png')))}")
 
 
 if __name__ == "__main__":

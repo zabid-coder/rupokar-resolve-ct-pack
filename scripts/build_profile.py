@@ -188,9 +188,12 @@ def main():
         # embed all 168 raster icons into ActionIcons/
         for item in manifest:
             svg_filename = Path(item["filename"]).name
-            png_path = PNG_DIR / item["type"] / svg_filename.replace(".svg", ".png")
+            png_name = svg_filename.replace(".svg", ".png")
+            touch_png = PNG_DIR / "touch" / png_name
+            default_png = PNG_DIR / item["type"] / png_name
+            png_path = touch_png if touch_png.exists() else default_png
             if png_path.exists():
-                z.write(png_path, f"ActionIcons/{png_path.name}")
+                z.write(png_path, f"ActionIcons/{png_name}")
 
     print(f"Built Loupedeck CT profile at: {LP5_PATH} ({len(workspaces)} workspaces, {len(profile_actions)} actions)")
 

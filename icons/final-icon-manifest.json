@@ -100,7 +100,7 @@
     "availability": "Both editions",
     "source_time": "00:00:34–00:01:05",
     "accent": "#38BDF8",
-    "glyph": "quickexport",
+    "glyph": "quickexport_touch",
     "reference": "reference-png/008.png"
   },
   {
@@ -1361,7 +1361,7 @@
     "availability": "Both editions",
     "source_time": "00:14:15–00:14:23",
     "accent": "#94A3B8",
-    "glyph": "folder",
+    "glyph": "mediapool_panel",
     "reference": "reference-png/105.png"
   },
   {
@@ -1387,7 +1387,7 @@
     "availability": "Both editions",
     "source_time": "00:14:28–00:14:32",
     "accent": "#94A3B8",
-    "glyph": "inspector",
+    "glyph": "inspector_panel",
     "reference": "reference-png/107.png"
   },
   {
@@ -1400,7 +1400,7 @@
     "availability": "Both editions",
     "source_time": "00:14:32–00:14:34",
     "accent": "#94A3B8",
-    "glyph": "mixer",
+    "glyph": "mixer_panel",
     "reference": "reference-png/108.png"
   },
   {
@@ -1413,7 +1413,7 @@
     "availability": "Both editions",
     "source_time": "00:14:34–00:14:38",
     "accent": "#94A3B8",
-    "glyph": "powerbins",
+    "glyph": "powerbins_panel",
     "reference": "reference-png/109.png"
   },
   {
@@ -1426,7 +1426,7 @@
     "availability": "Both editions",
     "source_time": "00:14:38–00:14:42",
     "accent": "#94A3B8",
-    "glyph": "metadata",
+    "glyph": "metadata_panel",
     "reference": "reference-png/110.png"
   },
   {
@@ -1439,7 +1439,7 @@
     "availability": "Both editions",
     "source_time": "00:14:42–00:14:47",
     "accent": "#94A3B8",
-    "glyph": "list",
+    "glyph": "index_panel",
     "reference": "reference-png/111.png"
   },
   {
@@ -1478,7 +1478,7 @@
     "availability": "Both editions",
     "source_time": "00:17:47–00:17:55",
     "accent": "#94A3B8",
-    "glyph": "bypass",
+    "glyph": "bypass_panel",
     "reference": "reference-png/114.png"
   },
   {
@@ -2102,7 +2102,7 @@
     "availability": "Studio only",
     "source_time": "00:20:13–00:20:21",
     "accent": "#EC4899",
-    "glyph": "thumbnail",
+    "glyph": "thumbnail_touch",
     "reference": "reference-png/162.png"
   },
   {
@@ -2115,7 +2115,7 @@
     "availability": "Studio only",
     "source_time": "00:20:21–00:20:25",
     "accent": "#EC4899",
-    "glyph": "exportfolder",
+    "glyph": "exportfolder_touch",
     "reference": "reference-png/163.png"
   },
   {
@@ -2167,7 +2167,7 @@
     "availability": "Free edition",
     "source_time": "00:20:35–00:20:43",
     "accent": "#EC4899",
-    "glyph": "free",
+    "glyph": "freedeliver_touch",
     "reference": "reference-png/167.png"
   },
   {
@@ -2180,7 +2180,7 @@
     "availability": "Both editions",
     "source_time": "00:20:47–00:20:59",
     "accent": "#EC4899",
-    "glyph": "quickexport",
+    "glyph": "quickexport_touch",
     "reference": "reference-png/168.png"
   }
 ]

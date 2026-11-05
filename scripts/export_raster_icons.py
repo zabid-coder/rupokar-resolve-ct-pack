@@ -116,6 +116,15 @@ def main():
         export_svg_to_png(svg_file, target_png, widths[item["type"]])
         exported_count += 1
 
+    # Also ensure all touch SVGs (including touch variants for Workspace 8 & panels) are exported
+    touch_svg_dir = SVG_ROOT / "touch"
+    touch_png_dir = PNG_ROOT / "touch"
+    if touch_svg_dir.exists():
+        for svg_file in touch_svg_dir.glob("*.svg"):
+            target_png = touch_png_dir / svg_file.name.replace(".svg", ".png")
+            export_svg_to_png(svg_file, target_png, 256)
+            exported_count += 1
+
     print(f"Raster export complete: {exported_count} PNGs exported to {PNG_ROOT}")
 
 

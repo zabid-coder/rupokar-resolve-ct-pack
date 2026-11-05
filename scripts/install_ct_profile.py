@@ -174,25 +174,7 @@ def main():
 
     ACTION_IMAGES_DIR.mkdir(parents=True, exist_ok=True)
 
-    # 1. Build profileActions and copy PNGs with exact action naming
-    profile_actions = []
-    action_by_id = {}
-    manifest_by_id = {m["id"]: m for m in manifest}
-
-    for item in manifest:
-        action_def, action_name = make_profile_action(item)
-        profile_actions.append(action_def)
-        action_by_id[item["id"]] = action_name
-
-        svg_name = Path(item["filename"]).name
-        png_name = svg_name.replace(".svg", ".png")
-        src_png = PNG_DIR / item["type"] / png_name
-        if src_png.exists():
-            dst_png = ACTION_IMAGES_DIR / f"{action_name}.png"
-            shutil.copy(src_png, dst_png)
-
-    # 2. Build 8 Workspaces with dedicated touch actions (zero empty holes!)
-    # Workspace definitions: (title, touch_ids, dial_section, page_shortcut)
+    # 1. Workspace definitions: (title, touch_ids, dial_section, page_shortcut)
     ws_touch_mappings = [
         # WS 1: Media & Project (Page 1: 12 Media items, Page 2: 12 Break Timer items)
         (
@@ -316,6 +298,42 @@ def main():
             "Shift+Key9___132105___Shift+9___"
         ),
     ]
+
+    # Collect all IDs assigned to touch pages across all workspaces
+    touch_item_ids = set()
+    for ws_title, pages_ids, dial_sec, page_shortcut in ws_touch_mappings:
+        for page_ids in pages_ids:
+            for item_id in page_ids:
+                touch_item_ids.add(item_id)
+
+    # 2. Build profileActions and copy PNGs with exact action naming
+    profile_actions = []
+    action_by_id = {}
+    manifest_by_id = {m["id"]: m for m in manifest}
+
+    for item in manifest:
+        action_def, action_name = make_profile_action(item)
+        profile_actions.append(action_def)
+        action_by_id[item["id"]] = action_name
+
+        svg_name = Path(item["filename"]).name
+        png_name = svg_name.replace(".svg", ".png")
+        touch_png = PNG_DIR / "touch" / png_name
+        default_png = PNG_DIR / item["type"] / png_name
+
+        # If action is assigned to a touch screen in any workspace, prioritize 256x256 square touch PNG!
+        if item["id"] in touch_item_ids and touch_png.exists():
+            src_png = touch_png
+        elif default_png.exists():
+            src_png = default_png
+        elif touch_png.exists():
+            src_png = touch_png
+        else:
+            src_png = None
+
+        if src_png and src_png.exists():
+            dst_png = ACTION_IMAGES_DIR / f"{action_name}.png"
+            shutil.copy(src_png, dst_png)
 
     workspaces = []
     touch_pages = []

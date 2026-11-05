@@ -341,37 +341,58 @@ def asset_type(item: dict[str, str]) -> str:
 
 
 def svg_touch(item: dict[str, str], color: str, token: str) -> str:
+    """Touch button: 256×256. Dark card, accent bar top, glyph in bounded area, label bottom."""
     label = lines(item["function"], 14)
-    font_size = 17 if any(len(w) > 10 for w in item["function"].split()) else 18
-    line_spacing = 21
-    y_start = 202 if len(label) > 1 else 214
+    n_lines = len(label)
+    # Font sizing: smaller if any word is very long
+    max_word = max((len(w) for w in item["function"].split()), default=0)
+    font_size = 15 if max_word > 11 else (16 if n_lines > 1 else 18)
+    # Label area: 42px tall at bottom (y=210 to y=252), separator at y=182
+    # Text baseline: 1 line → y=232; 2 lines → y=218 and y=238
+    if n_lines == 1:
+        y_positions = [233]
+    else:
+        y_positions = [219, 239]
     text = "".join(
-        f'<text x="128" y="{y_start + line * line_spacing}" text-anchor="middle" fill="#F5F7FC" font-family="Arial, Helvetica, sans-serif" font-size="{font_size}" font-weight="700">{html.escape(val)}</text>'
-        for line, val in enumerate(label)
+        f'<text x="128" y="{y}" text-anchor="middle" dominant-baseline="auto" '
+        f'fill="#F5F7FC" font-family="Arial,Helvetica,sans-serif" '
+        f'font-size="{font_size}" font-weight="700" '
+        f'textLength="{min(len(val)*font_size*0.6, 220):.0f}" lengthAdjust="spacingAndGlyphs">'
+        f'{html.escape(val)}</text>'
+        for y, val in zip(y_positions, label)
     )
     return (
         f'<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">'
+        f'<defs><clipPath id="tc"><rect x="18" y="18" width="220" height="160"/></clipPath></defs>'
         f'<rect width="256" height="256" rx="22" fill="#15181E"/>'
         f'<rect x="3" y="3" width="250" height="250" rx="19" fill="none" stroke="#364055" stroke-width="3"/>'
-        f'<rect x="18" y="16" width="220" height="5" rx="2.5" fill="{color}"/>'
-        f'<g transform="translate(22 15)">{glyph(token, color)}</g>'
-        f'<path d="M31 180h194" stroke="#303A4E" stroke-width="2"/>{text}</svg>'
+        f'<rect x="18" y="14" width="220" height="5" rx="2.5" fill="{color}"/>'
+        f'<svg x="22" y="20" width="212" height="158" viewBox="0 0 212 212" '
+        f'preserveAspectRatio="xMidYMid meet">{glyph(token, color)}</svg>'
+        f'<path d="M28 182h200" stroke="#303A4E" stroke-width="1.5"/>'
+        f'{text}'
+        f'</svg>'
     )
 
 
 def svg_dial(item: dict[str, str], color: str, token: str) -> str:
-    label = lines(item["function"], 12)
-    max_len = max(len(w) for w in item["function"].split()) if item["function"] else 0
-    font_size = 11 if max_len > 12 else (12 if len(label) > 1 else 13)
-    
-    if len(label) == 1:
-        text_y_offsets = [122]
+    """Dial/Turn: 120×180. Compact card, glyph top 60%, label mid, TURN/PRESS badge bottom."""
+    label = lines(item["function"], 11)
+    n_lines = len(label)
+    max_word = max((len(w) for w in item["function"].split()), default=0)
+    font_size = 10 if max_word > 10 else (11 if n_lines > 1 else 12)
+    # Glyph area: bounded nested SVG x=8,y=14, width=104, height=92
+    # Label: single → y=124; two lines → y=116, y=130
+    if n_lines == 1:
+        y_positions = [125]
     else:
-        text_y_offsets = [114, 130]
-
+        y_positions = [116, 130]
     line_text = "".join(
-        f'<text x="60" y="{text_y_offsets[line]}" text-anchor="middle" fill="#F5F7FC" font-family="Arial, Helvetica, sans-serif" font-size="{font_size}" font-weight="700">{html.escape(val)}</text>'
-        for line, val in enumerate(label)
+        f'<text x="60" y="{y}" text-anchor="middle" fill="#F5F7FC" '
+        f'font-family="Arial,Helvetica,sans-serif" font-size="{font_size}" font-weight="700" '
+        f'textLength="{min(len(val)*font_size*0.65, 104):.0f}" lengthAdjust="spacingAndGlyphs">'
+        f'{html.escape(val)}</text>'
+        for y, val in zip(y_positions, label)
     )
     control = "TURN" if "turn" in item["control"].lower() else "PRESS"
     return (
@@ -379,31 +400,51 @@ def svg_dial(item: dict[str, str], color: str, token: str) -> str:
         f'<rect width="120" height="180" rx="14" fill="#15181E"/>'
         f'<rect x="2" y="2" width="116" height="176" rx="12" fill="none" stroke="#364055" stroke-width="2"/>'
         f'<rect x="16" y="8" width="88" height="4" rx="2" fill="{color}"/>'
-        f'<g transform="translate(5 4) scale(.52)">{glyph(token, color)}</g>'
+        f'<svg x="8" y="16" width="104" height="90" viewBox="0 0 212 212" '
+        f'preserveAspectRatio="xMidYMid meet">{glyph(token, color)}</svg>'
+        f'<line x1="10" y1="110" x2="110" y2="110" stroke="#303A4E" stroke-width="1"/>'
         f'{line_text}'
-        f'<rect x="18" y="148" width="84" height="20" rx="6" fill="#0D1117" stroke="{color}" stroke-width="1.5"/>'
-        f'<text x="60" y="162" text-anchor="middle" fill="{color}" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700" letter-spacing="1.2">{control}</text>'
+        f'<rect x="12" y="146" width="96" height="22" rx="7" fill="#0D1117" stroke="{color}" stroke-width="1.5"/>'
+        f'<text x="60" y="161" text-anchor="middle" fill="{color}" '
+        f'font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="700" letter-spacing="1.5">'
+        f'{control}</text>'
         f'</svg>'
     )
 
 
 def svg_physical(item: dict[str, str], color: str, token: str) -> str:
-    label = lines(item["function"], 20)
+    """Physical key: 320×160. Left glyph panel, right label panel."""
+    label = lines(item["function"], 18)
+    n_lines = len(label)
     control = item["control"].upper().replace("ROUND BUTTON", "ROUND")
-    font_size = 23 if any(len(w) > 12 for w in item["function"].split()) else 25
-    y_start = 68 if len(label) > 1 else 82
+    max_word = max((len(w) for w in item["function"].split()), default=0)
+    font_size = 20 if max_word > 13 else (22 if n_lines > 1 else 24)
+    # Right panel text area: x=120 to x=306 = 186px wide
+    # y_start: 2 lines → 68; 1 line → 80
+    y_start = 68 if n_lines > 1 else 80
     line_spacing = 28
     label_text = "".join(
-        f'<text x="126" y="{y_start + line * line_spacing}" fill="#F5F7FC" font-family="Arial, Helvetica, sans-serif" font-size="{font_size}" font-weight="700">{html.escape(val)}</text>'
-        for line, val in enumerate(label)
+        f'<text x="213" y="{y_start + i * line_spacing}" text-anchor="middle" '
+        f'fill="#F5F7FC" font-family="Arial,Helvetica,sans-serif" '
+        f'font-size="{font_size}" font-weight="700" '
+        f'textLength="{min(len(val)*font_size*0.6, 180):.0f}" lengthAdjust="spacingAndGlyphs">'
+        f'{html.escape(val)}</text>'
+        for i, val in enumerate(label)
     )
+    # Divider between glyph and text panels
     return (
         f'<svg xmlns="http://www.w3.org/2000/svg" width="320" height="160" viewBox="0 0 320 160">'
         f'<rect width="320" height="160" rx="17" fill="#15181E"/>'
         f'<rect x="3" y="3" width="314" height="154" rx="14" fill="none" stroke="#364055" stroke-width="3"/>'
-        f'<rect x="17" y="17" width="91" height="126" rx="14" fill="#11151C" stroke="{color}" stroke-width="3"/>'
-        f'<g transform="translate(7 2) scale(.52)">{glyph(token, color)}</g>{label_text}'
-        f'<text x="126" y="136" fill="{color}" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" letter-spacing="1.3">{html.escape(control[:27])}</text></svg>'
+        f'<rect x="17" y="17" width="91" height="126" rx="12" fill="#11151C" stroke="{color}" stroke-width="2"/>'
+        f'<svg x="21" y="21" width="83" height="118" viewBox="0 0 212 212" '
+        f'preserveAspectRatio="xMidYMid meet">{glyph(token, color)}</svg>'
+        f'<line x1="118" y1="20" x2="118" y2="140" stroke="#2A3850" stroke-width="1"/>'
+        f'{label_text}'
+        f'<text x="213" y="140" text-anchor="middle" fill="{color}" '
+        f'font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="700" letter-spacing="1.4">'
+        f'{html.escape(control[:30])}</text>'
+        f'</svg>'
     )
 
 

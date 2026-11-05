@@ -8,26 +8,17 @@ are wired with ChangeWorkspace and Resolve shortcuts, and 168 actions are define
 import json
 from pathlib import Path
 import pytest
+from scripts.install_ct_profile import PROFILE_DIR, main as install_main
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 MANIFEST_PATH = REPO_ROOT / "icons" / "final-icon-manifest.json"
-PROFILE_DIR = (
-    Path.home()
-    / "Library"
-    / "Application Support"
-    / "Logi"
-    / "LogiPluginService"
-    / "Applications"
-    / "Loupedeck20"
-    / "com.blackmagic-design.davinciresolve"
-    / "Profiles"
-    / "D94DAE0ACAAC4F4DA61287C9CB088BC8"
-)
 PROFILE_INFO_PATH = PROFILE_DIR / "ProfileInfo.json"
 
 
 @pytest.fixture(scope="module")
 def profile_data():
+    if not PROFILE_INFO_PATH.exists():
+        install_main()
     assert PROFILE_INFO_PATH.exists(), f"ProfileInfo.json not found at {PROFILE_INFO_PATH}"
     with open(PROFILE_INFO_PATH, "r", encoding="utf-8") as f:
         return json.load(f)

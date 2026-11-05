@@ -4,6 +4,7 @@ on:
   push:
     tags:
       - 'v*'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -26,10 +27,14 @@ jobs:
           python -m pip install --upgrade pip
           pip install pytest PyQt6 cairosvg Pillow
 
+      - name: Build & Install pack
+        run: |
+          python3 install.py
+
       - name: Run verification test suite
         run: |
           PYTHONPATH=. pytest tests/ -v
-          python scripts/verify_pack.py
+          python3 scripts/verify_pack.py
 
       - name: Create Release Zip
         run: |

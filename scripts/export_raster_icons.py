@@ -35,7 +35,7 @@ try:
     import cairosvg
 
     _CAIROSVG_AVAILABLE = True
-except ImportError:
+except (ImportError, OSError):
     _CAIROSVG_AVAILABLE = False
 
 

@@ -1,0 +1,64 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: Build & Release Package
+    runs-on: macos-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pytest PyQt6 cairosvg Pillow
+
+      - name: Run verification test suite
+        run: |
+          PYTHONPATH=. pytest tests/ -v
+          python scripts/verify_pack.py
+
+      - name: Create Release Zip
+        run: |
+          zip -r Rupokar-Resolve-CT-Pack-${{ github.ref_name }}.zip \
+            profile/Rupokar-Resolve-CT.lp5 \
+            keyboard-preset/Rupokar_Resolve_Keys.txt \
+            install.sh \
+            install.bat \
+            install.command \
+            install.py \
+            README.md \
+            LICENSE 2>/dev/null || \
+          zip -r Rupokar-Resolve-CT-Pack-${{ github.ref_name }}.zip \
+            profile/Rupokar-Resolve-CT.lp5 \
+            keyboard-preset/Rupokar_Resolve_Keys.txt \
+            install.sh \
+            install.bat \
+            install.command \
+            install.py \
+            README.md
+
+      - name: Publish GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            profile/Rupokar-Resolve-CT.lp5
+            keyboard-preset/Rupokar_Resolve_Keys.txt
+            Rupokar-Resolve-CT-Pack-${{ github.ref_name }}.zip
+          name: "Rupokar DaVinci Resolve CT Pack ${{ github.ref_name }}"
+          generate_release_notes: true
+          draft: false
+          prerelease: false

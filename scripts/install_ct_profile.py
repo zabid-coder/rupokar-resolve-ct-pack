@@ -12,6 +12,7 @@ import json
 import os
 import shutil
 import subprocess
+import sys
 import time
 import uuid
 from datetime import datetime, timezone
@@ -23,16 +24,115 @@ PNG_DIR = REPO_ROOT / "icons" / "export-png"
 SHORTCUTS_TXT = REPO_ROOT / "keyboard-preset" / "Rupokar_Resolve_Keys.txt"
 
 TARGET_PROFILE_ID = "D94DAE0ACAAC4F4DA61287C9CB088BC8"
-RESOLVE_APP_DIR = (
-    Path.home()
-    / "Library"
-    / "Application Support"
-    / "Logi"
-    / "LogiPluginService"
-    / "Applications"
-    / "Loupedeck20"
-    / "com.blackmagic-design.davinciresolve"
-)
+
+
+def get_loupedeck_resolve_dir() -> Path:
+    """Get Loupedeck DaVinci Resolve application profile directory across macOS and Windows."""
+    if sys.platform == "win32":
+        local_app_data = os.environ.get("LOCALAPPDATA")
+        app_data = os.environ.get("APPDATA")
+        candidates = []
+        if local_app_data:
+            candidates.append(
+                Path(local_app_data)
+                / "Logi"
+                / "LogiPluginService"
+                / "Applications"
+                / "Loupedeck20"
+                / "com.blackmagic-design.davinciresolve"
+            )
+            candidates.append(
+                Path(local_app_data)
+                / "Loupedeck"
+                / "Config"
+                / "Applications"
+                / "Loupedeck20"
+                / "com.blackmagic-design.davinciresolve"
+            )
+        if app_data:
+            candidates.append(
+                Path(app_data)
+                / "Loupedeck"
+                / "Config"
+                / "Applications"
+                / "Loupedeck20"
+                / "com.blackmagic-design.davinciresolve"
+            )
+        for c in candidates:
+            if c.exists():
+                return c
+        return candidates[0] if candidates else (
+            Path.home()
+            / "AppData"
+            / "Local"
+            / "Logi"
+            / "LogiPluginService"
+            / "Applications"
+            / "Loupedeck20"
+            / "com.blackmagic-design.davinciresolve"
+        )
+    else:
+        # macOS
+        logi_dir = (
+            Path.home()
+            / "Library"
+            / "Application Support"
+            / "Logi"
+            / "LogiPluginService"
+            / "Applications"
+            / "Loupedeck20"
+            / "com.blackmagic-design.davinciresolve"
+        )
+        if logi_dir.exists():
+            return logi_dir
+        loupedeck_dir = (
+            Path.home()
+            / "Library"
+            / "Application Support"
+            / "Loupedeck"
+            / "Config"
+            / "Applications"
+            / "Loupedeck20"
+            / "com.blackmagic-design.davinciresolve"
+        )
+        if loupedeck_dir.exists():
+            return loupedeck_dir
+        return logi_dir
+
+
+def get_davinci_resolve_shortcuts_dir() -> Path:
+    """Get DaVinci Resolve custom keyboard shortcuts directory across macOS and Windows."""
+    if sys.platform == "win32":
+        app_data = os.environ.get("APPDATA")
+        if app_data:
+            return (
+                Path(app_data)
+                / "Blackmagic Design"
+                / "DaVinci Resolve"
+                / "Support"
+                / "Keyboard Shortcuts"
+            )
+        return (
+            Path.home()
+            / "AppData"
+            / "Roaming"
+            / "Blackmagic Design"
+            / "DaVinci Resolve"
+            / "Support"
+            / "Keyboard Shortcuts"
+        )
+    else:
+        return (
+            Path.home()
+            / "Library"
+            / "Application Support"
+            / "Blackmagic Design"
+            / "DaVinci Resolve"
+            / "Keyboard Shortcuts"
+        )
+
+
+RESOLVE_APP_DIR = get_loupedeck_resolve_dir()
 PROFILE_DIR = RESOLVE_APP_DIR / "Profiles" / TARGET_PROFILE_ID
 ACTION_IMAGES_DIR = PROFILE_DIR / "ActionImages"
 
@@ -165,14 +265,24 @@ def make_profile_action(item: dict) -> tuple[dict, str]:
 
 def main():
     print(f"Target profile directory: {PROFILE_DIR}")
-    if not PROFILE_DIR.exists():
-        raise FileNotFoundError(f"Profile directory {PROFILE_DIR} does not exist!")
+    PROFILE_DIR.mkdir(parents=True, exist_ok=True)
+    ACTION_IMAGES_DIR.mkdir(parents=True, exist_ok=True)
+
+    # Auto-copy DaVinci Resolve keyboard shortcut preset
+    if SHORTCUTS_TXT.exists():
+        try:
+            shortcuts_dir = get_davinci_resolve_shortcuts_dir()
+            shortcuts_dir.mkdir(parents=True, exist_ok=True)
+            dest_shortcut = shortcuts_dir / SHORTCUTS_TXT.name
+            shutil.copy(SHORTCUTS_TXT, dest_shortcut)
+            print(f"✅ Auto-installed DaVinci Resolve keyboard preset:")
+            print(f"   -> {dest_shortcut}")
+        except Exception as err:
+            print(f"ℹ️ Note on keyboard preset auto-copy: {err}")
 
     with open(MANIFEST_PATH, "r", encoding="utf-8") as f:
         manifest = json.load(f)
     print(f"Loaded {len(manifest)} manifest items.")
-
-    ACTION_IMAGES_DIR.mkdir(parents=True, exist_ok=True)
 
     # 1. Workspace definitions: (title, touch_ids, dial_section, page_shortcut)
     ws_touch_mappings = [

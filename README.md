@@ -4,7 +4,7 @@
 [![Loupedeck Hardware](https://img.shields.io/badge/Loupedeck-CT%20(Loupedeck50)-5B4EE4?logo=logitech)](https://loupedeck.com/en/products/loupedeck-ct)
 [![Platform](https://img.shields.io/badge/Platform-macOS%20(Apple%20Silicon%20%26%20Intel)-grey?logo=apple)](https://apple.com)
 [![Actions](https://img.shields.io/badge/Audited%20Actions-168%20Total-success)](#hardware-layout--8-workspaces)
-[![Tests](https://img.shields.io/badge/Tests-22%20Passed-brightgreen)](tests/)
+[![Tests](https://img.shields.io/badge/Tests-28%20Passed-brightgreen)](tests/)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)](https://python.org)
 [![.NET](https://img.shields.io/badge/.NET-8.0-512BD4?logo=dotnet)](https://dotnet.microsoft.com/)
 
@@ -149,7 +149,23 @@ Every icon is built from pure SVG vectors without pixel stretching or generic fa
 
 ## Installation & Setup Guide
 
-### 1. Import Loupedeck Profile (`.lp5`)
+### 🚀 Option A: 1-Click Automated Installer (Recommended for macOS)
+
+No manual importing or folder copying required!
+
+1. Double-click **`install.command`** in Finder (or run `bash install.sh` in Terminal).
+2. The installer will:
+   - Gracefully close Loupedeck to prevent file conflicts.
+   - Build all 168 crisp, bold high-DPI vector icons.
+   - Inject the complete **DaVinci Resolve Rupokar** profile into your active Loupedeck CT configuration.
+   - Configure all 8 Workspaces (zero empty buttons across all pages).
+   - Wire Round Buttons 1–8 navigation macros with DaVinci Resolve page switching (`Shift+2` to `Shift+9`).
+   - Automatically set `DaVinci Resolve Rupokar` as your default active profile.
+   - Relaunch Loupedeck ready to edit!
+
+---
+
+### 📦 Option B: Manual Import Loupedeck Profile (`.lp5`)
 1. Open the **Loupedeck** software (v6.4 or later).
 2. Ensure your **Loupedeck CT** is connected via USB-C.
 3. Click the profile dropdown menu in the upper header -> select **Import Profile...**

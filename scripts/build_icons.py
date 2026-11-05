@@ -25,17 +25,17 @@ MANIFEST_PATH = ICONS_DIR / "final-icon-manifest.json"
 BOARD_PATH = ICONS_DIR / "Final-Icon-Board.html"
 
 PALETTE = {
-    "Navigation": "#A88CFF",
-    "Media / Project": "#B79AFF",
-    "Media / Break Timer": "#4EE0E2",
-    "Edit 1": "#64AAFF",
-    "Edit 2": "#72B6FF",
-    "Edit 3": "#8CB5FF",
-    "Physical keys & Fn layer": "#A38FFF",
-    "Color": "#46D9C4",
-    "Fairlight": "#80E06A",
-    "Deliver / Render Queue": "#C9A0FF",
-    "Quick Export": "#C9A0FF",
+    "Navigation": "#38BDF8",           # Electric Sky Blue / Cyan
+    "Media / Project": "#A855F7",      # Vibrant Purple
+    "Media / Break Timer": "#2DD4BF",  # Bright Teal / Aqua
+    "Edit 1": "#3B82F6",               # Vivid Royal Blue
+    "Edit 2": "#60A5FA",               # Crisp Electric Blue
+    "Edit 3": "#818CF8",               # Indigo / Lavender Blue
+    "Physical keys & Fn layer": "#94A3B8", # Sleek Cool Silver
+    "Color": "#F59E0B",                # Luminous Golden Amber
+    "Fairlight": "#10B981",            # Vivid Emerald Green
+    "Deliver / Render Queue": "#EC4899", # Bright Magenta / Hot Pink
+    "Quick Export": "#EC4899",         # Bright Magenta
 }
 
 COLOR_ACCENTS = {
@@ -169,7 +169,7 @@ def glyph_name(item: dict[str, str]) -> str:
 
 
 def glyph(token: str, color: str) -> str:
-    stroke_attrs = f'stroke="{color}" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"'
+    stroke_attrs = f'stroke="{color}" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"'
     s = f'{stroke_attrs} fill="none"'
     fill = f'fill="{color}"'
     shapes = {
@@ -341,92 +341,89 @@ def asset_type(item: dict[str, str]) -> str:
 
 
 def svg_touch(item: dict[str, str], color: str, token: str) -> str:
-    """Touch button: 256×256. Dark card, accent bar top, glyph centered in upper zone, label bottom."""
-    label = lines(item["function"], 14)
+    """Touch button: 256×256. Deep OLED dark canvas, vibrant top accent pill, large centered bold glyph, punchy white label."""
+    label = lines(item["function"], 13)
     n_lines = len(label)
     max_word = max((len(w) for w in item["function"].split()), default=0)
-    font_size = 15 if max_word > 11 else (16 if n_lines > 1 else 19)
+    font_size = 19 if max_word > 10 else (21 if n_lines > 1 else 25)
     if n_lines == 1:
-        y_positions = [218]
+        y_positions = [224]
     else:
-        y_positions = [206, 228]
+        y_positions = [206, 230]
     text = "".join(
-        f'<text x="128" y="{y}" text-anchor="middle" fill="#F5F7FC" '
-        f'font-family="Arial, Helvetica, sans-serif" font-size="{font_size}" font-weight="700">'
+        f'<text x="128" y="{y}" text-anchor="middle" fill="#FFFFFF" '
+        f'font-family="-apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="{font_size}" font-weight="900">'
         f'{html.escape(val)}</text>'
         for y, val in zip(y_positions, label)
     )
     return (
         f'<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">'
-        f'<rect width="256" height="256" rx="22" fill="#15181E"/>'
-        f'<rect x="3" y="3" width="250" height="250" rx="19" fill="none" stroke="#364055" stroke-width="3"/>'
-        f'<rect x="20" y="16" width="216" height="5" rx="2.5" fill="{color}"/>'
-        f'<g transform="translate(52, 24) scale(0.72)">{glyph(token, color)}</g>'
-        f'<line x1="26" y1="176" x2="230" y2="176" stroke="#2B3648" stroke-width="1.5"/>'
+        f'<rect width="256" height="256" rx="24" fill="#0C0F17"/>'
+        f'<rect x="2" y="2" width="252" height="252" rx="22" fill="none" stroke="#222A3B" stroke-width="2.5"/>'
+        f'<rect x="36" y="10" width="184" height="7" rx="3.5" fill="{color}"/>'
+        f'<g transform="translate(31, 16) scale(0.92)">{glyph(token, color)}</g>'
         f'{text}'
         f'</svg>'
     )
 
 
 def svg_dial(item: dict[str, str], color: str, token: str) -> str:
-    """Dial/Turn: 120×180. Compact card, glyph top, label mid, TURN/PRESS badge bottom."""
-    label = lines(item["function"], 11)
+    """Dial/Turn: 120×180."""
+    label = lines(item["function"], 10)
     n_lines = len(label)
     max_word = max((len(w) for w in item["function"].split()), default=0)
-    font_size = 10 if max_word > 10 else (11 if n_lines > 1 else 12)
+    font_size = 13 if max_word > 9 else (15 if n_lines > 1 else 17)
     if n_lines == 1:
         y_positions = [124]
     else:
-        y_positions = [116, 130]
+        y_positions = [116, 132]
     line_text = "".join(
-        f'<text x="60" y="{y}" text-anchor="middle" fill="#F5F7FC" '
-        f'font-family="Arial, Helvetica, sans-serif" font-size="{font_size}" font-weight="700">'
+        f'<text x="60" y="{y}" text-anchor="middle" fill="#FFFFFF" '
+        f'font-family="-apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="{font_size}" font-weight="800">'
         f'{html.escape(val)}</text>'
         for y, val in zip(y_positions, label)
     )
     control = "TURN" if "turn" in item["control"].lower() else "PRESS"
     return (
         f'<svg xmlns="http://www.w3.org/2000/svg" width="120" height="180" viewBox="0 0 120 180">'
-        f'<rect width="120" height="180" rx="14" fill="#15181E"/>'
-        f'<rect x="2" y="2" width="116" height="176" rx="12" fill="none" stroke="#364055" stroke-width="2"/>'
-        f'<rect x="14" y="8" width="92" height="4" rx="2" fill="{color}"/>'
-        f'<g transform="translate(13, 14) scale(0.44)">{glyph(token, color)}</g>'
-        f'<line x1="12" y1="102" x2="108" y2="102" stroke="#2B3648" stroke-width="1"/>'
+        f'<rect width="120" height="180" rx="16" fill="#0C0F17"/>'
+        f'<rect x="2" y="2" width="116" height="176" rx="14" fill="none" stroke="#222A3B" stroke-width="2"/>'
+        f'<rect x="18" y="8" width="84" height="5" rx="2.5" fill="{color}"/>'
+        f'<g transform="translate(7, 12) scale(0.50)">{glyph(token, color)}</g>'
         f'{line_text}'
-        f'<rect x="12" y="146" width="96" height="22" rx="7" fill="#0D1117" stroke="{color}" stroke-width="1.5"/>'
-        f'<text x="60" y="161" text-anchor="middle" fill="{color}" '
-        f'font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700" letter-spacing="1.5">'
+        f'<rect x="14" y="146" width="92" height="24" rx="12" fill="#182030" stroke="{color}" stroke-width="1.5"/>'
+        f'<text x="60" y="162" text-anchor="middle" fill="{color}" '
+        f'font-family="-apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="11" font-weight="900" letter-spacing="1.5">'
         f'{control}</text>'
         f'</svg>'
     )
 
 
 def svg_physical(item: dict[str, str], color: str, token: str) -> str:
-    """Physical key: 320×160. Left glyph panel, right label panel."""
-    label = lines(item["function"], 18)
+    """Physical key: 320×160."""
+    label = lines(item["function"], 16)
     n_lines = len(label)
     control = item["control"].upper().replace("ROUND BUTTON", "ROUND")
     max_word = max((len(w) for w in item["function"].split()), default=0)
-    font_size = 18 if max_word > 13 else (20 if n_lines > 1 else 23)
+    font_size = 20 if max_word > 12 else (22 if n_lines > 1 else 25)
     y_start = 66 if n_lines > 1 else 78
     line_spacing = 26
     label_text = "".join(
         f'<text x="216" y="{y_start + i * line_spacing}" text-anchor="middle" '
-        f'fill="#F5F7FC" font-family="Arial, Helvetica, sans-serif" '
-        f'font-size="{font_size}" font-weight="700">'
+        f'fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, Arial, sans-serif" '
+        f'font-size="{font_size}" font-weight="900">'
         f'{html.escape(val)}</text>'
         for i, val in enumerate(label)
     )
     return (
         f'<svg xmlns="http://www.w3.org/2000/svg" width="320" height="160" viewBox="0 0 320 160">'
-        f'<rect width="320" height="160" rx="17" fill="#15181E"/>'
-        f'<rect x="3" y="3" width="314" height="154" rx="14" fill="none" stroke="#364055" stroke-width="3"/>'
-        f'<rect x="16" y="16" width="96" height="128" rx="12" fill="#11151C" stroke="{color}" stroke-width="2"/>'
-        f'<g transform="translate(14, 28) scale(0.48)">{glyph(token, color)}</g>'
-        f'<line x1="122" y1="18" x2="122" y2="142" stroke="#2B3648" stroke-width="1.5"/>'
+        f'<rect width="320" height="160" rx="18" fill="#0C0F17"/>'
+        f'<rect x="3" y="3" width="314" height="154" rx="15" fill="none" stroke="#222A3B" stroke-width="3"/>'
+        f'<rect x="16" y="16" width="102" height="128" rx="12" fill="#141822" stroke="{color}" stroke-width="2"/>'
+        f'<g transform="translate(14, 28) scale(0.50)">{glyph(token, color)}</g>'
         f'{label_text}'
         f'<text x="216" y="136" text-anchor="middle" fill="{color}" '
-        f'font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" letter-spacing="1.4">'
+        f'font-family="-apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="12" font-weight="900" letter-spacing="1.4">'
         f'{html.escape(control[:30])}</text>'
         f'</svg>'
     )

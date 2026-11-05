@@ -4,6 +4,7 @@
 Injects all 8 workspaces, 168 actions, icons, dials, wheel, round buttons, and physical keys
 into the user's active Loupedeck CT profile 'D94DAE0ACAAC4F4DA61287C9CB088BC8'.
 Includes round-button macro navigation to switch workspaces & DaVinci Resolve pages.
+Ensures zero empty buttons across all 8 workspaces.
 """
 
 import hashlib
@@ -22,9 +23,17 @@ PNG_DIR = REPO_ROOT / "icons" / "export-png"
 SHORTCUTS_TXT = REPO_ROOT / "keyboard-preset" / "Rupokar_Resolve_Keys.txt"
 
 TARGET_PROFILE_ID = "D94DAE0ACAAC4F4DA61287C9CB088BC8"
-PROFILE_DIR = Path(
-    f"/Users/audiovisual/Library/Application Support/Logi/LogiPluginService/Applications/Loupedeck20/com.blackmagic-design.davinciresolve/Profiles/{TARGET_PROFILE_ID}"
+RESOLVE_APP_DIR = (
+    Path.home()
+    / "Library"
+    / "Application Support"
+    / "Logi"
+    / "LogiPluginService"
+    / "Applications"
+    / "Loupedeck20"
+    / "com.blackmagic-design.davinciresolve"
 )
+PROFILE_DIR = RESOLVE_APP_DIR / "Profiles" / TARGET_PROFILE_ID
 ACTION_IMAGES_DIR = PROFILE_DIR / "ActionImages"
 
 
@@ -168,6 +177,7 @@ def main():
     # 1. Build profileActions and copy PNGs with exact action naming
     profile_actions = []
     action_by_id = {}
+    manifest_by_id = {m["id"]: m for m in manifest}
 
     for item in manifest:
         action_def, action_name = make_profile_action(item)
@@ -181,16 +191,130 @@ def main():
             dst_png = ACTION_IMAGES_DIR / f"{action_name}.png"
             shutil.copy(src_png, dst_png)
 
-    # 2. Build 8 Workspaces
-    WORKSPACE_DEFS = [
-        ("Workspace 1 — Media & Project", ["Navigation", "Media / Project", "Media / Break Timer"], "Shift+Key2___132105___Shift+2___"),
-        ("Workspace 2 — Edit 1 (Timeline & Cuts)", ["Edit 1"], "Shift+Key4___132105___Shift+4___"),
-        ("Workspace 3 — Edit 2 (Sync & Colors)", ["Edit 2"], "Shift+Key4___132105___Shift+4___"),
-        ("Workspace 4 — Edit 3 (Fine Tuning)", ["Edit 3"], "Shift+Key4___132105___Shift+4___"),
-        ("Workspace 5 — Color (Nodes & Wheels)", ["Color"], "Shift+Key6___132105___Shift+6___"),
-        ("Workspace 6 — Fairlight (Audio & Fades)", ["Fairlight"], "Shift+Key7___132105___Shift+7___"),
-        ("Workspace 7 — Deliver & Render Queue", ["Deliver / Render Queue"], "Shift+Key8___132105___Shift+8___"),
-        ("Workspace 8 — Quick Export", ["Quick Export", "Physical keys & Fn layer"], "Shift+Key9___132105___Shift+9___"),
+    # 2. Build 8 Workspaces with dedicated touch actions (zero empty holes!)
+    # Workspace definitions: (title, touch_ids, dial_section, page_shortcut)
+    ws_touch_mappings = [
+        # WS 1: Media & Project (Page 1: 12 Media items, Page 2: 12 Break Timer items)
+        (
+            "Workspace 1 — Media & Project",
+            [
+                # Page 1: Media pool & project
+                ["rupokar.final.009", "rupokar.final.010", "rupokar.final.011", "rupokar.final.012",
+                 "rupokar.final.013", "rupokar.final.014", "rupokar.final.015", "rupokar.final.016",
+                 "rupokar.final.017", "rupokar.final.018", "rupokar.final.019", "rupokar.final.020"],
+                # Page 2: Break Timers
+                ["rupokar.final.023", "rupokar.final.024", "rupokar.final.025", "rupokar.final.026",
+                 "rupokar.final.027", "rupokar.final.028", "rupokar.final.029", "rupokar.final.030",
+                 "rupokar.final.031", "rupokar.final.032", "rupokar.final.033", "rupokar.final.034"]
+            ],
+            "Media / Project",
+            "Shift+Key2___132105___Shift+2___"
+        ),
+        # WS 2: Edit 1 (Timeline & Cuts)
+        (
+            "Workspace 2 — Edit 1 (Timeline & Cuts)",
+            [
+                ["rupokar.final.035", "rupokar.final.036", "rupokar.final.037", "rupokar.final.038",
+                 "rupokar.final.039", "rupokar.final.040", "rupokar.final.041", "rupokar.final.042",
+                 "rupokar.final.043", "rupokar.final.044", "rupokar.final.045", "rupokar.final.046"],
+                ["rupokar.final.048", "rupokar.final.050", "rupokar.final.054", "rupokar.final.056",
+                 "rupokar.final.058", "rupokar.final.060", "rupokar.final.039", "rupokar.final.040",
+                 "rupokar.final.043", "rupokar.final.044", "rupokar.final.045", "rupokar.final.046"]
+            ],
+            "Edit 1",
+            "Shift+Key4___132105___Shift+4___"
+        ),
+        # WS 3: Edit 2 (Sync & Colors)
+        (
+            "Workspace 3 — Edit 2 (Sync & Colors)",
+            [
+                ["rupokar.final.061", "rupokar.final.062", "rupokar.final.063", "rupokar.final.064",
+                 "rupokar.final.065", "rupokar.final.066", "rupokar.final.067", "rupokar.final.068",
+                 "rupokar.final.069", "rupokar.final.070", "rupokar.final.071", "rupokar.final.072"]
+            ],
+            "Edit 2",
+            "Shift+Key4___132105___Shift+4___"
+        ),
+        # WS 4: Edit 3 (Fine Tuning)
+        (
+            "Workspace 4 — Edit 3 (Fine Tuning)",
+            [
+                ["rupokar.final.079", "rupokar.final.080", "rupokar.final.081", "rupokar.final.082",
+                 "rupokar.final.083", "rupokar.final.084", "rupokar.final.085", "rupokar.final.086",
+                 "rupokar.final.087", "rupokar.final.088", "rupokar.final.089", "rupokar.final.090"]
+            ],
+            "Edit 3",
+            "Shift+Key4___132105___Shift+4___"
+        ),
+        # WS 5: Color (Nodes & Wheels)
+        (
+            "Workspace 5 — Color (Nodes & Wheels)",
+            [
+                ["rupokar.final.115", "rupokar.final.116", "rupokar.final.117", "rupokar.final.118",
+                 "rupokar.final.119", "rupokar.final.120", "rupokar.final.121", "rupokar.final.122",
+                 "rupokar.final.123", "rupokar.final.124", "rupokar.final.125", "rupokar.final.126"]
+            ],
+            "Color",
+            "Shift+Key6___132105___Shift+6___"
+        ),
+        # WS 6: Fairlight (Audio & Fades) — Fully populated 12 tiles!
+        (
+            "Workspace 6 — Fairlight (Audio & Fades)",
+            [
+                [
+                    "rupokar.final.137",  # Batch Fade Settings
+                    "rupokar.final.138",  # Apply Batch Fades
+                    "rupokar.final.139",  # Loop
+                    "rupokar.final.140",  # Mark In
+                    "rupokar.final.141",  # Mark Out
+                    "rupokar.final.142",  # Play/Pause
+                    "rupokar.final.144",  # Track Height
+                    "rupokar.final.145",  # Waveform Zoom
+                    "rupokar.final.146",  # Reset Waveform Zoom
+                    "rupokar.final.049",  # Audio Level
+                    "rupokar.final.065",  # Normalize
+                    "rupokar.final.108",  # Mixer panel
+                ]
+            ],
+            "Fairlight",
+            "Shift+Key7___132105___Shift+7___"
+        ),
+        # WS 7: Deliver & Render Queue
+        (
+            "Workspace 7 — Deliver & Render Queue",
+            [
+                ["rupokar.final.150", "rupokar.final.151", "rupokar.final.152", "rupokar.final.153",
+                 "rupokar.final.154", "rupokar.final.155", "rupokar.final.156", "rupokar.final.157",
+                 "rupokar.final.158", "rupokar.final.159", "rupokar.final.160", "rupokar.final.161"],
+                ["rupokar.final.162", "rupokar.final.163", "rupokar.final.164", "rupokar.final.167",
+                 "rupokar.final.105", "rupokar.final.106", "rupokar.final.107", "rupokar.final.108",
+                 "rupokar.final.109", "rupokar.final.110", "rupokar.final.111", "rupokar.final.114"]
+            ],
+            "Deliver / Render Queue",
+            "Shift+Key8___132105___Shift+8___"
+        ),
+        # WS 8: Quick Export & Utilities — Fully populated 12 tiles!
+        (
+            "Workspace 8 — Quick Export",
+            [
+                [
+                    "rupokar.final.168",  # Quick Export
+                    "rupokar.final.163",  # Export Folder
+                    "rupokar.final.162",  # Thumbnail
+                    "rupokar.final.167",  # Free Deliver Controls
+                    "rupokar.final.105",  # Media Pool Panel
+                    "rupokar.final.106",  # Effects Library Panel
+                    "rupokar.final.107",  # Inspector Panel
+                    "rupokar.final.108",  # Mixer Panel
+                    "rupokar.final.109",  # Power Bins Panel
+                    "rupokar.final.110",  # Metadata Panel
+                    "rupokar.final.111",  # Index Panel
+                    "rupokar.final.114",  # Bypass All Grades
+                ]
+            ],
+            "Quick Export",
+            "Shift+Key9___132105___Shift+9___"
+        ),
     ]
 
     workspaces = []
@@ -221,7 +345,6 @@ def main():
         }
     ]
 
-    # Wheel page (Common to all workspaces)
     wheel_page_guid = deterministic_guid("rupokar_wheel_page")
     wheel_pages = [
         {
@@ -240,39 +363,28 @@ def main():
         }
     ]
 
-    for ws_idx, (ws_title, sections, page_shortcut) in enumerate(WORKSPACE_DEFS, start=1):
+    for ws_idx, (ws_title, pages_ids, dial_sec, page_shortcut) in enumerate(ws_touch_mappings, start=1):
         ws_guid = deterministic_guid(f"rupokar_ws_{ws_idx}_{ws_title}")
 
-        touch_items = [
-            m for m in manifest if m["section"] in sections and m["type"] == "touch"
-        ]
-        dial_items = [
-            m for m in manifest if m["section"] in sections and m["type"] == "dial"
-        ]
-
-        # Touch pages (12 controls each)
         ws_touch_page_guids = []
-        for page_idx in range(max(1, (len(touch_items) + 11) // 12)):
+        for page_idx, page_ids in enumerate(pages_ids):
             tp_guid = deterministic_guid(f"rupokar_touch_page_{ws_idx}_{page_idx}")
             ws_touch_page_guids.append(tp_guid)
-            page_slice = touch_items[page_idx * 12 : (page_idx + 1) * 12]
 
             controls = []
-            for c_idx in range(12):
-                if c_idx < len(page_slice):
-                    it = page_slice[c_idx]
-                    act = action_by_id[it["id"]]
-                    controls.append({
-                        "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
-                        "pressAction": act,
-                        "fnPressAction": None,
-                    })
-                else:
-                    controls.append({
-                        "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
-                        "pressAction": None,
-                        "fnPressAction": None,
-                    })
+            for item_id in page_ids[:12]:
+                act = action_by_id.get(item_id)
+                controls.append({
+                    "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+                    "pressAction": act,
+                    "fnPressAction": None,
+                })
+            while len(controls) < 12:
+                controls.append({
+                    "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+                    "pressAction": None,
+                    "fnPressAction": None,
+                })
 
             touch_pages.append({
                 "$type": "Loupedeck.Service.ProfileLayoutButtonPage, LoupedeckService",
@@ -287,13 +399,22 @@ def main():
 
         # Encoder page (6 dials: 3 on left, 3 on right)
         ep_guid = deterministic_guid(f"rupokar_encoder_page_{ws_idx}")
-        dial_controls = []
+        dial_items = [
+            m for m in manifest if dial_sec in m["section"] and m["type"] == "dial"
+        ]
         dials_turn = [d for d in dial_items if "turn" in d["control"].lower()]
         dials_press = [d for d in dial_items if "press" in d["control"].lower()]
 
+        default_turn_items = [m for m in manifest if m["section"] == "Edit 1" and m["type"] == "dial" and "turn" in m["control"].lower()]
+        default_press_items = [m for m in manifest if m["section"] == "Edit 1" and m["type"] == "dial" and "press" in m["control"].lower()]
+
+        dial_controls = []
         for d_idx in range(6):
-            turn_act = action_by_id[dials_turn[d_idx]["id"]] if d_idx < len(dials_turn) else None
-            press_act = action_by_id[dials_press[d_idx]["id"]] if d_idx < len(dials_press) else None
+            turn_item = dials_turn[d_idx] if d_idx < len(dials_turn) else (default_turn_items[d_idx] if d_idx < len(default_turn_items) else None)
+            press_item = dials_press[d_idx] if d_idx < len(dials_press) else (default_press_items[d_idx] if d_idx < len(default_press_items) else None)
+
+            turn_act = action_by_id[turn_item["id"]] if turn_item else None
+            press_act = action_by_id[press_item["id"]] if press_item else None
 
             dial_controls.append({
                 "$type": "Loupedeck.Service.ProfileLayoutEncoder, LoupedeckService",
@@ -332,12 +453,11 @@ def main():
     for r_idx in range(8):
         ws = workspaces[r_idx]
         ws_guid = ws["name"]
-        ws_title, _, page_shortcut = WORKSPACE_DEFS[r_idx]
+        ws_title, _, _, page_shortcut = ws_touch_mappings[r_idx]
 
         macro_guid = deterministic_guid(f"rupokar_round_btn_macro_{r_idx+1}")
         sub_cmd_guid = deterministic_guid(f"rupokar_round_btn_subcmd_{r_idx+1}")
 
-        # Macro that changes workspace on CT AND switches Resolve page!
         macro_def = {
             "$type": "Loupedeck.Service.ApplicationProfileMacroCommand, LoupedeckService",
             "isCommand": True,
@@ -368,7 +488,6 @@ def main():
         }
         macro_commands.append(macro_def)
 
-        # Set round button action
         round_act = f"$@Generic___@Macro___{macro_guid}"
         round_controls.append({
             "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
@@ -376,7 +495,6 @@ def main():
             "fnPressAction": None,
         })
 
-        # Copy nav icon for this round button macro
         if r_idx < len(nav_manifest_items):
             nav_item = nav_manifest_items[r_idx]
             svg_name = Path(nav_item["filename"]).name
@@ -484,7 +602,34 @@ def main():
     with open(out_file, "w", encoding="utf-8") as f:
         json.dump(profile_info, f, indent=4, ensure_ascii=False)
 
+    # Ensure ApplicationInfo.json exists and has defaultProfileName set
+    RESOLVE_APP_DIR.mkdir(parents=True, exist_ok=True)
+    app_info_file = RESOLVE_APP_DIR / "ApplicationInfo.json"
+    app_info = {
+        "$type": "Loupedeck.Service.SupportedApplicationInfo, LoupedeckService",
+        "name": "com.blackmagic-design.davinciresolve",
+        "displayName": "DaVinci Resolve",
+        "description": None,
+        "deviceType": "Loupedeck20",
+        "nativePluginName": None,
+        "hasNativePlugin": False,
+        "processOrBundleName": "com.blackmagic-design.davinciresolve",
+        "modes": [
+            {
+                "$type": "Loupedeck.Service.ApplicationMode, LoupedeckService",
+                "name": "main",
+                "parentModeName": None,
+                "displayName": "Main"
+            }
+        ],
+        "defaultProfileName": TARGET_PROFILE_ID,
+        "isEnabled": True
+    }
+    with open(app_info_file, "w", encoding="utf-8") as f:
+        json.dump(app_info, f, indent=4, ensure_ascii=False)
+
     print(f"✅ Successfully wrote ProfileInfo.json ({out_file.stat().st_size} bytes)")
+    print(f"✅ Successfully set defaultProfileName in ApplicationInfo.json")
     print(f"✅ Workspaces: {len(workspaces)}")
     print(f"✅ Macro commands (Round 1-8): {len(macro_commands)}")
     print(f"✅ Touch pages: {len(touch_pages)}")
